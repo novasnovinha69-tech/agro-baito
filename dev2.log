@@ -1660,3 +1660,290 @@ digest: "1000539021"
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:93:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _handleRequest (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:138:9)
+    at async _request (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:118:18)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/GoTrueClient.js:4023:24)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/helpers.js:224:36) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:93:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _handleRequest (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:138:9)
+    at async _request (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:118:18)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/GoTrueClient.js:4023:24)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/helpers.js:224:36) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:93:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _handleRequest (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:138:9)
+    at async _request (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:118:18)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/GoTrueClient.js:4023:24)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/helpers.js:224:36) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:93:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async _handleRequest (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:138:9)
+    at async _request (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/fetch.js:118:18)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/GoTrueClient.js:4023:24)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@supabase/auth-js/dist/module/lib/helpers.js:224:36) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+ GET / 200 in 12482ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ✓ Compiled in 1719ms (2807 modules)
+ ✓ Compiled in 864ms (2807 modules)
+ ✓ Compiled in 252ms (682 modules)
+ ✓ Compiled in 1546ms (2806 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ components\loja\header-loja.tsx (159:12) @ BotaoAvaliacaoGoogle
+ ⨯ ReferenceError: BotaoAvaliacaoGoogle is not defined
+    at HeaderLoja (./components/loja/header-loja.tsx:341:105)
+digest: "198516623"
+[0m [90m 157 |[39m[0m
+[0m [90m 158 |[39m           {[90m/* Botão avaliação Google (logo oficial) */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 159 |[39m           [33m<[39m[33mBotaoAvaliacaoGoogle[39m variant[33m=[39m[32m"compacto"[39m className[33m=[39m[32m"shrink-0 transition-transform hover:scale-110"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 160 |[39m[0m
+[0m [90m 161 |[39m           {[90m/* Botão Painel (só admin) */[39m}[0m
+[0m [90m 162 |[39m           {isAdmin [33m&&[39m ([0m
+ ⨯ components\loja\header-loja.tsx (159:12) @ BotaoAvaliacaoGoogle
+ ⨯ ReferenceError: BotaoAvaliacaoGoogle is not defined
+    at HeaderLoja (./components/loja/header-loja.tsx:341:105)
+digest: "198516623"
+[0m [90m 157 |[39m[0m
+[0m [90m 158 |[39m           {[90m/* Botão avaliação Google (logo oficial) */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 159 |[39m           [33m<[39m[33mBotaoAvaliacaoGoogle[39m variant[33m=[39m[32m"compacto"[39m className[33m=[39m[32m"shrink-0 transition-transform hover:scale-110"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 160 |[39m[0m
+[0m [90m 161 |[39m           {[90m/* Botão Painel (só admin) */[39m}[0m
+[0m [90m 162 |[39m           {isAdmin [33m&&[39m ([0m
+ GET / 500 in 797ms
+ GET / 500 in 932ms
+ ✓ Compiled in 793ms (2806 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ components\loja\header-loja.tsx (158:12) @ BotaoAvaliacaoGoogle
+ ⨯ ReferenceError: BotaoAvaliacaoGoogle is not defined
+    at HeaderLoja (./components/loja/header-loja.tsx:341:105)
+digest: "198516623"
+[0m [90m 156 |[39m[0m
+[0m [90m 157 |[39m           {[90m/* Botão avaliação Google (logo oficial) */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 158 |[39m           [33m<[39m[33mBotaoAvaliacaoGoogle[39m variant[33m=[39m[32m"compacto"[39m className[33m=[39m[32m"shrink-0 transition-transform hover:scale-110"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 159 |[39m[0m
+[0m [90m 160 |[39m           {[90m/* Botão Painel (só admin) */[39m}[0m
+[0m [90m 161 |[39m           {isAdmin [33m&&[39m ([0m
+ ⨯ components\loja\header-loja.tsx (158:12) @ BotaoAvaliacaoGoogle
+ ⨯ ReferenceError: BotaoAvaliacaoGoogle is not defined
+    at HeaderLoja (./components/loja/header-loja.tsx:341:105)
+digest: "198516623"
+[0m [90m 156 |[39m[0m
+[0m [90m 157 |[39m           {[90m/* Botão avaliação Google (logo oficial) */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 158 |[39m           [33m<[39m[33mBotaoAvaliacaoGoogle[39m variant[33m=[39m[32m"compacto"[39m className[33m=[39m[32m"shrink-0 transition-transform hover:scale-110"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 159 |[39m[0m
+[0m [90m 160 |[39m           {[90m/* Botão Painel (só admin) */[39m}[0m
+[0m [90m 161 |[39m           {isAdmin [33m&&[39m ([0m
+ GET / 500 in 1012ms
+ GET / 500 in 1016ms
+ ✓ Compiled in 686ms (2808 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 777ms
+ GET / 200 in 781ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ✓ Compiled in 483ms (682 modules)
+ ✓ Compiled in 332ms (682 modules)
+ ✓ Compiled in 520ms (682 modules)
+ GET / 200 in 621ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 386ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ GET / 200 in 539ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ GET / 200 in 366ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 469ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 399ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 416ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ GET /categoria/racoes 200 in 898ms
+ GET /categoria/medicamentos 200 in 761ms
+ GET /categoria/pesca 200 in 473ms
+ GET /categoria/ferramentas 200 in 941ms
+ GET /categoria/ferragens 200 in 947ms
+ GET /categoria/agro 200 in 542ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
