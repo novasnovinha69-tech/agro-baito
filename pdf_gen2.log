@@ -1,0 +1,21 @@
+
+🔄 Converting proposta-comercial.html...
+   Engine: Playwright + Chromium native @page (no Paged.js)
+
+📋 Pre-render checks:
+  ⏳ Auto-injecting KaTeX CDN (math formulas detected but KaTeX not loaded)...
+  ✓ KaTeX CDN loaded successfully
+  ⏳ Triggering KaTeX rendering...
+  ✓ KaTeX rendered
+  ⚠️  Converted absolute-bottom elements to document flow (prevents overlap on multi-page):
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+  ✓ Fixed 1 full-page cover section(s) for print
+
+📄 Rendering PDF...
+   Custom size: 210mm × 297mm
+
+🔧 Post-processing (pdf-lib):
+
+✗ Conversion failed: pdf-lib not found. Install: npm install -g pdf-lib

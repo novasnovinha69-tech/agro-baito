@@ -1,0 +1,34 @@
+components/loja/catalogo-cliente.tsx(9,15): error TS2305: Module '"@/types/database.types"' has no exported member 'Produto'.
+components/loja/catalogo-cliente.tsx(9,24): error TS2305: Module '"@/types/database.types"' has no exported member 'Categoria'.
+components/loja/product-card.tsx(11,15): error TS2305: Module '"@/types/database.types"' has no exported member 'Produto'.
+components/loja/produto-detalhe.tsx(27,15): error TS2305: Module '"@/types/database.types"' has no exported member 'Produto'.
+components/loja/produto-detalhe.tsx(156,44): error TS7006: Parameter 'q' implicitly has an 'any' type.
+components/loja/produto-detalhe.tsx(172,44): error TS7006: Parameter 'q' implicitly has an 'any' type.
+lib/data.ts(15,15): error TS2305: Module '"@/types/database.types"' has no exported member 'Unidade'.
+lib/data.ts(15,24): error TS2305: Module '"@/types/database.types"' has no exported member 'ZonaEntrega'.
+lib/data.ts(106,11): error TS2352: Conversion of type 'null' to type 'ProdutoComCategoria' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'null' is not comparable to type '{ id: string; categoria_id: string; nome: string; slug: string; descricao: string | null; preco_cents: number; preco_promocional_cents: number | null; preco_por_kg: boolean; peso_kg: number | null; ... 9 more ...; updated_at: string; }'.
+lib/data.ts(115,30): error TS7006: Parameter 'z' implicitly has an 'any' type.
+lib/frete.ts(7,15): error TS2305: Module '"@/types/database.types"' has no exported member 'ZonaEntrega'.
+lib/mock-data.ts(11,3): error TS2305: Module '"@/types/database.types"' has no exported member 'Categoria'.
+lib/mock-data.ts(12,3): error TS2305: Module '"@/types/database.types"' has no exported member 'Produto'.
+lib/mock-data.ts(13,3): error TS2305: Module '"@/types/database.types"' has no exported member 'Unidade'.
+lib/mock-data.ts(14,3): error TS2305: Module '"@/types/database.types"' has no exported member 'ZonaEntrega'.
+lib/store/carrinho.ts(5,15): error TS2305: Module '"@/types/database.types"' has no exported member 'Produto'.
+lib/store/carrinho.ts(58,5): error TS2561: Object literal may only specify known properties, but 'qtd_minima' does not exist in type 'ItemCarrinho'. Did you mean to write 'qtdMinima'?
+lib/supabase/server.ts(27,14): error TS7006: Parameter 'cookiesToSet' implicitly has an 'any' type.
+lib/supabase/server.ts(29,35): error TS7031: Binding element 'name' implicitly has an 'any' type.
+lib/supabase/server.ts(29,41): error TS7031: Binding element 'value' implicitly has an 'any' type.
+lib/supabase/server.ts(29,48): error TS7031: Binding element 'options' implicitly has an 'any' type.
+middleware.ts(32,14): error TS7006: Parameter 'cookiesToSet' implicitly has an 'any' type.
+middleware.ts(33,33): error TS7031: Binding element 'name' implicitly has an 'any' type.
+middleware.ts(33,39): error TS7031: Binding element 'value' implicitly has an 'any' type.
+middleware.ts(33,46): error TS7031: Binding element 'options' implicitly has an 'any' type.
+types/database.types.ts(34,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(78,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(99,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(124,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(176,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(201,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(220,25): error TS2304: Cannot find name 'Insert'.
+types/database.types.ts(239,25): error TS2304: Cannot find name 'Insert'.

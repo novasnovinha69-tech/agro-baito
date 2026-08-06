@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Analisando...</title></head><body><script>
+const arquivos = ["ig_00.jpg","ig_01.jpg","ig_02.jpg","ig_03.jpg","ig_04.jpg","ig_05.jpg","ig_06.jpg","ig_07.jpg","ig_08.jpg","ig_09.jpg","ig_10.jpg","ig_11.jpg"];
+async function corDominante(url) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const c = document.createElement("canvas");
+      const w = 40, h = 40;
+      c.width = w; c.height = h;
+      const ctx = c.getContext("2d");
+      ctx.drawImage(img, 0, 0, w, h);
+      const data = ctx.getImageData(0, 0, w, h).data;
+      const contagem = {};
+      for (let i = 0; i < data.length; i += 4) {
+        const r = data[i], g = data[i+1], b = data[i+2];
+        // agrupa por bucket de 32 para reduzir variação
+        const key = (Math.round(r/32)*32) + "," + (Math.round(g/32)*32) + "," + (Math.round(b/32)*32);
+        contagem[key] = (contagem[key]||0) + 1;
+      }
+      const top = Object.entries(contagem).sort((a,b)=>b[1]-a[1]).slice(0,3);
+      resolve(top);
+    };
+    img.onerror = () => resolve([["erro",0]]);
+    img.src = url;
+  });
+}
+(async () => {
+  const resultado = [];
+  for (const a of arquivos) {
+    const top = await corDominante("/produtos-reais/" + a);
+    resultado.push({ arquivo: a, cores: top });
+  }
+  document.title = "RESULTADO:" + JSON.stringify(resultado);
+})();
+</script></body></html>

@@ -1,0 +1,1662 @@
+
+> agro-mundo-animal@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 3.8s
+ ✓ Compiled /middleware in 239ms
+ ✓ Compiled (127 modules)
+ ○ Compiling /entrar ...
+ ✓ Compiled /entrar in 7.5s (903 modules)
+ GET /entrar?next=%2Fadmin 200 in 8019ms
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (107kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (258kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ○ Compiling / ...
+ ✓ Compiled / in 4.9s (2503 modules)
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+ GET / 200 in 5937ms
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 822ms (2500 modules)
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+ GET /catalogo 200 in 1734ms
+ ✓ Compiled in 526ms (457 modules)
+ ✓ Compiled in 329ms (457 modules)
+ ✓ Compiled in 1060ms (1021 modules)
+ ✓ Compiled in 314ms (457 modules)
+ ✓ Compiled in 240ms (457 modules)
+ ✓ Compiled in 263ms (457 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 660ms (2050 modules)
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+ GET / 200 in 2205ms
+ GET /entrar 200 in 110ms
+ GET /entrar 200 in 91ms
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+ GET / 200 in 865ms
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 874ms (2057 modules)
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 2.5s (2521 modules)
+ ✓ Compiled in 1047ms (457 modules)
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+ GET /categoria/racoes 200 in 674ms
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+ GET /catalogo 200 in 375ms
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarCategorias] erro — usando mocks: Could not find the table 'public.categorias' in the schema cache
+[listarProdutos] erro: Could not find the table 'public.produtos' in the schema cache
+ GET /categoria/ferramentas 200 in 955ms
+ GET /entrar 200 in 207ms
+ GET /catalogo 200 in 378ms
+ GET /catalogo 200 in 458ms
+ GET / 200 in 262ms
+ GET /entrar 200 in 28ms
+ GET /entrar 200 in 50ms
+ ○ Compiling /admin ...
+ ✓ Compiled /admin in 2.4s (2552 modules)
+ ✓ Compiled in 935ms (467 modules)
+ GET /entrar 200 in 311ms
+ ○ Compiling /admin/produtos ...
+ ✓ Compiled /admin/produtos in 648ms (2555 modules)
+ GET /admin/produtos 200 in 1390ms
+ ○ Compiling /admin/pedidos ...
+ ✓ Compiled /admin/pedidos in 548ms (2558 modules)
+ GET /admin/pedidos 200 in 1364ms
+ ✓ Compiled /admin/estoque in 470ms (2561 modules)
+ GET /admin/estoque 200 in 978ms
+ ○ Compiling /admin/zonas-entrega ...
+ ✓ Compiled /admin/zonas-entrega in 548ms (2566 modules)
+ ⨯ lib\data.ts (132:43) @ filter
+ ⨯ TypeError: Cannot read properties of undefined (reading 'filter')
+    at eval (./lib/data.ts:107:28)
+    at Array.map (<anonymous>)
+    at listarUnidadesComZonas (./lib/data.ts:105:22)
+    at async AdminZonasPage (./app/admin/zonas-entrega/page.tsx:19:22)
+digest: "3837909929"
+[0m [90m 130 |[39m       [33m?[39m[33m.[39mmap((u) [33m=>[39m ({[0m
+[0m [90m 131 |[39m         [33m...[39mu[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 132 |[39m         zonas[33m:[39m (u[33m.[39mzonas [36mas[39m [33mZonaEntrega[39m[])[33m.[39mfilter((z) [33m=>[39m z[33m.[39mativa)[33m,[39m[0m
+[0m [90m     |[39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 133 |[39m       }))[0m
+[0m [90m 134 |[39m       [33m.[39mfilter((u) [33m=>[39m u[33m.[39mzonas[33m.[39mlength [33m>[39m [35m0[39m) [33m?[39m[33m?[39m [][0m
+[0m [90m 135 |[39m   )[33m;[39m[0m
+ ⨯ lib\data.ts (132:43) @ filter
+ ⨯ TypeError: Cannot read properties of undefined (reading 'filter')
+    at eval (./lib/data.ts:107:28)
+    at Array.map (<anonymous>)
+    at listarUnidadesComZonas (./lib/data.ts:105:22)
+    at async AdminZonasPage (./app/admin/zonas-entrega/page.tsx:19:22)
+digest: "3837909929"
+[0m [90m 130 |[39m       [33m?[39m[33m.[39mmap((u) [33m=>[39m ({[0m
+[0m [90m 131 |[39m         [33m...[39mu[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 132 |[39m         zonas[33m:[39m (u[33m.[39mzonas [36mas[39m [33mZonaEntrega[39m[])[33m.[39mfilter((z) [33m=>[39m z[33m.[39mativa)[33m,[39m[0m
+[0m [90m     |[39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 133 |[39m       }))[0m
+[0m [90m 134 |[39m       [33m.[39mfilter((u) [33m=>[39m u[33m.[39mzonas[33m.[39mlength [33m>[39m [35m0[39m) [33m?[39m[33m?[39m [][0m
+[0m [90m 135 |[39m   )[33m;[39m[0m
+ GET /admin/zonas-entrega 500 in 1109ms
+ GET /admin 200 in 598ms
+ GET /admin 200 in 565ms
+ GET /admin 200 in 801ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 3.6s (2548 modules)
+ GET /master 404 in 5019ms
+ GET /entrar 200 in 98ms
+ GET /entrar 200 in 80ms
+ GET /admin 200 in 1075ms
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 1218ms (2091 modules)
+ ✓ Compiled in 615ms (469 modules)
+ ✓ Compiled in 284ms (469 modules)
+ ✓ Compiled in 215ms (469 modules)
+ ○ Compiling /checkout ...
+ ✓ Compiled /checkout in 2.6s (2568 modules)
+ ⨯ lib\data.ts (132:43) @ filter
+ ⨯ TypeError: Cannot read properties of undefined (reading 'filter')
+    at eval (./lib/data.ts:107:28)
+    at Array.map (<anonymous>)
+    at listarUnidadesComZonas (./lib/data.ts:105:22)
+    at async CheckoutPage (./app/checkout/page.tsx:17:22)
+digest: "1112309131"
+[0m [90m 130 |[39m       [33m?[39m[33m.[39mmap((u) [33m=>[39m ({[0m
+[0m [90m 131 |[39m         [33m...[39mu[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 132 |[39m         zonas[33m:[39m (u[33m.[39mzonas [36mas[39m [33mZonaEntrega[39m[])[33m.[39mfilter((z) [33m=>[39m z[33m.[39mativa)[33m,[39m[0m
+[0m [90m     |[39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 133 |[39m       }))[0m
+[0m [90m 134 |[39m       [33m.[39mfilter((u) [33m=>[39m u[33m.[39mzonas[33m.[39mlength [33m>[39m [35m0[39m) [33m?[39m[33m?[39m [][0m
+[0m [90m 135 |[39m   )[33m;[39m[0m
+ ⨯ lib\data.ts (132:43) @ filter
+ ⨯ TypeError: Cannot read properties of undefined (reading 'filter')
+    at eval (./lib/data.ts:107:28)
+    at Array.map (<anonymous>)
+    at listarUnidadesComZonas (./lib/data.ts:105:22)
+    at async CheckoutPage (./app/checkout/page.tsx:17:22)
+digest: "1112309131"
+[0m [90m 130 |[39m       [33m?[39m[33m.[39mmap((u) [33m=>[39m ({[0m
+[0m [90m 131 |[39m         [33m...[39mu[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 132 |[39m         zonas[33m:[39m (u[33m.[39mzonas [36mas[39m [33mZonaEntrega[39m[])[33m.[39mfilter((z) [33m=>[39m z[33m.[39mativa)[33m,[39m[0m
+[0m [90m     |[39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 133 |[39m       }))[0m
+[0m [90m 134 |[39m       [33m.[39mfilter((u) [33m=>[39m u[33m.[39mzonas[33m.[39mlength [33m>[39m [35m0[39m) [33m?[39m[33m?[39m [][0m
+[0m [90m 135 |[39m   )[33m;[39m[0m
+ GET /checkout 500 in 4103ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 896ms (2565 modules)
+ ✓ Compiled in 1ms (2087 modules)
+ ✓ Compiled in 0ms (2087 modules)
+ ✓ Compiled in 0ms (2087 modules)
+ ⨯ TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "319729374"
+ ⨯ TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "319729374"
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:162364)
+    at usePathname (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7)
+ ⨯ TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:162364)
+    at usePathname (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7) {
+  page: '/checkout'
+}
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:162364)
+    at usePathname (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7)
+ ⨯ TypeError: Cannot read properties of null (reading 'useContext')
+    at t.useContext (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:162364)
+    at usePathname (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/navigation.js:121:34)
+    at ErrorBoundary (webpack-internal:///(ssr)/./node_modules/next/dist/client/components/error-boundary.js:159:50)
+    at au (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:10446)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:15122
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:46505)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at ab (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:11808)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16871
+    at aw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:16908)
+    at a_ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:49776)
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:58612
+    at C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59270
+    at aN (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:59278)
+    at Timeout._onTimeout (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:6939)
+    at listOnTimeout (node:internal/timers:635:17)
+    at process.processTimers (node:internal/timers:571:7) {
+  page: '/checkout'
+}
+ ○ Compiling /_error ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /_error in 2.2s (2778 modules)
+ GET /checkout 500 in 5210ms
+ GET /checkout 200 in 679ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /checkout 200 in 462ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1748ms (2790 modules)
+ ✓ Compiled in 387ms (663 modules)
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 2s (2134 modules)
+ ✓ Compiled in 2.5s (2797 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ components\loja\checkout-cliente.tsx (93:17) @ FRETE_GRATIS_MIN_CENTS
+ ⨯ ReferenceError: FRETE_GRATIS_MIN_CENTS is not defined
+    at CheckoutCliente (./components/loja/checkout-cliente.tsx:98:43)
+digest: "910492113"
+[0m [90m 91 |[39m   [36mconst[39m zona [33m=[39m todasZonas[33m.[39mfind((z) [33m=>[39m z[33m.[39mid [33m===[39m zonaSelecionadaId)[33m;[39m[0m
+[0m [90m 92 |[39m   [36mconst[39m ganhouFreteGratis [33m=[39m[0m
+[0m[31m[1m>[22m[39m[90m 93 |[39m     subtotal [33m>=[39m [33mFRETE_GRATIS_MIN_CENTS[39m [33m&&[39m tipoEntrega [33m===[39m [32m"entrega"[39m[33m;[39m[0m
+[0m [90m    |[39m                 [31m[1m^[22m[39m[0m
+[0m [90m 94 |[39m   [36mconst[39m freteCents [33m=[39m[0m
+[0m [90m 95 |[39m     zona [33m&&[39m [33m![39mganhouFreteGratis[0m
+[0m [90m 96 |[39m       [33m?[39m [33mMath[39m[33m.[39mround((subtotal [33m*[39m [33mNumber[39m(zona[33m.[39mfrete_percentual)) [33m/[39m [35m100[39m)[0m
+ GET /checkout 500 in 1351ms
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 1765ms (2141 modules)
+ ✓ Compiled in 673ms (2805 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1ms (2142 modules)
+ GET /checkout 200 in 9186ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1098ms (2806 modules)
+ GET /checkout 200 in 794ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1170ms (2806 modules)
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1042ms (2792 modules)
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 1052ms (2135 modules)
+ GET /catalogo 200 in 1888ms
+ GET /checkout 200 in 364ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /catalogo 200 in 669ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1660ms (2795 modules)
+ ✓ Compiled in 666ms (664 modules)
+ ✓ Compiled in 807ms (2795 modules)
+ ✓ Compiled in 1583ms (2795 modules)
+ GET /entrar 200 in 94ms
+ GET /entrar 200 in 69ms
+ GET /entrar 200 in 56ms
+ ○ Compiling /admin/produtos ...
+ ✓ Compiled /admin/produtos in 1166ms (2147 modules)
+ ○ Compiling /admin/pedidos ...
+ ✓ Compiled /admin/pedidos in 611ms (2150 modules)
+ ✓ Compiled in 1ms (2150 modules)
+ ✓ Compiled /admin/configuracoes in 1ms (2150 modules)
+ ✓ Compiled in 1676ms (2822 modules)
+ ○ Compiling /admin/zonas-entrega ...
+ ✓ Compiled /admin/zonas-entrega in 599ms (2154 modules)
+ ○ Compiling /admin/estoque ...
+ ✓ Compiled /admin/estoque in 589ms (2157 modules)
+ ✓ Compiled /catalogo in 462ms (2148 modules)
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 1189ms (2150 modules)
+ ○ Compiling /admin/produtos/novo ...
+ ✓ Compiled /admin/produtos/novo in 1871ms (2815 modules)
+ ✓ Compiled in 1224ms (2803 modules)
+ ✓ Compiled in 639ms (2803 modules)
+ GET /admin/produtos/novo 200 in 739ms
+ GET / 200 in 598ms
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 592ms (2140 modules)
+ GET /catalogo 200 in 1143ms
+ ✓ Compiled /categoria/[slug] in 290ms (2147 modules)
+ GET /categoria/racoes 200 in 1125ms
+ GET /categoria/ferragens 200 in 428ms
+ ○ Compiling /carrinho ...
+ ✓ Compiled /carrinho in 1575ms (2813 modules)
+ GET /carrinho 200 in 1844ms
+ GET /checkout 200 in 259ms
+ ○ Compiling /buscar ...
+ ✓ Compiled /buscar in 522ms (2815 modules)
+ GET /buscar?q=racao 200 in 967ms
+ GET / 200 in 557ms
+ GET /catalogo 200 in 597ms
+ GET /categoria/racoes 200 in 463ms
+ GET /categoria/ferragens 200 in 431ms
+ ○ Compiling /produto/[slug] ...
+ ✓ Compiled /produto/[slug] in 1798ms (2828 modules)
+ GET /produto/racao-premier-formula-caes-adultos-15kg 404 in 3537ms
+ GET /carrinho 200 in 79ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /checkout 200 in 381ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /catalogo 200 in 620ms
+ GET /carrinho 200 in 58ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /carrinho 200 in 69ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /entrar 200 in 86ms
+ GET /entrar 200 in 65ms
+ ✓ Compiled in 3s (2916 modules)
+ ✓ Compiled in 389ms (679 modules)
+ ⨯ ./lib/admin-data.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:79:1]
+ [2m 79[0m |     }
+ [2m 80[0m |       if (!isSupabaseConfigured()) {
+ [2m 81[0m |         // Pedidos mock para o dashboard demo
+ [2m 82[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m     return [
+ [2m 83[0m | [31;1m|[0m         {
+ [2m 84[0m | [31;1m|[0m           id: "ped-demo-1",
+ [2m 85[0m | [31;1m|[0m           codigo: "AMA-0001",
+ [2m 86[0m | [31;1m|[0m           cliente_nome: "João da Silva",
+ [2m 87[0m | [31;1m|[0m           cliente_telefone: "47999887766",
+ [2m 88[0m | [31;1m|[0m           cliente_email: null,
+ [2m 89[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m 90[0m | [31;1m|[0m           subtotal_cents: 16990,
+ [2m 91[0m | [31;1m|[0m           frete_cents: 1700,
+ [2m 92[0m | [31;1m|[0m           total_cents: 18690,
+ [2m 93[0m | [31;1m|[0m           zona_id: null,
+ [2m 94[0m | [31;1m|[0m           unidade_id: null,
+ [2m 95[0m | [31;1m|[0m           tipo_entrega: "entrega",
+ [2m 96[0m | [31;1m|[0m           endereco: { bairro: "Tabuleiro", cidade: "Itapema" },
+ [2m 97[0m | [31;1m|[0m           status: "confirmado",
+ [2m 98[0m | [31;1m|[0m           pagamento_id: null,
+ [2m 99[0m | [31;1m|[0m           pagamento_status: "approved",
+ [2m100[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m101[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m102[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m103[0m | [31;1m|[0m           observacoes: null,
+ [2m104[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m105[0m | [31;1m|[0m           created_at: new Date(Date.now() - 3600_000).toISOString(),
+ [2m106[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m107[0m | [31;1m|[0m         },
+ [2m108[0m | [31;1m|[0m         {
+ [2m109[0m | [31;1m|[0m           id: "ped-demo-2",
+ [2m110[0m | [31;1m|[0m           codigo: "AMA-0002",
+ [2m111[0m | [31;1m|[0m           cliente_nome: "Maria Produção Rural",
+ [2m112[0m | [31;1m|[0m           cliente_telefone: "47988776655",
+ [2m113[0m | [31;1m|[0m           cliente_email: null,
+ [2m114[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m115[0m | [31;1m|[0m           subtotal_cents: 7490,
+ [2m116[0m | [31;1m|[0m           frete_cents: 750,
+ [2m117[0m | [31;1m|[0m           total_cents: 8240,
+ [2m118[0m | [31;1m|[0m           zona_id: null,
+ [2m119[0m | [31;1m|[0m           unidade_id: null,
+ [2m120[0m | [31;1m|[0m           tipo_entrega: "retirada",
+ [2m121[0m | [31;1m|[0m           endereco: null,
+ [2m122[0m | [31;1m|[0m           status: "pendente",
+ [2m123[0m | [31;1m|[0m           pagamento_id: null,
+ [2m124[0m | [31;1m|[0m           pagamento_status: "pending",
+ [2m125[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m126[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m127[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m128[0m | [31;1m|[0m           observacoes: null,
+ [2m129[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m130[0m | [31;1m|[0m           created_at: new Date(Date.now() - 7200_000).toISOString(),
+ [2m131[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m132[0m | [31;1m|[0m         },
+ [2m133[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m     ];
+ [2m134[0m |       }
+ [2m135[0m |       const sb = createSupabaseAdminClient();
+ [2m136[0m |       const { data, error } = await sb
+     `----
+
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:139:1]
+ [2m139[0m |     .order("created_at", { ascending: false })
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+     : [31;1m  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m143[0m | }
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:140:1]
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+ [2m143[0m | }
+     : [31;1m^[0m
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+ [2m146[0m |   id: string;
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./lib/admin-data.ts
+./app/admin/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./lib/admin-data.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:79:1]
+ [2m 79[0m |     }
+ [2m 80[0m |       if (!isSupabaseConfigured()) {
+ [2m 81[0m |         // Pedidos mock para o dashboard demo
+ [2m 82[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m     return [
+ [2m 83[0m | [31;1m|[0m         {
+ [2m 84[0m | [31;1m|[0m           id: "ped-demo-1",
+ [2m 85[0m | [31;1m|[0m           codigo: "AMA-0001",
+ [2m 86[0m | [31;1m|[0m           cliente_nome: "João da Silva",
+ [2m 87[0m | [31;1m|[0m           cliente_telefone: "47999887766",
+ [2m 88[0m | [31;1m|[0m           cliente_email: null,
+ [2m 89[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m 90[0m | [31;1m|[0m           subtotal_cents: 16990,
+ [2m 91[0m | [31;1m|[0m           frete_cents: 1700,
+ [2m 92[0m | [31;1m|[0m           total_cents: 18690,
+ [2m 93[0m | [31;1m|[0m           zona_id: null,
+ [2m 94[0m | [31;1m|[0m           unidade_id: null,
+ [2m 95[0m | [31;1m|[0m           tipo_entrega: "entrega",
+ [2m 96[0m | [31;1m|[0m           endereco: { bairro: "Tabuleiro", cidade: "Itapema" },
+ [2m 97[0m | [31;1m|[0m           status: "confirmado",
+ [2m 98[0m | [31;1m|[0m           pagamento_id: null,
+ [2m 99[0m | [31;1m|[0m           pagamento_status: "approved",
+ [2m100[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m101[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m102[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m103[0m | [31;1m|[0m           observacoes: null,
+ [2m104[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m105[0m | [31;1m|[0m           created_at: new Date(Date.now() - 3600_000).toISOString(),
+ [2m106[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m107[0m | [31;1m|[0m         },
+ [2m108[0m | [31;1m|[0m         {
+ [2m109[0m | [31;1m|[0m           id: "ped-demo-2",
+ [2m110[0m | [31;1m|[0m           codigo: "AMA-0002",
+ [2m111[0m | [31;1m|[0m           cliente_nome: "Maria Produção Rural",
+ [2m112[0m | [31;1m|[0m           cliente_telefone: "47988776655",
+ [2m113[0m | [31;1m|[0m           cliente_email: null,
+ [2m114[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m115[0m | [31;1m|[0m           subtotal_cents: 7490,
+ [2m116[0m | [31;1m|[0m           frete_cents: 750,
+ [2m117[0m | [31;1m|[0m           total_cents: 8240,
+ [2m118[0m | [31;1m|[0m           zona_id: null,
+ [2m119[0m | [31;1m|[0m           unidade_id: null,
+ [2m120[0m | [31;1m|[0m           tipo_entrega: "retirada",
+ [2m121[0m | [31;1m|[0m           endereco: null,
+ [2m122[0m | [31;1m|[0m           status: "pendente",
+ [2m123[0m | [31;1m|[0m           pagamento_id: null,
+ [2m124[0m | [31;1m|[0m           pagamento_status: "pending",
+ [2m125[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m126[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m127[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m128[0m | [31;1m|[0m           observacoes: null,
+ [2m129[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m130[0m | [31;1m|[0m           created_at: new Date(Date.now() - 7200_000).toISOString(),
+ [2m131[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m132[0m | [31;1m|[0m         },
+ [2m133[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m     ];
+ [2m134[0m |       }
+ [2m135[0m |       const sb = createSupabaseAdminClient();
+ [2m136[0m |       const { data, error } = await sb
+     `----
+
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:139:1]
+ [2m139[0m |     .order("created_at", { ascending: false })
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+     : [31;1m  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m143[0m | }
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:140:1]
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+ [2m143[0m | }
+     : [31;1m^[0m
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+ [2m146[0m |   id: string;
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./lib/admin-data.ts
+./app/admin/page.tsx
+ GET / 500 in 163ms
+ GET / 500 in 163ms
+ GET /entrar 500 in 197ms
+ GET / 500 in 228ms
+ GET /entrar 500 in 236ms
+ GET /admin 500 in 334ms
+ ⨯ ./lib/admin-data.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:79:1]
+ [2m 79[0m |     }
+ [2m 80[0m |       if (!isSupabaseConfigured()) {
+ [2m 81[0m |         // Pedidos mock para o dashboard demo
+ [2m 82[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m     return [
+ [2m 83[0m | [31;1m|[0m         {
+ [2m 84[0m | [31;1m|[0m           id: "ped-demo-1",
+ [2m 85[0m | [31;1m|[0m           codigo: "AMA-0001",
+ [2m 86[0m | [31;1m|[0m           cliente_nome: "João da Silva",
+ [2m 87[0m | [31;1m|[0m           cliente_telefone: "47999887766",
+ [2m 88[0m | [31;1m|[0m           cliente_email: null,
+ [2m 89[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m 90[0m | [31;1m|[0m           subtotal_cents: 16990,
+ [2m 91[0m | [31;1m|[0m           frete_cents: 1700,
+ [2m 92[0m | [31;1m|[0m           total_cents: 18690,
+ [2m 93[0m | [31;1m|[0m           zona_id: null,
+ [2m 94[0m | [31;1m|[0m           unidade_id: null,
+ [2m 95[0m | [31;1m|[0m           tipo_entrega: "entrega",
+ [2m 96[0m | [31;1m|[0m           endereco: { bairro: "Tabuleiro", cidade: "Itapema" },
+ [2m 97[0m | [31;1m|[0m           status: "confirmado",
+ [2m 98[0m | [31;1m|[0m           pagamento_id: null,
+ [2m 99[0m | [31;1m|[0m           pagamento_status: "approved",
+ [2m100[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m101[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m102[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m103[0m | [31;1m|[0m           observacoes: null,
+ [2m104[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m105[0m | [31;1m|[0m           created_at: new Date(Date.now() - 3600_000).toISOString(),
+ [2m106[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m107[0m | [31;1m|[0m         },
+ [2m108[0m | [31;1m|[0m         {
+ [2m109[0m | [31;1m|[0m           id: "ped-demo-2",
+ [2m110[0m | [31;1m|[0m           codigo: "AMA-0002",
+ [2m111[0m | [31;1m|[0m           cliente_nome: "Maria Produção Rural",
+ [2m112[0m | [31;1m|[0m           cliente_telefone: "47988776655",
+ [2m113[0m | [31;1m|[0m           cliente_email: null,
+ [2m114[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m115[0m | [31;1m|[0m           subtotal_cents: 7490,
+ [2m116[0m | [31;1m|[0m           frete_cents: 750,
+ [2m117[0m | [31;1m|[0m           total_cents: 8240,
+ [2m118[0m | [31;1m|[0m           zona_id: null,
+ [2m119[0m | [31;1m|[0m           unidade_id: null,
+ [2m120[0m | [31;1m|[0m           tipo_entrega: "retirada",
+ [2m121[0m | [31;1m|[0m           endereco: null,
+ [2m122[0m | [31;1m|[0m           status: "pendente",
+ [2m123[0m | [31;1m|[0m           pagamento_id: null,
+ [2m124[0m | [31;1m|[0m           pagamento_status: "pending",
+ [2m125[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m126[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m127[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m128[0m | [31;1m|[0m           observacoes: null,
+ [2m129[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m130[0m | [31;1m|[0m           created_at: new Date(Date.now() - 7200_000).toISOString(),
+ [2m131[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m132[0m | [31;1m|[0m         },
+ [2m133[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m     ];
+ [2m134[0m |       }
+ [2m135[0m |       const sb = createSupabaseAdminClient();
+ [2m136[0m |       const { data, error } = await sb
+     `----
+
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:139:1]
+ [2m139[0m |     .order("created_at", { ascending: false })
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+     : [31;1m  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m143[0m | }
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:140:1]
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+ [2m143[0m | }
+     : [31;1m^[0m
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+ [2m146[0m |   id: string;
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./lib/admin-data.ts
+./app/admin/page.tsx
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 3087ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 3076ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 117ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /entrar 500 in 238ms
+ GET / 500 in 242ms
+ GET / 500 in 239ms
+ GET /entrar 500 in 297ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 148ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 278ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 198ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /entrar 500 in 353ms
+ GET /entrar 500 in 395ms
+ GET /admin 500 in 390ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\JJ\.zcode\workspace\default\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\JJ\.zcode\workspace\default\.next\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\JJ\.zcode\workspace\default\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\JJ\.zcode\workspace\default\.next\cache\webpack\client-development-fallback\0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\JJ\.zcode\workspace\default\.next\cache\webpack\client-development-fallback\0.pack.gz_' -> 'C:\Users\JJ\.zcode\workspace\default\.next\cache\webpack\client-development-fallback\0.pack.gz'
+ ⨯ ./lib/admin-data.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:79:1]
+ [2m 79[0m |     }
+ [2m 80[0m |       if (!isSupabaseConfigured()) {
+ [2m 81[0m |         // Pedidos mock para o dashboard demo
+ [2m 82[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m     return [
+ [2m 83[0m | [31;1m|[0m         {
+ [2m 84[0m | [31;1m|[0m           id: "ped-demo-1",
+ [2m 85[0m | [31;1m|[0m           codigo: "AMA-0001",
+ [2m 86[0m | [31;1m|[0m           cliente_nome: "João da Silva",
+ [2m 87[0m | [31;1m|[0m           cliente_telefone: "47999887766",
+ [2m 88[0m | [31;1m|[0m           cliente_email: null,
+ [2m 89[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m 90[0m | [31;1m|[0m           subtotal_cents: 16990,
+ [2m 91[0m | [31;1m|[0m           frete_cents: 1700,
+ [2m 92[0m | [31;1m|[0m           total_cents: 18690,
+ [2m 93[0m | [31;1m|[0m           zona_id: null,
+ [2m 94[0m | [31;1m|[0m           unidade_id: null,
+ [2m 95[0m | [31;1m|[0m           tipo_entrega: "entrega",
+ [2m 96[0m | [31;1m|[0m           endereco: { bairro: "Tabuleiro", cidade: "Itapema" },
+ [2m 97[0m | [31;1m|[0m           status: "confirmado",
+ [2m 98[0m | [31;1m|[0m           pagamento_id: null,
+ [2m 99[0m | [31;1m|[0m           pagamento_status: "approved",
+ [2m100[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m101[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m102[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m103[0m | [31;1m|[0m           observacoes: null,
+ [2m104[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m105[0m | [31;1m|[0m           created_at: new Date(Date.now() - 3600_000).toISOString(),
+ [2m106[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m107[0m | [31;1m|[0m         },
+ [2m108[0m | [31;1m|[0m         {
+ [2m109[0m | [31;1m|[0m           id: "ped-demo-2",
+ [2m110[0m | [31;1m|[0m           codigo: "AMA-0002",
+ [2m111[0m | [31;1m|[0m           cliente_nome: "Maria Produção Rural",
+ [2m112[0m | [31;1m|[0m           cliente_telefone: "47988776655",
+ [2m113[0m | [31;1m|[0m           cliente_email: null,
+ [2m114[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m115[0m | [31;1m|[0m           subtotal_cents: 7490,
+ [2m116[0m | [31;1m|[0m           frete_cents: 750,
+ [2m117[0m | [31;1m|[0m           total_cents: 8240,
+ [2m118[0m | [31;1m|[0m           zona_id: null,
+ [2m119[0m | [31;1m|[0m           unidade_id: null,
+ [2m120[0m | [31;1m|[0m           tipo_entrega: "retirada",
+ [2m121[0m | [31;1m|[0m           endereco: null,
+ [2m122[0m | [31;1m|[0m           status: "pendente",
+ [2m123[0m | [31;1m|[0m           pagamento_id: null,
+ [2m124[0m | [31;1m|[0m           pagamento_status: "pending",
+ [2m125[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m126[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m127[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m128[0m | [31;1m|[0m           observacoes: null,
+ [2m129[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m130[0m | [31;1m|[0m           created_at: new Date(Date.now() - 7200_000).toISOString(),
+ [2m131[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m132[0m | [31;1m|[0m         },
+ [2m133[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m     ];
+ [2m134[0m |       }
+ [2m135[0m |       const sb = createSupabaseAdminClient();
+ [2m136[0m |       const { data, error } = await sb
+     `----
+
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:139:1]
+ [2m139[0m |     .order("created_at", { ascending: false })
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+     : [31;1m  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m143[0m | }
+ [2m144[0m | 
+ [2m145[0m | /** Busca 1 pedido pelo ID (sem limit de 50). */
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:140:1]
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+ [2m143[0m | }
+     : [31;1m^[0m
+ [2m144[0m | 
+ [2m145[0m | /** Busca 1 pedido pelo ID (sem limit de 50). */
+ [2m146[0m | export async function adminObterPedidoPorId(
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./lib/admin-data.ts
+./app/admin/page.tsx
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1428ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1430ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 89ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 40ms
+ GET /entrar 500 in 118ms
+ GET / 500 in 117ms
+ GET / 500 in 193ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 99ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /entrar 500 in 161ms
+ GET /entrar 500 in 118ms
+ GET /admin 500 in 145ms
+ ✓ Compiled /_not-found in 280ms (680 modules)
+ GET / 500 in 49ms
+ GET / 500 in 55ms
+ GET /entrar 500 in 93ms
+ GET / 500 in 162ms
+ GET /entrar 500 in 170ms
+ GET /admin 500 in 45ms
+ ✓ Compiled in 264ms (680 modules)
+ GET / 500 in 32ms
+ GET /entrar 500 in 63ms
+ GET / 500 in 64ms
+ GET /entrar 500 in 97ms
+ GET / 500 in 139ms
+ GET /admin 500 in 108ms
+ ○ Compiling /_not-found ...
+ ⨯ ./lib/admin-data.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:79:1]
+ [2m 79[0m |     }
+ [2m 80[0m |       if (!isSupabaseConfigured()) {
+ [2m 81[0m |         // Pedidos mock para o dashboard demo
+ [2m 82[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m     return [
+ [2m 83[0m | [31;1m|[0m         {
+ [2m 84[0m | [31;1m|[0m           id: "ped-demo-1",
+ [2m 85[0m | [31;1m|[0m           codigo: "AMA-0001",
+ [2m 86[0m | [31;1m|[0m           cliente_nome: "João da Silva",
+ [2m 87[0m | [31;1m|[0m           cliente_telefone: "47999887766",
+ [2m 88[0m | [31;1m|[0m           cliente_email: null,
+ [2m 89[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m 90[0m | [31;1m|[0m           subtotal_cents: 16990,
+ [2m 91[0m | [31;1m|[0m           frete_cents: 1700,
+ [2m 92[0m | [31;1m|[0m           total_cents: 18690,
+ [2m 93[0m | [31;1m|[0m           zona_id: null,
+ [2m 94[0m | [31;1m|[0m           unidade_id: null,
+ [2m 95[0m | [31;1m|[0m           tipo_entrega: "entrega",
+ [2m 96[0m | [31;1m|[0m           endereco: { bairro: "Tabuleiro", cidade: "Itapema" },
+ [2m 97[0m | [31;1m|[0m           status: "confirmado",
+ [2m 98[0m | [31;1m|[0m           pagamento_id: null,
+ [2m 99[0m | [31;1m|[0m           pagamento_status: "approved",
+ [2m100[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m101[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m102[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m103[0m | [31;1m|[0m           observacoes: null,
+ [2m104[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m105[0m | [31;1m|[0m           created_at: new Date(Date.now() - 3600_000).toISOString(),
+ [2m106[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m107[0m | [31;1m|[0m         },
+ [2m108[0m | [31;1m|[0m         {
+ [2m109[0m | [31;1m|[0m           id: "ped-demo-2",
+ [2m110[0m | [31;1m|[0m           codigo: "AMA-0002",
+ [2m111[0m | [31;1m|[0m           cliente_nome: "Maria Produção Rural",
+ [2m112[0m | [31;1m|[0m           cliente_telefone: "47988776655",
+ [2m113[0m | [31;1m|[0m           cliente_email: null,
+ [2m114[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m115[0m | [31;1m|[0m           subtotal_cents: 7490,
+ [2m116[0m | [31;1m|[0m           frete_cents: 750,
+ [2m117[0m | [31;1m|[0m           total_cents: 8240,
+ [2m118[0m | [31;1m|[0m           zona_id: null,
+ [2m119[0m | [31;1m|[0m           unidade_id: null,
+ [2m120[0m | [31;1m|[0m           tipo_entrega: "retirada",
+ [2m121[0m | [31;1m|[0m           endereco: null,
+ [2m122[0m | [31;1m|[0m           status: "pendente",
+ [2m123[0m | [31;1m|[0m           pagamento_id: null,
+ [2m124[0m | [31;1m|[0m           pagamento_status: "pending",
+ [2m125[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m126[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m127[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m128[0m | [31;1m|[0m           observacoes: null,
+ [2m129[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m130[0m | [31;1m|[0m           created_at: new Date(Date.now() - 7200_000).toISOString(),
+ [2m131[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m132[0m | [31;1m|[0m         },
+ [2m133[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m     ];
+ [2m134[0m |       }
+ [2m135[0m |       const sb = createSupabaseAdminClient();
+ [2m136[0m |       const { data, error } = await sb
+     `----
+
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:139:1]
+ [2m139[0m |     .order("created_at", { ascending: false })
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+     : [31;1m  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m143[0m | }
+ [2m144[0m | 
+ [2m145[0m | /** Busca 1 pedido pelo ID (sem limit de 50). */
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:140:1]
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+ [2m143[0m | }
+     : [31;1m^[0m
+ [2m144[0m | 
+ [2m145[0m | /** Busca 1 pedido pelo ID (sem limit de 50). */
+ [2m146[0m | export async function adminObterPedidoPorId(
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./lib/admin-data.ts
+./app/admin/page.tsx
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1328ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1325ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 84ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 43ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /entrar 500 in 105ms
+ GET / 500 in 102ms
+ GET / 500 in 167ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 96ms
+ GET /entrar 500 in 161ms
+ GET /admin 500 in 38ms
+ ⨯ ./lib/admin-data.ts
+Error: 
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:79:1]
+ [2m 79[0m |     }
+ [2m 80[0m |       if (!isSupabaseConfigured()) {
+ [2m 81[0m |         // Pedidos mock para o dashboard demo
+ [2m 82[0m | [31;1m,[0m[31;1m-[0m[31;1m>[0m     return [
+ [2m 83[0m | [31;1m|[0m         {
+ [2m 84[0m | [31;1m|[0m           id: "ped-demo-1",
+ [2m 85[0m | [31;1m|[0m           codigo: "AMA-0001",
+ [2m 86[0m | [31;1m|[0m           cliente_nome: "João da Silva",
+ [2m 87[0m | [31;1m|[0m           cliente_telefone: "47999887766",
+ [2m 88[0m | [31;1m|[0m           cliente_email: null,
+ [2m 89[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m 90[0m | [31;1m|[0m           subtotal_cents: 16990,
+ [2m 91[0m | [31;1m|[0m           frete_cents: 1700,
+ [2m 92[0m | [31;1m|[0m           total_cents: 18690,
+ [2m 93[0m | [31;1m|[0m           zona_id: null,
+ [2m 94[0m | [31;1m|[0m           unidade_id: null,
+ [2m 95[0m | [31;1m|[0m           tipo_entrega: "entrega",
+ [2m 96[0m | [31;1m|[0m           endereco: { bairro: "Tabuleiro", cidade: "Itapema" },
+ [2m 97[0m | [31;1m|[0m           status: "confirmado",
+ [2m 98[0m | [31;1m|[0m           pagamento_id: null,
+ [2m 99[0m | [31;1m|[0m           pagamento_status: "approved",
+ [2m100[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m101[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m102[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m103[0m | [31;1m|[0m           observacoes: null,
+ [2m104[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m105[0m | [31;1m|[0m           created_at: new Date(Date.now() - 3600_000).toISOString(),
+ [2m106[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m107[0m | [31;1m|[0m         },
+ [2m108[0m | [31;1m|[0m         {
+ [2m109[0m | [31;1m|[0m           id: "ped-demo-2",
+ [2m110[0m | [31;1m|[0m           codigo: "AMA-0002",
+ [2m111[0m | [31;1m|[0m           cliente_nome: "Maria Produção Rural",
+ [2m112[0m | [31;1m|[0m           cliente_telefone: "47988776655",
+ [2m113[0m | [31;1m|[0m           cliente_email: null,
+ [2m114[0m | [31;1m|[0m           cliente_cpf_cnpj: null,
+ [2m115[0m | [31;1m|[0m           subtotal_cents: 7490,
+ [2m116[0m | [31;1m|[0m           frete_cents: 750,
+ [2m117[0m | [31;1m|[0m           total_cents: 8240,
+ [2m118[0m | [31;1m|[0m           zona_id: null,
+ [2m119[0m | [31;1m|[0m           unidade_id: null,
+ [2m120[0m | [31;1m|[0m           tipo_entrega: "retirada",
+ [2m121[0m | [31;1m|[0m           endereco: null,
+ [2m122[0m | [31;1m|[0m           status: "pendente",
+ [2m123[0m | [31;1m|[0m           pagamento_id: null,
+ [2m124[0m | [31;1m|[0m           pagamento_status: "pending",
+ [2m125[0m | [31;1m|[0m           pix_qr_code: null,
+ [2m126[0m | [31;1m|[0m           pix_qr_base64: null,
+ [2m127[0m | [31;1m|[0m           pix_expira_em: null,
+ [2m128[0m | [31;1m|[0m           observacoes: null,
+ [2m129[0m | [31;1m|[0m           token_acesso: "demo",
+ [2m130[0m | [31;1m|[0m           created_at: new Date(Date.now() - 7200_000).toISOString(),
+ [2m131[0m | [31;1m|[0m           updated_at: new Date().toISOString(),
+ [2m132[0m | [31;1m|[0m         },
+ [2m133[0m | [31;1m`[0m[31;1m-[0m[31;1m>[0m     ];
+ [2m134[0m |       }
+ [2m135[0m |       const sb = createSupabaseAdminClient();
+ [2m136[0m |       const { data, error } = await sb
+     `----
+
+  [31mx[0m Return statement is not allowed here
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:139:1]
+ [2m139[0m |     .order("created_at", { ascending: false })
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+     : [31;1m  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m143[0m | }
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+     `----
+
+  [31mx[0m Expression expected
+     ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\lib\admin-data.ts[0m:140:1]
+ [2m140[0m |     .limit(50);
+ [2m141[0m |   if (error) throw error;
+ [2m142[0m |   return (data as Pedido[]) ?? [];
+ [2m143[0m | }
+     : [31;1m^[0m
+ [2m144[0m | 
+ [2m145[0m | export type EstoqueBaixoItem = {
+ [2m146[0m |   id: string;
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./lib/admin-data.ts
+./app/admin/page.tsx
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1159ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1159ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 99ms
+ GET /entrar 500 in 99ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 48ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 69ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 57ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 500 in 96ms
+ GET /entrar 500 in 125ms
+ GET / 500 in 133ms
+ GET / 500 in 169ms
+ GET /admin 500 in 135ms
+ GET / 500 in 8ms
+ GET / 500 in 15ms
+ ✓ Compiled /_not-found in 1792ms (2793 modules)
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 500 in 1791ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 404 in 610ms
+ GET /entrar 200 in 1226ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /entrar 200 in 626ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 404 in 82ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 1352ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 404 in 79ms
+ GET /entrar 200 in 98ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 117ms
+ GET /_next/static/webpack/29307339d177f8ac.webpack.hot-update.json 404 in 91ms
+ GET / 200 in 698ms
+ GET / 200 in 317ms
+ GET / 200 in 302ms
+ ✓ Compiled in 1109ms (2807 modules)
+ ✓ Compiled in 318ms (680 modules)
+ ✓ Compiled in 876ms (2807 modules)
+ GET / 200 in 535ms
+ GET /catalogo 200 in 276ms
+ GET /carrinho 200 in 73ms
+ ○ Compiling /checkout ...
+ ✓ Compiled /checkout in 1381ms (2138 modules)
+ GET /checkout 200 in 2235ms
+ GET /entrar 200 in 84ms
+ ○ Compiling /api/admin/pedido-status ...
+ ✓ Compiled /api/admin/pedido-status in 780ms (2166 modules)
+ GET /api/admin/pedido-status 405 in 883ms
+ ✓ Compiled in 503ms (680 modules)
+ ✓ Compiled in 294ms (680 modules)
+ ✓ Compiled in 244ms (680 modules)
+ ✓ Compiled in 345ms (680 modules)
+ ✓ Compiled in 1457ms (2805 modules)
+ ⨯ ./components/loja/footer-loja.tsx
+Error: 
+  [31mx[0m Unexpected token `footer`. Expected jsx identifier
+    ,-[[36;1;4mC:\Users\JJ\.zcode\workspace\default\components\loja\footer-loja.tsx[0m:4:1]
+ [2m 4[0m | 
+ [2m 5[0m | export function FooterLoja() {
+ [2m 6[0m |   return (
+ [2m 7[0m |     <footer className="mt-16 border-t bg-agro-blue-dark text-white/90">
+    : [31;1m     ^^^^^^[0m
+ [2m 8[0m |       <div className="container-agro grid gap-8 py-12 md:grid-cols-4">
+ [2m 9[0m |         {/* Marca */}
+ [2m10[0m |         <div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/loja/footer-loja.tsx
+./components/loja/loja-shell.tsx
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 2.1s (2805 modules)
+ ⨯ components\loja\footer-loja.tsx (80:16) @ Clock
+ ⨯ ReferenceError: Clock is not defined
+    at FooterLoja (./components/loja/footer-loja.tsx:244:121)
+digest: "1000539021"
+[0m [90m 78 |[39m             [33m<[39m[33m/[39m[33mli[39m[33m>[39m[0m
+[0m [90m 79 |[39m             [33m<[39m[33mli[39m className[33m=[39m[32m"flex items-center gap-2"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 80 |[39m               [33m<[39m[33mClock[39m className[33m=[39m[32m"h-4 w-4 text-white"[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 81 |[39m               [33m<[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 82 |[39m                 [33m<[39m[33mstrong[39m className[33m=[39m[32m"block text-white"[39m[33m>[39m[33mHorário[39m[33m<[39m[33m/[39m[33mstrong[39m[33m>[39m[0m
+[0m [90m 83 |[39m                 [33m<[39m[33mspan[39m className[33m=[39m[32m"text-white/70"[39m[33m>[39m[0m
+ ⨯ components\loja\footer-loja.tsx (80:16) @ Clock
+ ⨯ ReferenceError: Clock is not defined
+    at FooterLoja (./components/loja/footer-loja.tsx:244:121)
+digest: "1000539021"
+[0m [90m 78 |[39m             [33m<[39m[33m/[39m[33mli[39m[33m>[39m[0m
+[0m [90m 79 |[39m             [33m<[39m[33mli[39m className[33m=[39m[32m"flex items-center gap-2"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 80 |[39m               [33m<[39m[33mClock[39m className[33m=[39m[32m"h-4 w-4 text-white"[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 81 |[39m               [33m<[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 82 |[39m                 [33m<[39m[33mstrong[39m className[33m=[39m[32m"block text-white"[39m[33m>[39m[33mHorário[39m[33m<[39m[33m/[39m[33mstrong[39m[33m>[39m[0m
+[0m [90m 83 |[39m                 [33m<[39m[33mspan[39m className[33m=[39m[32m"text-white/70"[39m[33m>[39m[0m
+ GET /entrar 500 in 1719ms
+ ⨯ components\loja\footer-loja.tsx (80:16) @ Clock
+ ⨯ ReferenceError: Clock is not defined
+    at FooterLoja (./components/loja/footer-loja.tsx:244:121)
+digest: "1000539021"
+[0m [90m 78 |[39m             [33m<[39m[33m/[39m[33mli[39m[33m>[39m[0m
+[0m [90m 79 |[39m             [33m<[39m[33mli[39m className[33m=[39m[32m"flex items-center gap-2"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 80 |[39m               [33m<[39m[33mClock[39m className[33m=[39m[32m"h-4 w-4 text-white"[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 81 |[39m               [33m<[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 82 |[39m                 [33m<[39m[33mstrong[39m className[33m=[39m[32m"block text-white"[39m[33m>[39m[33mHorário[39m[33m<[39m[33m/[39m[33mstrong[39m[33m>[39m[0m
+[0m [90m 83 |[39m                 [33m<[39m[33mspan[39m className[33m=[39m[32m"text-white/70"[39m[33m>[39m[0m
+ ⨯ components\loja\footer-loja.tsx (80:16) @ Clock
+ ⨯ ReferenceError: Clock is not defined
+    at FooterLoja (./components/loja/footer-loja.tsx:244:121)
+digest: "1000539021"
+[0m [90m 78 |[39m             [33m<[39m[33m/[39m[33mli[39m[33m>[39m[0m
+[0m [90m 79 |[39m             [33m<[39m[33mli[39m className[33m=[39m[32m"flex items-center gap-2"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 80 |[39m               [33m<[39m[33mClock[39m className[33m=[39m[32m"h-4 w-4 text-white"[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 81 |[39m               [33m<[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 82 |[39m                 [33m<[39m[33mstrong[39m className[33m=[39m[32m"block text-white"[39m[33m>[39m[33mHorário[39m[33m<[39m[33m/[39m[33mstrong[39m[33m>[39m[0m
+[0m [90m 83 |[39m                 [33m<[39m[33mspan[39m className[33m=[39m[32m"text-white/70"[39m[33m>[39m[0m
+ GET /entrar 500 in 125ms
+ ⨯ components\loja\footer-loja.tsx (80:16) @ Clock
+ ⨯ ReferenceError: Clock is not defined
+    at FooterLoja (./components/loja/footer-loja.tsx:244:121)
+digest: "1000539021"
+[0m [90m 78 |[39m             [33m<[39m[33m/[39m[33mli[39m[33m>[39m[0m
+[0m [90m 79 |[39m             [33m<[39m[33mli[39m className[33m=[39m[32m"flex items-center gap-2"[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 80 |[39m               [33m<[39m[33mClock[39m className[33m=[39m[32m"h-4 w-4 text-white"[39m [33m/[39m[33m>[39m[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 81 |[39m               [33m<[39m[33mspan[39m[33m>[39m[0m
+[0m [90m 82 |[39m                 [33m<[39m[33mstrong[39m className[33m=[39m[32m"block text-white"[39m[33m>[39m[33mHorário[39m[33m<[39m[33m/[39m[33mstrong[39m[33m>[39m[0m
+[0m [90m 83 |[39m                 [33m<[39m[33mspan[39m className[33m=[39m[32m"text-white/70"[39m[33m>[39m[0m
+ GET / 500 in 2248ms
+ GET / 500 in 620ms
+ GET / 500 in 529ms
+ ✓ Compiled in 717ms (2807 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /entrar 200 in 504ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /entrar 200 in 207ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 913ms
+ GET / 200 in 915ms
+ GET / 200 in 566ms
+ ✓ Compiled in 218ms (681 modules)
+ GET / 200 in 589ms
+ GET /entrar 200 in 52ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ GET / 200 in 981ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 1006ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ✓ Compiled in 1686ms (2807 modules)
+ ✓ Compiled in 1166ms (681 modules)
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ✓ Compiled in 926ms (2807 modules)
+ GET / 200 in 568ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 386ms
+ GET / 200 in 642ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ GET / 200 in 563ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 431ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ GET /entrar 200 in 67ms
+ GET /entrar 200 in 78ms
+ GET / 200 in 414ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 6740ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ✓ Compiled in 1652ms (2807 modules)
+ GET / 200 in 651ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 706ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ GET / 200 in 467ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 718ms (2133 modules)
+ GET /categoria/racoes 200 in 1557ms
+ GET /categoria/ferragens 200 in 470ms
+ GET /categoria/medicamentos 200 in 806ms
+ GET /categoria/pesca 200 in 805ms
+ GET /categoria/ferramentas 200 in 702ms
+ GET /categoria/agro 200 in 775ms
+ GET / 200 in 475ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ GET / 200 in 365ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ GET / 200 in 360ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ GET / 200 in 474ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ GET / 200 in 479ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ GET / 200 in 372ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 617ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ GET / 200 in 400ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ GET / 200 in 358ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ GET / 200 in 589ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ GET / 200 in 629ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 654ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ GET / 200 in 407ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ GET / 200 in 802ms
+ GET / 200 in 897ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ✓ Compiled in 1707ms (2807 modules)
+ ✓ Compiled in 1311ms (2807 modules)
+ GET / 200 in 474ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ✓ Compiled in 631ms (682 modules)
+ ✓ Compiled in 442ms (682 modules)
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ GET / 200 in 491ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ GET / 200 in 518ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ GET / 200 in 390ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/166534/FFFFFF?text=Tesoura+Poda&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/475569/FFFFFF?text=Prego+1kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/334155/FFFFFF?text=Arme+Farpado&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 360ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
