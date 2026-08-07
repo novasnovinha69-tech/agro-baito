@@ -1092,3 +1092,19 @@ digest: "3310107827"
  GET /checkout 200 in 288ms
  GET /entrar 200 in 31ms
  GET /catalogo 200 in 312ms
+ ✓ Compiled in 1048ms (2801 modules)
+ ✓ Compiled in 223ms (669 modules)
+ ✓ Compiled in 439ms (669 modules)
+ ✓ Compiled in 625ms (2801 modules)
+ ✓ Compiled in 446ms (2801 modules)
+ GET / 200 in 1122ms
+   Reload env: .env.local
+ ✓ Compiled in 1236ms (2914 modules)
+ ✓ Compiled in 189ms (669 modules)
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.4s

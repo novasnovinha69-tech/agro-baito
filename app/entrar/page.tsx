@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,15 @@ import {
 import { Sprout, LogIn, AlertCircle } from "lucide-react";
 import { isSupabaseConfigured } from "@/lib/carrinho";
 
-export default function EntrarPage() {
+export default function EntrarPageWrapper() {
+  return (
+    <Suspense fallback={<div className="container-agro py-12 text-center">Carregando...</div>}>
+      <EntrarPage />
+    </Suspense>
+  );
+}
+
+function EntrarPage() {
   const router = useRouter();
   const params = useSearchParams();
   const proximaPagina = params.get("next") ?? "/admin";

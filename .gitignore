@@ -41,3 +41,10 @@ next-env.d.ts
 supabase/.temp
 supabase/.branches
 `n# Logs e arquivos temporarios`n*.log`nlogo_ama.jpg`nbaixar_ig.ps1`npublic/analisa-cores.html`npublic/galeria.html`n.zcode/
+.vercel
+.env*
+
+# Projetos extras (nao pertencem ao site)
+plataforma-modelos/
+high-line/
+referencia-baito/

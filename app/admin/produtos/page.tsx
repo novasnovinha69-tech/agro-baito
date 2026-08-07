@@ -37,7 +37,7 @@ export default async function AdminProdutosPage() {
             <Package className="h-12 w-12 text-muted-foreground" />
             <p className="font-medium">Nenhum produto cadastrado</p>
             <p className="text-sm text-muted-foreground">
-              Clique em "Novo produto" para cadastrar o primeiro.
+              Clique em &quot;Novo produto&quot; para cadastrar o primeiro.
             </p>
             <Button asChild>
               <Link href="/admin/produtos/novo">
