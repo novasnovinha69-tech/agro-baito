@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { toast } from "sonner";
 import {
   MapPin,
@@ -14,6 +15,8 @@ import {
   CheckCircle2,
   Navigation,
   AlertCircle,
+  Clock,
+  MessageCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -225,13 +228,75 @@ export function CheckoutCliente({ unidades }: Props) {
     const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
     toast.success("Abrindo WhatsApp com seu pedido...");
+    // Marca como confirmado e limpa o carrinho
+    setPedidoConfirmado(true);
+    setTimeout(() => limpar(), 500);
   }
 
-  // ===== Finalizar (mock — Etapa 7 plugará Pix) =====
+  // ===== Estado de pedido confirmado (mostra tela de sucesso) =====
+  const [pedidoConfirmado, setPedidoConfirmado] = useState(false);
+
+  // ===== Finalizar — mostra tela de sucesso e limpa carrinho =====
   function finalizar() {
     if (!validarPedido()) return;
-    toast.success(
-      "Pedido registrado! (O pagamento via Pix será integrado na Etapa 7.)",
+    setPedidoConfirmado(true);
+    setTimeout(() => limpar(), 500);
+  }
+
+  // ===== Tela de pedido confirmado =====
+  if (pedidoConfirmado) {
+    return (
+      <div className="container-agro py-12">
+        <div className="mx-auto max-w-lg rounded-2xl border-2 border-agro-green/30 bg-agro-green/5 p-8 text-center">
+          <div className="mx-auto grid h-20 w-20 place-items-center rounded-full bg-agro-green">
+            <CheckCircle2 className="h-10 w-10 text-white" />
+          </div>
+          <h2 className="mt-4 font-display text-2xl font-bold text-agro-navy">
+            Pedido confirmado! 🎉
+          </h2>
+          <p className="mt-2 text-muted-foreground">
+            Recebemos seu pedido e em breve nossa equipe entrará em contato pelo
+            WhatsApp para confirmar os detalhes e o prazo de entrega.
+          </p>
+
+          <div className="mt-5 rounded-lg bg-white p-4 text-left text-sm">
+            <p className="flex items-center gap-2">
+              <Clock className="h-4 w-4 text-agro-green" />
+              <span>
+                <strong>Atendimento:</strong> {LOJA.horarioAtendimento}
+              </span>
+            </p>
+            <p className="mt-2 flex items-center gap-2">
+              <MessageCircle className="h-4 w-4 text-whatsapp" />
+              <span>
+                Dúvidas? Fale com a gente pelo WhatsApp de qualquer uma das nossas
+                3 lojas.
+              </span>
+            </p>
+          </div>
+
+          <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
+            <Button asChild variant="whatsapp">
+              <a
+                href={`https://wa.me/${LOJA.whatsappNumero}?text=${encodeURIComponent("Olá! Acabei de fazer um pedido pelo site e gostaria de confirmar.")}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <WhatsAppIcon className="h-4 w-4" />
+                Falar no WhatsApp
+              </a>
+            </Button>
+            <Button asChild variant="outline">
+              <Link href="/catalogo">Continuar comprando</Link>
+            </Button>
+          </div>
+
+          {/* Avaliação no Google */}
+          <div className="mt-5">
+            <BotaoAvaliacaoGoogle variant="cheio" className="w-full justify-center" />
+          </div>
+        </div>
+      </div>
     );
   }
 
@@ -695,6 +760,9 @@ export function CheckoutCliente({ unidades }: Props) {
                 <WhatsAppIcon className="h-5 w-5" />
                 Enviar pedido por WhatsApp
               </Button>
+              <p className="mt-1.5 text-center text-xs text-muted-foreground">
+                Abre o WhatsApp da loja com seu pedido pronto pra enviar
+              </p>
 
               <div className="my-3 flex items-center gap-2">
                 <Separator className="flex-1" />
@@ -708,11 +776,10 @@ export function CheckoutCliente({ unidades }: Props) {
                 size="lg"
                 onClick={finalizar}
               >
-                Confirmar pedido (Pix em breve)
+                Confirmar pedido sem WhatsApp
               </Button>
               <p className="mt-2 text-center text-xs text-muted-foreground">
-                Pagamento online via Pix/cartão será ativado quando o sistema
-                for entregue ao cliente.
+                Pagamento via Pix/cartão será ativado em breve
               </p>
 
               {/* Avaliação no Google (botão oficial) */}

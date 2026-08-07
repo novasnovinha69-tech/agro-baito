@@ -1021,3 +1021,14 @@ digest: "3310107827"
  GET /checkout 200 in 422ms
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ✓ Compiled in 1402ms (2795 modules)
+ ✓ Compiled in 1527ms (2795 modules)
+ GET /checkout 200 in 552ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ GET /checkout 200 in 384ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ○ Compiling /entrar ...
+ ✓ Compiled /entrar in 847ms (2132 modules)
+ GET /entrar 200 in 1327ms
