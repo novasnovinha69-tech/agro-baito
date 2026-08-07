@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 import { LojaShell } from "@/components/loja/loja-shell";
@@ -9,10 +9,10 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-const manrope = Manrope({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
-  variable: "--font-manrope",
+  variable: "--font-jakarta",
   display: "swap",
 });
 
@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`}
+        className={`${inter.variable} ${jakarta.variable} font-sans antialiased min-h-screen flex flex-col`}
       >
         <LojaShell>{children}</LojaShell>
         <Toaster position="top-right" richColors closeButton />

@@ -765,3 +765,213 @@ ReferenceError: Sparkles is not defined
  GET /categoria/racoes 200 in 2081ms
  GET /catalogo 200 in 382ms
  GET /categoria/acessorios-pet 200 in 453ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ GET / 200 in 869ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ✓ Compiled in 3.7s (2752 modules)
+ ⨯ app\layout.tsx (55:41) @ manrope
+ ⨯ ReferenceError: manrope is not defined
+    at RootLayout (./app/layout.tsx:50:218)
+    at stringify (<anonymous>)
+digest: "1717800924"
+[0m [90m 53 |[39m     [33m<[39m[33mhtml[39m lang[33m=[39m[32m"pt-BR"[39m suppressHydrationWarning[33m>[39m[0m
+[0m [90m 54 |[39m       [33m<[39m[33mbody[39m[0m
+[0m[31m[1m>[22m[39m[90m 55 |[39m         className[33m=[39m{[32m`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`[39m}[0m
+[0m [90m    |[39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 56 |[39m       [33m>[39m[0m
+[0m [90m 57 |[39m         [33m<[39m[33mLojaShell[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mLojaShell[39m[33m>[39m[0m
+[0m [90m 58 |[39m         [33m<[39m[33mToaster[39m position[33m=[39m[32m"top-right"[39m richColors closeButton [33m/[39m[33m>[39m[0m
+ ⨯ app\layout.tsx (55:41) @ manrope
+ ⨯ ReferenceError: manrope is not defined
+    at RootLayout (./app/layout.tsx:50:218)
+    at stringify (<anonymous>)
+digest: "1717800924"
+[0m [90m 53 |[39m     [33m<[39m[33mhtml[39m lang[33m=[39m[32m"pt-BR"[39m suppressHydrationWarning[33m>[39m[0m
+[0m [90m 54 |[39m       [33m<[39m[33mbody[39m[0m
+[0m[31m[1m>[22m[39m[90m 55 |[39m         className[33m=[39m{[32m`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`[39m}[0m
+[0m [90m    |[39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 56 |[39m       [33m>[39m[0m
+[0m [90m 57 |[39m         [33m<[39m[33mLojaShell[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mLojaShell[39m[33m>[39m[0m
+[0m [90m 58 |[39m         [33m<[39m[33mToaster[39m position[33m=[39m[32m"top-right"[39m richColors closeButton [33m/[39m[33m>[39m[0m
+ ⨯ app\layout.tsx (55:41) @ manrope
+ ⨯ ReferenceError: manrope is not defined
+    at RootLayout (./app/layout.tsx:50:218)
+    at stringify (<anonymous>)
+digest: "1717800924"
+[0m [90m 53 |[39m     [33m<[39m[33mhtml[39m lang[33m=[39m[32m"pt-BR"[39m suppressHydrationWarning[33m>[39m[0m
+[0m [90m 54 |[39m       [33m<[39m[33mbody[39m[0m
+[0m[31m[1m>[22m[39m[90m 55 |[39m         className[33m=[39m{[32m`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`[39m}[0m
+[0m [90m    |[39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 56 |[39m       [33m>[39m[0m
+[0m [90m 57 |[39m         [33m<[39m[33mLojaShell[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mLojaShell[39m[33m>[39m[0m
+[0m [90m 58 |[39m         [33m<[39m[33mToaster[39m position[33m=[39m[32m"top-right"[39m richColors closeButton [33m/[39m[33m>[39m[0m
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ app\layout.tsx (55:41) @ manrope
+ ⨯ ReferenceError: manrope is not defined
+    at RootLayout (./app/layout.tsx:50:218)
+    at stringify (<anonymous>)
+digest: "1717800924"
+[0m [90m 53 |[39m     [33m<[39m[33mhtml[39m lang[33m=[39m[32m"pt-BR"[39m suppressHydrationWarning[33m>[39m[0m
+[0m [90m 54 |[39m       [33m<[39m[33mbody[39m[0m
+[0m[31m[1m>[22m[39m[90m 55 |[39m         className[33m=[39m{[32m`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`[39m}[0m
+[0m [90m    |[39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 56 |[39m       [33m>[39m[0m
+[0m [90m 57 |[39m         [33m<[39m[33mLojaShell[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mLojaShell[39m[33m>[39m[0m
+[0m [90m 58 |[39m         [33m<[39m[33mToaster[39m position[33m=[39m[32m"top-right"[39m richColors closeButton [33m/[39m[33m>[39m[0m
+ ⨯ app\layout.tsx (55:41) @ manrope
+ ⨯ ReferenceError: manrope is not defined
+    at RootLayout (./app/layout.tsx:50:218)
+    at stringify (<anonymous>)
+digest: "2688999696"
+[0m [90m 53 |[39m     [33m<[39m[33mhtml[39m lang[33m=[39m[32m"pt-BR"[39m suppressHydrationWarning[33m>[39m[0m
+[0m [90m 54 |[39m       [33m<[39m[33mbody[39m[0m
+[0m[31m[1m>[22m[39m[90m 55 |[39m         className[33m=[39m{[32m`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`[39m}[0m
+[0m [90m    |[39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 56 |[39m       [33m>[39m[0m
+[0m [90m 57 |[39m         [33m<[39m[33mLojaShell[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mLojaShell[39m[33m>[39m[0m
+[0m [90m 58 |[39m         [33m<[39m[33mToaster[39m position[33m=[39m[32m"top-right"[39m richColors closeButton [33m/[39m[33m>[39m[0m
+ ⨯ app\layout.tsx (55:41) @ manrope
+ ⨯ ReferenceError: manrope is not defined
+    at RootLayout (./app/layout.tsx:50:218)
+    at stringify (<anonymous>)
+digest: "2688999696"
+[0m [90m 53 |[39m     [33m<[39m[33mhtml[39m lang[33m=[39m[32m"pt-BR"[39m suppressHydrationWarning[33m>[39m[0m
+[0m [90m 54 |[39m       [33m<[39m[33mbody[39m[0m
+[0m[31m[1m>[22m[39m[90m 55 |[39m         className[33m=[39m{[32m`${inter.variable} ${manrope.variable} font-sans antialiased min-h-screen flex flex-col`[39m}[0m
+[0m [90m    |[39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 56 |[39m       [33m>[39m[0m
+[0m [90m 57 |[39m         [33m<[39m[33mLojaShell[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mLojaShell[39m[33m>[39m[0m
+[0m [90m 58 |[39m         [33m<[39m[33mToaster[39m position[33m=[39m[32m"top-right"[39m richColors closeButton [33m/[39m[33m>[39m[0m
+ GET / 500 in 1974ms
+ ✓ Compiled in 818ms (2743 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 1632ms
+ GET / 200 in 454ms
+ GET / 200 in 456ms
+ GET / 200 in 482ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ✓ Compiled in 680ms (660 modules)
+ ✓ Compiled in 231ms (660 modules)
+ ✓ Compiled in 1075ms (2743 modules)
+ ⨯ app\page.tsx (254:12) @ BotaoWhatsAppLojas
+ ⨯ ReferenceError: BotaoWhatsAppLojas is not defined
+    at HomePage (./app/page.tsx:665:101)
+digest: "3310107827"
+[0m [90m 252 |[39m[0m
+[0m [90m 253 |[39m           {[90m/* Card com os 3 números de WhatsApp por loja */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 254 |[39m           [33m<[39m[33mBotaoWhatsAppLojas[39m variant[33m=[39m[32m"completo"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 255 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 256 |[39m       [33m<[39m[33m/[39m[33msection[39m[33m>[39m[0m
+[0m [90m 257 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+ ⨯ app\page.tsx (254:12) @ BotaoWhatsAppLojas
+ ⨯ ReferenceError: BotaoWhatsAppLojas is not defined
+    at HomePage (./app/page.tsx:665:101)
+digest: "3310107827"
+[0m [90m 252 |[39m[0m
+[0m [90m 253 |[39m           {[90m/* Card com os 3 números de WhatsApp por loja */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 254 |[39m           [33m<[39m[33mBotaoWhatsAppLojas[39m variant[33m=[39m[32m"completo"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 255 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 256 |[39m       [33m<[39m[33m/[39m[33msection[39m[33m>[39m[0m
+[0m [90m 257 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+ ⨯ app\page.tsx (254:12) @ BotaoWhatsAppLojas
+ ⨯ ReferenceError: BotaoWhatsAppLojas is not defined
+    at HomePage (./app/page.tsx:665:101)
+digest: "3310107827"
+[0m [90m 252 |[39m[0m
+[0m [90m 253 |[39m           {[90m/* Card com os 3 números de WhatsApp por loja */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 254 |[39m           [33m<[39m[33mBotaoWhatsAppLojas[39m variant[33m=[39m[32m"completo"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 255 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 256 |[39m       [33m<[39m[33m/[39m[33msection[39m[33m>[39m[0m
+[0m [90m 257 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+ ⨯ app\page.tsx (254:12) @ BotaoWhatsAppLojas
+ ⨯ ReferenceError: BotaoWhatsAppLojas is not defined
+    at HomePage (./app/page.tsx:665:101)
+digest: "3310107827"
+[0m [90m 252 |[39m[0m
+[0m [90m 253 |[39m           {[90m/* Card com os 3 números de WhatsApp por loja */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 254 |[39m           [33m<[39m[33mBotaoWhatsAppLojas[39m variant[33m=[39m[32m"completo"[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 255 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[0m [90m 256 |[39m       [33m<[39m[33m/[39m[33msection[39m[33m>[39m[0m
+[0m [90m 257 |[39m     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+ ✓ Compiled in 1355ms (2750 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 5056ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ GET / 200 in 1452ms
+ GET / 200 in 388ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET / 200 in 277ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ✓ Compiled in 1711ms (2750 modules)

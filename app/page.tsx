@@ -22,6 +22,7 @@ import {
 } from "@/lib/data";
 import { LOJA, linkWhatsApp } from "@/lib/loja-config";
 import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
+import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
 import * as Icons from "lucide-react";
 
 // Ícone por slug de categoria (fallback Package)
@@ -225,33 +226,34 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ============ CTA WHATSAPP ============ */}
+      {/* ============ CTA WHATSAPP COM SELETOR DE LOJAS ============ */}
       <section className="container-agro py-12">
-        <Card className="overflow-hidden border-0 bg-agro-blue text-white">
-          <CardContent className="flex flex-col items-center gap-4 p-8 text-center md:flex-row md:p-10 md:text-left">
-            <div className="grid h-16 w-16 shrink-0 place-items-center rounded-full bg-whatsapp">
-              <WhatsAppIcon className="h-8 w-8 text-white" />
+        <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:items-center">
+          <div>
+            <h2 className="font-display text-2xl font-bold text-agro-navy md:text-3xl">
+              Precisa de ajuda? 🐾
+            </h2>
+            <p className="mt-2 max-w-md text-muted-foreground">
+              Fale com a gente no WhatsApp. Nossa equipe é <strong className="text-agro-green-dark">louca por PET</strong> e
+              pronta pra ajudar você a escolher o melhor pro seu bichinho,
+              jardim ou roça.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <div className="flex items-center gap-2 rounded-lg bg-agro-green/10 px-3 py-2 text-sm font-medium text-agro-green-dark">
+                🐶 Pet shop completo
+              </div>
+              <div className="flex items-center gap-2 rounded-lg bg-agro-amber/10 px-3 py-2 text-sm font-medium text-agro-amber-dark">
+                🩺 Veterinário na loja
+              </div>
+              <div className="flex items-center gap-2 rounded-lg bg-agro-green/10 px-3 py-2 text-sm font-medium text-agro-green-dark">
+                🚚 Entrega rápida
+              </div>
             </div>
-            <div className="flex-1">
-              <h3 className="font-display text-xl font-bold md:text-2xl">
-                Precisa de ajuda para escolher?
-              </h3>
-              <p className="mt-1 text-white/85">
-                Fale com a gente no WhatsApp. Atendemos produtores rurais e
-                lojistas de toda a região de {LOJA.cidade}.
-              </p>
-            </div>
-            <Button asChild size="xl" variant="whatsapp">
-              <a
-                href={linkWhatsApp("Olá! Preciso de ajuda para escolher um produto.")}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <WhatsAppIcon className="h-5 w-5" /> Chamar no WhatsApp
-              </a>
-            </Button>
-          </CardContent>
-        </Card>
+          </div>
+
+          {/* Card com os 3 números de WhatsApp por loja */}
+          <BotaoWhatsAppLojas variant="completo" />
+        </div>
       </section>
     </div>
   );

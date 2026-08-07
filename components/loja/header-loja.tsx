@@ -26,6 +26,7 @@ import { LINKS_NAV, LOJA, linkWhatsApp } from "@/lib/loja-config";
 import { cn } from "@/lib/utils";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
+import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
 
 export function HeaderLoja() {
   const pathname = usePathname();
@@ -157,6 +158,11 @@ export function HeaderLoja() {
 
           {/* Botão avaliação Google (logo oficial) */}
           <BotaoAvaliacaoGoogle variant="compacto" className="shrink-0 transition-transform hover:scale-110" />
+
+          {/* Botão WhatsApp com seletor de lojas (desktop) */}
+          <div className="hidden md:block">
+            <BotaoWhatsAppLojas variant="simples" />
+          </div>
 
           {/* Botão Painel (só admin) */}
           {isAdmin && (

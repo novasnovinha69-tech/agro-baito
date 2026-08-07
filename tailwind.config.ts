@@ -70,7 +70,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-manrope)", "var(--font-inter)", "sans-serif"],
+        display: ["var(--font-jakarta)", "var(--font-inter)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
