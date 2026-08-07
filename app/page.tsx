@@ -37,12 +37,12 @@ const ICONES_CATEGORIA: Record<string, Icons.LucideIcon> = {
 
 // Cartões do hero — ícones vetoriais. Cada card é um LINK pra categoria.
 const HERO_CARDS = [
-  { icon: Wheat, cor: "text-agro-amber", label: "Rações", href: "/categoria/racoes" },
-  { icon: Bone, cor: "text-agro-green", label: "Acessórios", href: "/categoria/acessorios-pet" },
-  { icon: Pill, cor: "text-agro-green-light", label: "Veterinária", href: "/categoria/veterinaria" },
-  { icon: Sparkles, cor: "text-agro-amber", label: "Higiene", href: "/categoria/higiene" },
-  { icon: Sprout, cor: "text-agro-green-dark", label: "Jardinagem", href: "/categoria/jardinagem" },
-  { icon: Sprout, cor: "text-agro-emerald-dark", label: "Agro", href: "/categoria/agro" },
+  { icon: Wheat, cor: "text-agro-orange-light", label: "Rações", href: "/categoria/racoes" },
+  { icon: Bone, cor: "text-agro-green-bright", label: "Acessórios", href: "/categoria/acessorios-pet" },
+  { icon: Pill, cor: "text-agro-orange-light", label: "Veterinária", href: "/categoria/veterinaria" },
+  { icon: Sparkles, cor: "text-agro-green-bright", label: "Higiene", href: "/categoria/higiene" },
+  { icon: Sprout, cor: "text-agro-orange-light", label: "Jardinagem", href: "/categoria/jardinagem" },
+  { icon: Sprout, cor: "text-agro-green-bright", label: "Agro", href: "/categoria/agro" },
 ];
 
 export default async function HomePage() {
@@ -58,20 +58,25 @@ export default async function HomePage() {
       <section className="bg-agro-gradient text-white">
         <div className="container-agro grid items-center gap-8 py-12 md:grid-cols-2 md:py-20">
           <div>
-            <span className="badge-agro mb-3 bg-white/20 text-white">
-              🚚 Entregas no Litoral Norte (Porto Belo, Bombinhas e Itapema)
-            </span>
+            <div className="mb-4 flex flex-wrap gap-2">
+              <span className="badge-agro bg-agro-orange/90 text-white">
+                ⭐ 20 ANOS DE TRADIÇÃO
+              </span>
+              <span className="badge-agro bg-white/20 text-white">
+                🚚 Entregas no Litoral Norte
+              </span>
+            </div>
             <h1 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">
-              Somos loucos por <span className="text-white">PET!</span>
-              Tudo para seu pet, jardim e roça.
+              Somos loucos por <span className="text-agro-orange-light">PET!</span>
+              <br />20 anos cuidando do seu melhor amigo.
             </h1>
             <p className="mt-4 max-w-md text-white/85 md:text-lg">
-              Rações, acessórios pet, veterinária, higiene, jardinagem e produtos
-              agro. Retire na loja do <strong>Perequê</strong> em{" "}
-              <strong>Porto Belo</strong> ou peça entrega com frete justo.
+              Há <strong>20 anos</strong> a Agro Baito é referência em rações,
+              acessórios pet, veterinária, jardinagem e produtos agro em
+              Porto Belo, Bombinhas e Itapema.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild size="xl">
+              <Button asChild size="xl" variant="accent">
                 <Link href="/catalogo">
                   Ver catálogo <ChevronRight className="h-5 w-5" />
                 </Link>
@@ -79,7 +84,7 @@ export default async function HomePage() {
               <Button asChild size="xl" variant="whatsapp">
                 <a
                   href={linkWhatsApp(
-                    "Olá! Vim pelo site e gostaria de atendimento.",
+                    "Olá! Vim pelo site da Agro Baito e gostaria de atendimento.",
                   )}
                   target="_blank"
                   rel="noreferrer"
@@ -91,7 +96,7 @@ export default async function HomePage() {
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/80">
               <span className="flex items-center gap-1">
-                <ShieldCheck className="h-4 w-4 text-white" /> Produtos
+                <ShieldCheck className="h-4 w-4 text-agro-orange-light" /> Produtos
                 originais
               </span>
               <span className="flex items-center gap-1">

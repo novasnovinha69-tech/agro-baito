@@ -49,22 +49,26 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Marca — verde-esmeralda profissional (AgroBaito)
+        // Marca — verde escuro + laranja (AgroBaito V3)
         agro: {
-          green: "#1A9D63",          // verde esmeralda (primária)
-          "green-dark": "#14563B",   // verde escuro
-          "green-light": "#22C55E",  // verde claro (hover)
-          emerald: "#10B981",
-          "emerald-dark": "#047857",
-          amber: "#F59E0B",          // âmbar (acento pet)
+          green: "#0F5132",          // verde floresta escuro (primária)
+          "green-dark": "#0A3D26",   // verde ainda mais escuro
+          "green-light": "#1A6B45",  // verde médio (hover)
+          "green-bright": "#22C55E", // verde brilhante (sucesso)
+          orange: "#F97316",         // laranja vibrante (acento/ação)
+          "orange-dark": "#C2410C",  // laranja escuro
+          "orange-light": "#FB923C", // laranja claro (hover)
+          amber: "#F59E0B",          // âmbar (badges)
           "amber-dark": "#B45309",
-          navy: "#1E293B",           // slate-800 p/ textos escuros
+          navy: "#1E293B",           // slate-800 (textos)
           gray: "#64748B",
           "gray-light": "#F1F5F9",
-          // Mantém aliases antigos (blue) apontando pro verde p/ não quebrar componentes
-          blue: "#1A9D63",
-          "blue-dark": "#14563B",
-          "blue-light": "#22C55E",
+          // Aliases antigos apontando p/ nova paleta (não quebrar componentes)
+          blue: "#0F5132",
+          "blue-dark": "#0A3D26",
+          "blue-light": "#1A6B45",
+          emerald: "#22C55E",
+          "emerald-dark": "#0F5132",
         },
         whatsapp: "#25D366",
       },

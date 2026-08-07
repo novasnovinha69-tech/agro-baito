@@ -1032,3 +1032,63 @@ digest: "3310107827"
  ○ Compiling /entrar ...
  ✓ Compiled /entrar in 847ms (2132 modules)
  GET /entrar 200 in 1327ms
+ ✓ Compiled in 1185ms (2801 modules)
+ ✓ Compiled in 788ms (2801 modules)
+ ✓ Compiled in 906ms (2801 modules)
+ ✓ Compiled in 753ms (2801 modules)
+ ✓ Compiled in 2s (2801 modules)
+ GET /produto/racao-premier-caes-adultos-15kg 200 in 733ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET /checkout 200 in 439ms
+ GET /produto/racao-premier-caes-adultos-15kg 200 in 728ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET / 200 in 649ms
+ GET /catalogo 200 in 314ms
+ GET /produto/racao-premier-caes-adultos-15kg 200 in 301ms
+ ○ Compiling /carrinho ...
+ ✓ Compiled /carrinho in 952ms (2138 modules)
+ GET /carrinho 200 in 1350ms
+ GET /checkout 200 in 405ms
+ GET /entrar 200 in 63ms
+ GET /produto/racao-premier-caes-adultos-15kg 200 in 474ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET / 200 in 620ms
+ GET /catalogo 200 in 524ms
+ GET /checkout 200 in 287ms
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 777ms (127 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (107kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (258kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ GET / 200 in 986ms
+ GET /catalogo 200 in 626ms
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 1115ms (2134 modules)
+ GET /categoria/racoes 200 in 5053ms
+ GET /categoria/acessorios-pet 200 in 1003ms
+ GET /categoria/veterinaria 200 in 578ms
+ GET /categoria/higiene 200 in 506ms
+ GET /categoria/jardinagem 200 in 988ms
+ GET /categoria/agro 200 in 749ms
+ ✓ Compiled /carrinho in 387ms (2140 modules)
+ GET /carrinho 200 in 639ms
+ GET /checkout 200 in 536ms
+ GET /entrar 200 in 68ms
+ GET / 200 in 678ms
+ GET /categoria/racoes 200 in 563ms
+ GET /categoria/acessorios-pet 200 in 724ms
+ GET /categoria/veterinaria 200 in 505ms
+ GET /categoria/higiene 200 in 538ms
+ GET /categoria/jardinagem 200 in 526ms
+ GET /categoria/agro 200 in 497ms
+ GET /checkout 200 in 281ms
+ GET / 200 in 814ms
+ GET /catalogo 200 in 294ms
+ GET /checkout 200 in 288ms
+ GET /entrar 200 in 31ms
+ GET /catalogo 200 in 312ms
