@@ -144,7 +144,7 @@ export default async function AdminPedidoDetalhePage({
               <CardContent className="flex items-center gap-3 p-5 text-sm">
                 <Package className="h-5 w-5 text-agro-blue" />
                 <span>
-                  Cliente retirará na loja (Tabuleiro ou Centro).
+                  Cliente retirará em uma das lojas da Agro Baito.
                 </span>
               </CardContent>
             </Card>

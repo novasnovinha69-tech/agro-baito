@@ -12,7 +12,7 @@ export async function generateMetadata({
   if (!cat) return { title: "Categoria" };
   return {
     title: cat.nome,
-    description: `Produtos da categoria ${cat.nome} na Agro Mundo Animal.`,
+    description: `Produtos da categoria ${cat.nome} na Agro Baito.`,
   };
 }
 

@@ -4,7 +4,7 @@ import { listarProdutos, listarCategorias } from "@/lib/data";
 export const metadata = {
   title: "Catálogo completo",
   description:
-    "Todos os produtos da Agro Mundo Animal: rações, medicamentos veterinários, pesca, ferramentas e agro.",
+    "Todos os produtos da Agro Baito: rações, medicamentos veterinários, pesca, ferramentas e agro.",
 };
 
 export default async function CatalogoPage({

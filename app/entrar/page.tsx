@@ -101,7 +101,7 @@ export default function EntrarPage() {
           </div>
           <CardTitle>Painel Administrativo</CardTitle>
           <CardDescription>
-            Agro Mundo Animal — acesso restrito
+            Agro Baito — acesso restrito
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -114,7 +114,7 @@ export default function EntrarPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@agromundoanimal.com.br"
+                placeholder="admin@agrobaito.com.br"
                 autoComplete="email"
               />
             </div>

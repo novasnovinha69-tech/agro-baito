@@ -68,7 +68,7 @@ export function HeaderLoja() {
         <div className="container-agro flex h-9 items-center justify-between text-xs">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1">
-              <MapPin className="h-3.5 w-3.5" /> Tabuleiro & Centro — Itapema/SC
+              <MapPin className="h-3.5 w-3.5" /> Perequê, Bombas e Itapema
             </span>
             <a
               href={`https://wa.me/${LOJA.whatsappNumero}`}
@@ -80,7 +80,7 @@ export function HeaderLoja() {
             </a>
           </div>
           <span className="flex items-center gap-1">
-            <Sprout className="h-3.5 w-3.5" /> Entregas no Vale do Itajaí e Litoral Norte
+            <Sprout className="h-3.5 w-3.5" /> Entregas em Porto Belo, Bombinhas e Itapema
           </span>
         </div>
       </div>
@@ -97,7 +97,7 @@ export function HeaderLoja() {
           <SheetContent side="left" className="w-72">
             <SheetHeader>
               <SheetTitle className="flex items-center gap-2 text-agro-blue">
-                <Sprout className="h-5 w-5" /> Agro Mundo
+                <Sprout className="h-5 w-5" /> Agro Baito
               </SheetTitle>
             </SheetHeader>
             <nav className="mt-4 flex flex-col gap-1">
@@ -117,14 +117,14 @@ export function HeaderLoja() {
           </SheetContent>
         </Sheet>
 
-        {/* Logo Agro Mundo */}
+        {/* Logo Agro Baito */}
         <Link href="/" className="flex items-center gap-2">
           <div className="grid h-10 w-10 place-items-center rounded-full bg-agro-gradient">
             <Sprout className="h-6 w-6 text-white" />
           </div>
           <div className="leading-tight">
             <p className="font-display text-base font-extrabold text-agro-blue-dark md:text-lg">
-              Agro Mundo
+              Agro Baito
             </p>
             <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-agro-navy md:text-xs">
               Animal

@@ -74,7 +74,7 @@ export function AdminSidebar({
           <Sprout className="h-5 w-5 text-white" />
         </div>
         <div className="leading-tight">
-          <p className="font-display text-sm font-bold">Agro Mundo</p>
+          <p className="font-display text-sm font-bold">Agro Baito</p>
           <p className="-mt-0.5 text-[10px] uppercase tracking-wider text-white/60">
             Admin
           </p>
@@ -171,7 +171,7 @@ export function AdminTopbar({ role, nome }: { role: Role; nome?: string }) {
       <div className="flex min-w-0 items-center gap-2">
         <Sprout className="h-5 w-5 shrink-0 text-agro-blue-light" />
         <div className="min-w-0 leading-tight">
-          <span className="block font-display text-sm font-bold">Agro Mundo</span>
+          <span className="block font-display text-sm font-bold">Agro Baito</span>
           {nome ? (
             <span className="flex items-center gap-1 text-[10px] text-white/70">
               {ehMaster ? (

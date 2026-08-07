@@ -211,7 +211,7 @@ export function ProdutoDetalhe({ produto }: { produto: Produto }) {
           <div className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-3">
             <div className="flex items-center gap-2">
               <Truck className="h-5 w-5 text-agro-blue" />
-              <span>Entrega em Floripa</span>
+              <span>Entrega no Litoral Norte</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-5 w-5 text-agro-blue" />

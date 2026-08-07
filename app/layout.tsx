@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    title: "Agro Mundo Animal — Tudo para sua criação e sua roça",
-    description: "Entrega rápida em Florianópolis. Pix com desconto. Retire na loja.",
+    title: "Agro Baito — Tudo para sua criação e sua roça",
+    description: "Entrega em Porto Belo, Bombinhas e Itapema. Pix com desconto. Retire na loja.",
   },
 };
 

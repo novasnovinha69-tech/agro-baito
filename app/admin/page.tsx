@@ -51,7 +51,7 @@ export default async function AdminDashboardPage() {
             Dashboard
           </h1>
           <p className="text-sm text-muted-foreground">
-            Visão geral da Agro Mundo Animal
+            Visão geral da Agro Baito
           </p>
         </div>
         <Button asChild>

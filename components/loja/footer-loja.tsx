@@ -13,7 +13,7 @@ export function FooterLoja() {
               <Sprout className="h-6 w-6 text-agro-blue-dark" />
             </div>
             <div className="leading-tight">
-              <p className="font-display text-base font-extrabold">Agro Mundo</p>
+              <p className="font-display text-base font-extrabold">Agro Baito</p>
               <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-white">
                 Animal
               </p>
@@ -67,7 +67,7 @@ export function FooterLoja() {
           <ul className="mt-3 space-y-3 text-sm">
             <li>
               <a
-                href={linkWhatsApp("Olá! Vim pelo site da Agro Mundo Animal.")}
+                href={linkWhatsApp("Olá! Vim pelo site da Agro Baito.")}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-white"
@@ -95,7 +95,7 @@ export function FooterLoja() {
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-white"
               >
-                <Instagram className="h-4 w-4 text-white" /> @agromundoanimaltabuleiro
+                <Instagram className="h-4 w-4 text-white" /> @insta_baito
               </a>
             </li>
           </ul>

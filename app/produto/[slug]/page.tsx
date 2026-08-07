@@ -13,7 +13,7 @@ export async function generateMetadata({
     title: produto.nome,
     description:
       produto.descricao ??
-      `${produto.nome} na Agro Mundo Animal. Entrega em Florianópolis.`,
+      `${produto.nome} na Agro Baito. Entrega em Porto Belo.`,
   };
 }
 

@@ -24,7 +24,7 @@ export function applyPercent(cents: number, percent: number): number {
   return Math.round((cents * (percent || 0)) / 100);
 }
 
-/** Máscara de telefone (47) 99895-3365 a partir de só dígitos. */
+/** Máscara de telefone (47) 99717-4539 a partir de só dígitos. */
 export function maskPhone(digits: string): string {
   const d = (digits ?? "").replace(/\D/g, "").slice(0, 11);
   if (d.length <= 2) return d;
