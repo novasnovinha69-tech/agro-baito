@@ -201,10 +201,28 @@ export function CheckoutCliente({ unidades }: Props) {
   }
 
   // ===== Enviar pedido por WhatsApp =====
+  // Lógica: usa o WhatsApp da loja certa conforme a escolha do cliente.
+  //  - Retirada: número da loja selecionada (Perequê, Bombas ou Meia Praia)
+  //  - Entrega: número da unidade responsável pela zona de entrega
+  //  - Fallback: número principal (Perequê)
   function enviarPorWhatsApp() {
     if (!validarPedido()) return;
     const msg = montarMensagemWhatsApp();
-    const url = linkWhatsApp(msg);
+
+    // Descobre qual número de WhatsApp usar
+    let numeroWhats: string = LOJA.whatsappNumero; // padrão (Perequê)
+    if (tipoEntrega === "retirada") {
+      const uni = unidades.find((u) => u.id === unidadeRetiradaId);
+      if (uni?.whatsapp) numeroWhats = uni.whatsapp;
+    } else if (zona) {
+      // Acha a unidade dona da zona selecionada
+      const uniZona = unidades.find((u) =>
+        u.zonas.some((z) => z.id === zonaSelecionadaId),
+      );
+      if (uniZona?.whatsapp) numeroWhats = uniZona.whatsapp;
+    }
+
+    const url = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
     toast.success("Abrindo WhatsApp com seu pedido...");
   }

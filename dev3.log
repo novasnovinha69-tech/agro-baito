@@ -975,3 +975,49 @@ digest: "3310107827"
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
  ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
  ✓ Compiled in 1711ms (2750 modules)
+ ✓ Compiled in 1209ms (2750 modules)
+ GET / 200 in 794ms
+ GET / 200 in 285ms
+ GET / 200 in 3930ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 678ms (2094 modules)
+ GET /catalogo 200 in 1498ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/64748B/FFFFFF?text=Areia+Gato&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/14563B/FFFFFF?text=Racao+Filhotes&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Cama+Pet&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/14563B/FFFFFF?text=Substrato&font=manrope received null
+ ○ Compiling /produto/[slug] ...
+ ✓ Compiled /produto/[slug] in 1516ms (2764 modules)
+ GET /produto/racao-premier-caes-adultos-15kg 200 in 2544ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ○ Compiling /checkout ...
+ ✓ Compiled /checkout in 607ms (2126 modules)
+ GET /checkout 200 in 1354ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET /checkout 200 in 630ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET /produto/racao-premier-caes-adultos-15kg 200 in 498ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ GET /checkout 200 in 422ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/2E7D32/F5F1E8?text=Ra%C3%A7%C3%A3o%20C%C3%A3o%2015kg&font=poppins received null
