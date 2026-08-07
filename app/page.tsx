@@ -7,9 +7,7 @@ import {
   MapPin,
   Clock,
   Package,
-  Fish,
-  Hammer,
-  Wrench,
+  Sparkles,
   Sprout,
   Pill,
   Wheat,
@@ -29,22 +27,20 @@ import * as Icons from "lucide-react";
 // Ícone por slug de categoria (fallback Package)
 const ICONES_CATEGORIA: Record<string, Icons.LucideIcon> = {
   racoes: Wheat,
-  petiscos: Bone,
-  medicamentos: Pill,
-  pesca: Fish,
-  ferramentas: Hammer,
-  ferragens: Wrench,
+  "acessorios-pet": Bone,
+  veterinaria: Pill,
+  higiene: Sparkles,
+  jardinagem: Sprout,
   agro: Sprout,
 };
 
-// Cartões do hero — ícones vetoriais (não embaçam em nenhuma resolução)
-// Cada card é um LINK que leva para a categoria correspondente
+// Cartões do hero — ícones vetoriais. Cada card é um LINK pra categoria.
 const HERO_CARDS = [
-  { icon: Wheat, cor: "text-agro-blue-light", label: "Rações", href: "/categoria/racoes" },
-  { icon: Pill, cor: "text-agro-emerald", label: "Veterinário", href: "/categoria/medicamentos" },
-  { icon: Fish, cor: "text-sky-400", label: "Pesca", href: "/categoria/pesca" },
-  { icon: Hammer, cor: "text-agro-navy", label: "Ferramentas", href: "/categoria/ferramentas" },
-  { icon: Wrench, cor: "text-orange-500", label: "Ferragens", href: "/categoria/ferragens" },
+  { icon: Wheat, cor: "text-agro-amber", label: "Rações", href: "/categoria/racoes" },
+  { icon: Bone, cor: "text-agro-green", label: "Acessórios", href: "/categoria/acessorios-pet" },
+  { icon: Pill, cor: "text-agro-green-light", label: "Veterinária", href: "/categoria/veterinaria" },
+  { icon: Sparkles, cor: "text-agro-amber", label: "Higiene", href: "/categoria/higiene" },
+  { icon: Sprout, cor: "text-agro-green-dark", label: "Jardinagem", href: "/categoria/jardinagem" },
   { icon: Sprout, cor: "text-agro-emerald-dark", label: "Agro", href: "/categoria/agro" },
 ];
 
@@ -62,16 +58,16 @@ export default async function HomePage() {
         <div className="container-agro grid items-center gap-8 py-12 md:grid-cols-2 md:py-20">
           <div>
             <span className="badge-agro mb-3 bg-white/20 text-white">
-              🚚 Entregas no Vale do Itajaí e Litoral Norte
+              🚚 Entregas no Litoral Norte (Porto Belo, Bombinhas e Itapema)
             </span>
             <h1 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">
-              Tudo para sua <span className="text-white">criação</span> e
-              sua <span className="text-white">roça</span> em um só lugar.
+              Somos loucos por <span className="text-white">PET!</span>
+              Tudo para seu pet, jardim e roça.
             </h1>
             <p className="mt-4 max-w-md text-white/85 md:text-lg">
-              Rações, medicamentos veterinários, ferragens, ferramentas, pesca e
-              insumos agro. Retire na loja do <strong>Tabuleiro</strong> em{" "}
-              <strong>Itapema</strong> ou peça entrega com frete justo.
+              Rações, acessórios pet, veterinária, higiene, jardinagem e produtos
+              agro. Retire na loja do <strong>Perequê</strong> em{" "}
+              <strong>Porto Belo</strong> ou peça entrega com frete justo.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="xl">
@@ -101,7 +97,7 @@ export default async function HomePage() {
                 <Truck className="h-4 w-4 text-white" /> Entrega própria
               </span>
               <span className="flex items-center gap-1">
-                <MapPin className="h-4 w-4 text-white" /> 2 lojas em Itapema
+                <MapPin className="h-4 w-4 text-white" /> 3 lojas na região
               </span>
             </div>
           </div>
@@ -131,9 +127,9 @@ export default async function HomePage() {
       <section className="border-b bg-card">
         <div className="container-agro grid grid-cols-2 gap-4 py-6 md:grid-cols-4">
           {[
-            { icon: Truck, titulo: "Entrega rápida", texto: "Vale do Itajaí" },
+            { icon: Truck, titulo: "Entrega rápida", texto: "Litoral Norte" },
             { icon: ShieldCheck, titulo: "Produtos originais", texto: "Qualidade garantida" },
-            { icon: Clock, titulo: "Retire na loja", texto: "Tabuleiro e Centro" },
+            { icon: Clock, titulo: "Retire na loja", texto: "Perequê, Bombas, Itapema" },
             { icon: MessageCircle, titulo: "Atendimento", texto: "Direto no WhatsApp" },
           ].map((b) => (
             <div key={b.titulo} className="flex items-center gap-3">

@@ -1,0 +1,703 @@
+
+> agro-mundo-animal@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 4.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 25.1s (2509 modules)
+ GET / 200 in 850ms
+ GET / 200 in 797ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 1346ms (2507 modules)
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/795548/FFFFFF?text=Sal+Mineral+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Kit+Anzois&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ ✓ Compiled in 2.5s (2495 modules)
+ ✓ Compiled in 3.2s (2495 modules)
+ ✓ Compiled in 1548ms (452 modules)
+ ✓ Compiled in 2.2s (2495 modules)
+ ✓ Compiled in 3.6s (2495 modules)
+ ✓ Compiled in 1580ms (2495 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async rq (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:7341)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:10388
+    at async Promise.all (index 0)
+    at async rq (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:10093)
+    at async rJ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:12680)
+    at async r3 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:16174)
+    at async doRender (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.1s (2708 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async rq (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:7341)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:10388
+    at async Promise.all (index 0)
+    at async rq (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:10093)
+    at async rJ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:12680)
+    at async r3 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:16174)
+    at async doRender (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async rq (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:7341)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:10388
+    at async Promise.all (index 0)
+    at async rq (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:10093)
+    at async rJ (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:12680)
+    at async r3 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:40:16174)
+    at async doRender (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1427:30)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1496:28)
+    at async DevServer.renderPageComponent (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\base-server.js:818:17)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ GET / 500 in 253ms
+ ✓ Compiled in 2.2s (2722 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ GET / 500 in 436ms
+ ✓ Compiled in 1810ms (2722 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ GET / 500 in 253ms
+ ✓ Compiled in 1467ms (2722 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "2603900446"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "2603900446"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ✓ Compiled in 1492ms (2708 modules)
+ GET / 500 in 1550ms
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "2603900446"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "2603900446"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ GET / 500 in 311ms
+ ✓ Compiled in 1263ms (2722 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ GET / 500 in 235ms
+ ✓ Compiled in 1679ms (2722 modules)
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async Promise.all (index 0)
+digest: "1176084508"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+digest: "911740282"
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282'
+}
+ ⨯ app\page.tsx (34:12) @ Sparkles
+ ⨯ ReferenceError: Sparkles is not defined
+    at eval (webpack-internal:///(rsc)/./app/page.tsx:41:14)
+    at (rsc)/./app/page.tsx (C:\Users\JJ\.zcode\workspace\default\.next\server\app\page.js:359:1)
+    at __webpack_require__ (C:\Users\JJ\.zcode\workspace\default\.next\server\webpack-runtime.js:33:42)
+    at async e7 (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:398716)
+    at async tS (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402230)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402791)
+    at async tw (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:402922)
+    at async tO (C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2320)
+    at async C:\Users\JJ\.zcode\workspace\default\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:36:2989 {
+  digest: '911740282',
+  page: '/'
+}
+[0m [90m 32 |[39m   [32m"acessorios-pet"[39m[33m:[39m [33mBone[39m[33m,[39m[0m
+[0m [90m 33 |[39m   veterinaria[33m:[39m [33mPill[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m   higiene[33m:[39m [33mSparkles[39m[33m,[39m[0m
+[0m [90m    |[39m            [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m   jardinagem[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 36 |[39m   agro[33m:[39m [33mSprout[39m[33m,[39m[0m
+[0m [90m 37 |[39m }[33m;[39m[0m
+ GET / 500 in 285ms
+ ✓ Compiled in 3.1s (2720 modules)
+ GET / 200 in 2322ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0F3D91/F7F9FC?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1E40AF/F7F9FC?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/25A06B/FFFFFF?text=Racao+Frangos+25kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Bifinho+500g&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0EA5E9/FFFFFF?text=Antipulgas&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/0369A1/FFFFFF?text=Vara+Pesca&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/7C2D12/FFFFFF?text=Enxada&font=manrope received null
+ GET / 200 in 784ms
+ GET / 200 in 773ms
+ ○ Compiling /catalogo ...
+ ✓ Compiled /catalogo in 3.6s (2713 modules)
+ GET /catalogo 200 in 6012ms
+ GET / 200 in 1128ms

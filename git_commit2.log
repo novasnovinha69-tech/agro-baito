@@ -1,0 +1,3 @@
+[main 48e62a0] chore: remover logs e arquivos temporarios do versionamento
+ 4 files changed, 426 insertions(+)
+ create mode 100644 git_rm.log

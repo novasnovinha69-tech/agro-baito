@@ -49,16 +49,22 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Marca — azul escuro profissional (sem amarelo)
+        // Marca — verde-esmeralda profissional (AgroBaito)
         agro: {
-          blue: "#0F3D91",          // azul royal (primária)
-          "blue-dark": "#0A2D6E",   // azul mais escuro
-          "blue-light": "#3B82F6",  // azul claro p/ hover
-          navy: "#1E293B",          // slate-800
-          emerald: "#25A06B",       // verde sutil (agro)
-          "emerald-dark": "#1A7A52",
-          gray: "#64748B",          // slate-500
-          "gray-light": "#F1F5F9",  // slate-100
+          green: "#1A9D63",          // verde esmeralda (primária)
+          "green-dark": "#14563B",   // verde escuro
+          "green-light": "#22C55E",  // verde claro (hover)
+          emerald: "#10B981",
+          "emerald-dark": "#047857",
+          amber: "#F59E0B",          // âmbar (acento pet)
+          "amber-dark": "#B45309",
+          navy: "#1E293B",           // slate-800 p/ textos escuros
+          gray: "#64748B",
+          "gray-light": "#F1F5F9",
+          // Mantém aliases antigos (blue) apontando pro verde p/ não quebrar componentes
+          blue: "#1A9D63",
+          "blue-dark": "#14563B",
+          "blue-light": "#22C55E",
         },
         whatsapp: "#25D366",
       },

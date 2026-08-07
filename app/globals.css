@@ -3,43 +3,41 @@
 @tailwind utilities;
 
 /* ============================================================================
-   AGRO MUNDO ANIMAL — Design Tokens (REDESIGN)
-   Paleta: AZUL ESCURO profissional + branco + cinzas neutros (sem amarelo)
-   Inspirada na identidade real da loja (logo azul do Instagram).
+   AGRO BAITO — Design Tokens
+   Paleta: VERDE-ESMERALDA profissional (combina com "Loucos por PET" + agro)
    ========================================================================== */
 @layer base {
   :root {
-    /* Fundo e texto — clean, branco/cinza muito claro */
-    --background: 210 40% 98%;            /* #F7F9FC quase branco azulado */
-    --foreground: 222 47% 11%;            /* #0F172A slate-900 (texto forte) */
+    --background: 150 20% 97%;            /* #F1F8F4 verde claríssimo */
+    --foreground: 160 50% 10%;            /* marrom-esverdeado escuro */
 
-    --card: 0 0% 100%;                    /* branco puro */
-    --card-foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 160 50% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 160 50% 10%;
 
-    /* PRIMÁRIA — azul escuro profissional */
-    --primary: 224 76% 25%;               /* #0F3D91 azul royal escuro */
-    --primary-foreground: 0 0% 100%;      /* texto branco sobre azul */
+    /* PRIMÁRIA — verde-esmeralda */
+    --primary: 152 65% 30%;               /* #1A9D63 verde esmeralda */
+    --primary-foreground: 0 0% 100%;
 
-    /* SECUNDÁRIA — azul mais claro p/ detalhes */
-    --secondary: 217 33% 17%;             /* #1E293B slate-800 */
+    /* SECUNDÁRIA — verde mais escuro */
+    --secondary: 155 60% 20%;             /* #14563B verde escuro */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 94%;                 /* cinza azulado claro */
-    --muted-foreground: 215 16% 47%;      /* slate-500 texto secundário */
+    --muted: 150 20% 93%;
+    --muted-foreground: 155 15% 40%;
 
-    /* ACCENT — verde sutil (mantém o "agro" sem amarelo) */
-    --accent: 158 64% 40%;                /* #25A06B verde-esmeralda */
-    --accent-foreground: 0 0% 100%;
+    /* ACCENT — âmbar suave (destaque pet) */
+    --accent: 38 92% 50%;                 /* #F59E0B âmbar */
+    --accent-foreground: 30 25% 15%;
 
-    --destructive: 0 72% 45%;             /* vermelho p/ erros */
+    --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 88%;                /* borda cinza-azulada discreta */
-    --input: 214 32% 88%;
-    --ring: 224 76% 25%;                  /* foco na cor primária */
+    --border: 150 15% 86%;
+    --input: 150 15% 86%;
+    --ring: 152 65% 30%;
 
     --radius: 0.5rem;
   }
@@ -60,24 +58,20 @@
 }
 
 @layer components {
-  /* Gradiente azul profissional */
   .bg-agro-gradient {
-    background-image: linear-gradient(135deg, #0F3D91 0%, #1E3A8A 50%, #1E40AF 100%);
+    background-image: linear-gradient(135deg, #1A9D63 0%, #14563B 50%, #0F3D2C 100%);
   }
   .container-agro {
     @apply container mx-auto px-4 max-w-7xl;
   }
-  /* Selo discreto (sem amarelo) */
   .badge-agro {
     @apply inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary;
   }
-  /* Cartão com sombra suave profissional */
   .card-professional {
     @apply rounded-lg border bg-card shadow-sm transition-all hover:shadow-md;
   }
 }
 
-/* Botão WhatsApp oficial */
 .btn-whatsapp {
   background-color: #25D366;
   color: #ffffff;
@@ -86,7 +80,6 @@
   background-color: #1ebe5d;
 }
 
-/* Scrollbar discreta e profissional */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground) / 0.3); border-radius: 9999px; }
