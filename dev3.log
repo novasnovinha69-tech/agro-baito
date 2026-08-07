@@ -746,3 +746,22 @@ ReferenceError: Sparkles is not defined
  ✓ Compiled /entrar in 559ms (2766 modules)
  GET /entrar 200 in 789ms
  GET /checkout 200 in 468ms
+ GET / 200 in 954ms
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/DC2626/FFFFFF?text=Vermifugo&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Racao+Caes+15kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Racao+Gatos+7,5kg&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Coleira&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/1A9D63/FFFFFF?text=Vaso&font=manrope received null
+ ⨯ The requested resource isn't a valid image for https://placehold.co/600x600/F59E0B/FFFFFF?text=Shampoo&font=manrope received null
+ GET / 200 in 708ms
+ GET /checkout 200 in 225ms
+ GET / 200 in 484ms
+ GET /catalogo 200 in 492ms
+ GET /checkout 200 in 479ms
+ GET / 200 in 429ms
+ GET /catalogo 200 in 519ms
+ ○ Compiling /categoria/[slug] ...
+ ✓ Compiled /categoria/[slug] in 995ms (2115 modules)
+ GET /categoria/racoes 200 in 2081ms
+ GET /catalogo 200 in 382ms
+ GET /categoria/acessorios-pet 200 in 453ms

@@ -1,0 +1,34 @@
+
+🔄 Converting proposta-comercial-baito.html...
+   Engine: Playwright + Chromium native @page (no Paged.js)
+
+📋 Pre-render checks:
+  ⏳ Auto-injecting KaTeX CDN (math formulas detected but KaTeX not loaded)...
+  ✓ KaTeX CDN loaded successfully
+  ⏳ Triggering KaTeX rendering...
+  ✓ KaTeX rendered
+  ⚠️  Converted absolute-bottom elements to document flow (prevents overlap on multi-page):
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    span.katex-mathml: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+    div.page-footer: was position:absolute;bottom:auto → now static (flows with content)
+  ✓ Fixed 1 full-page cover section(s) for print
+
+📄 Rendering PDF...
+   Custom size: 210mm × 297mm
+
+🔧 Post-processing (pdf-lib):
+
+════════════════════════════════════════
+  PDF Generated Successfully
+════════════════════════════════════════
+  File:    Proposta-Comercial-Agro-Baito.pdf
+  Pages:   8
+  Size:    680.2 KB
+  Words:   ~1.234
+  Assets:  0 figures, 4 tables
+  Engine:  Playwright (no Paged.js)
+  Path:    C:\Users\JJ\.zcode\workspace\default\Proposta-Comercial-Agro-Baito.pdf
