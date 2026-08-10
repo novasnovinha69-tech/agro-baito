@@ -21,7 +21,8 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
   title: {
-    default: "Agro Baito — Rações, Veterinária e Pet em Porto Belo, Bombinhas e Itapema/SC",
+    default:
+      "Agro Baito — Rações, Veterinária e Pet em Porto Belo, Bombinhas e Itapema/SC",
     template: "%s | Agro Baito",
   },
   description:
@@ -42,7 +43,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     title: "Agro Baito — Tudo para sua criação e sua roça",
-    description: "Entrega em Porto Belo, Bombinhas e Itapema. Pix com desconto. Retire na loja.",
+    description:
+      "Entrega em Porto Belo, Bombinhas e Itapema. Pix com desconto. Retire na loja.",
   },
 };
 

@@ -63,7 +63,11 @@ function paraItem(p: Produto, quantidade: number): ItemCarrinho {
 }
 
 /** Ajusta a quantidade às regras de qtd mínima e múltiplo. */
-function clampQuantidade(q: number, qtdMinima: number, multiplo: number): number {
+function clampQuantidade(
+  q: number,
+  qtdMinima: number,
+  multiplo: number,
+): number {
   if (q < qtdMinima) q = qtdMinima;
   if (multiplo > 1) {
     q = Math.ceil(q / multiplo) * multiplo;
@@ -90,10 +94,7 @@ export const useCarrinho = create<EstadoCarrinho>()(
         const itens = [...get().itens];
         const idx = itens.findIndex((i) => i.produtoId === produto.id);
         if (idx >= 0) {
-          const novaQtd = Math.min(
-            itens[idx].quantidade + q,
-            produto.estoque,
-          );
+          const novaQtd = Math.min(itens[idx].quantidade + q, produto.estoque);
           itens[idx] = {
             ...itens[idx],
             quantidade: novaQtd,
@@ -137,14 +138,10 @@ export const useCarrinho = create<EstadoCarrinho>()(
             .filter((i) => i.quantidade > 0),
         })),
 
-      totalItens: () =>
-        get().itens.reduce((acc, i) => acc + i.quantidade, 0),
+      totalItens: () => get().itens.reduce((acc, i) => acc + i.quantidade, 0),
 
       subtotalCents: () =>
-        get().itens.reduce(
-          (acc, i) => acc + i.precoCents * i.quantidade,
-          0,
-        ),
+        get().itens.reduce((acc, i) => acc + i.precoCents * i.quantidade, 0),
     }),
     {
       name: "ama-carrinho",

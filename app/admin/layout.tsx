@@ -1,7 +1,4 @@
-import {
-  AdminSidebar,
-  AdminTopbar,
-} from "@/components/admin/admin-sidebar";
+import { AdminSidebar, AdminTopbar } from "@/components/admin/admin-sidebar";
 import { getAdminAtual } from "@/lib/auth-server";
 import { isSupabaseConfigured } from "@/lib/carrinho";
 

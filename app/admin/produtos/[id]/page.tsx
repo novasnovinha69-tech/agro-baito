@@ -1,6 +1,9 @@
 import { notFound } from "next/navigation";
 import { ProdutoForm } from "@/components/admin/produto-form";
-import { adminListarCategorias, adminObterProdutoPorId } from "@/lib/admin-data";
+import {
+  adminListarCategorias,
+  adminObterProdutoPorId,
+} from "@/lib/admin-data";
 
 export default async function EditarProdutoPage({
   params,

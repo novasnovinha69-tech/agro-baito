@@ -1,13 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { ArrowRight, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import Image from "next/image";
-import { Minus, Plus, Trash2, ShoppingBag, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { useCarrinho } from "@/lib/store/carrinho";
 import { formatBRL, formatPeso } from "@/lib/money";
+import { useCarrinho } from "@/lib/store/carrinho";
 
 export default function CarrinhoPage() {
   const { itens, atualizarQuantidade, remover, subtotalCents, limpar } =
@@ -25,7 +25,8 @@ export default function CarrinhoPage() {
             Seu carrinho está vazio
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            Que tal explorar nosso catálogo de rações, medicamentos e ferramentas?
+            Que tal explorar nosso catálogo de rações, medicamentos e
+            ferramentas?
           </p>
           <Button asChild className="mt-4" size="lg">
             <Link href="/catalogo">

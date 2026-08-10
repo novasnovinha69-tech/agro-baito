@@ -1,25 +1,20 @@
-import Link from "next/link";
-import { notFound } from "next/navigation";
 import {
   ArrowLeft,
-  User,
-  MapPin,
-  Package,
   CreditCard,
+  MapPin,
   MessageCircle,
+  Package,
+  User,
 } from "lucide-react";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { NotificarCliente } from "@/components/admin/notificar-cliente";
+import { StatusControle } from "@/components/admin/status-controle";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { adminObterPedidoPorId } from "@/lib/admin-data";
 import { formatBRL } from "@/lib/money";
-import { StatusControle } from "@/components/admin/status-controle";
-import { NotificarCliente } from "@/components/admin/notificar-cliente";
 
 export default async function AdminPedidoDetalhePage({
   params,
@@ -100,9 +95,7 @@ export default async function AdminPedidoDetalhePage({
             </CardHeader>
             <CardContent className="space-y-1 text-sm">
               <p className="font-medium">{pedido.cliente_nome}</p>
-              <p className="text-muted-foreground">
-                {pedido.cliente_telefone}
-              </p>
+              <p className="text-muted-foreground">{pedido.cliente_telefone}</p>
               {pedido.cliente_email && (
                 <p className="text-muted-foreground">{pedido.cliente_email}</p>
               )}
@@ -143,9 +136,7 @@ export default async function AdminPedidoDetalhePage({
             <Card>
               <CardContent className="flex items-center gap-3 p-5 text-sm">
                 <Package className="h-5 w-5 text-agro-blue" />
-                <span>
-                  Cliente retirará em uma das lojas da Agro Baito.
-                </span>
+                <span>Cliente retirará em uma das lojas da Agro Baito.</span>
               </CardContent>
             </Card>
           )}
@@ -161,7 +152,10 @@ export default async function AdminPedidoDetalhePage({
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <StatusControle pedidoId={pedido.id} statusAtual={pedido.status} />
+                <StatusControle
+                  pedidoId={pedido.id}
+                  statusAtual={pedido.status}
+                />
               </CardContent>
             </Card>
 

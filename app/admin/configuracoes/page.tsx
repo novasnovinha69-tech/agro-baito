@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -6,10 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { LOJA } from "@/lib/loja-config";
-import { isSupabaseConfigured } from "@/lib/carrinho";
 import { requireRole } from "@/lib/auth-server";
+import { isSupabaseConfigured } from "@/lib/carrinho";
+import { LOJA } from "@/lib/loja-config";
 
 export default async function AdminConfigPage() {
   const configurado = isSupabaseConfigured();
@@ -60,9 +60,7 @@ export default async function AdminConfigPage() {
           />
           <Linha
             nome="WhatsApp"
-            status={
-              process.env.WHATSAPP_ACCESS_TOKEN ? "ok" : "fallback"
-            }
+            status={process.env.WHATSAPP_ACCESS_TOKEN ? "ok" : "fallback"}
             detalhe={
               process.env.WHATSAPP_ACCESS_TOKEN
                 ? "Cloud API conectada"
@@ -77,7 +75,8 @@ export default async function AdminConfigPage() {
         <CardHeader className="pb-3">
           <CardTitle className="text-base">Dados da loja</CardTitle>
           <CardDescription>
-            Editáveis em <code className="rounded bg-muted px-1">lib/loja-config.ts</code>
+            Editáveis em{" "}
+            <code className="rounded bg-muted px-1">lib/loja-config.ts</code>
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-3 text-sm">

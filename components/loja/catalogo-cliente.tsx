@@ -1,13 +1,13 @@
 "use client";
 
+import { Search, SlidersHorizontal, X } from "lucide-react";
 import { useMemo, useState } from "react";
-import { SlidersHorizontal, Search, X } from "lucide-react";
 import { ProductCard } from "@/components/loja/product-card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import type { Produto, Categoria } from "@/types/database.types";
 import { formatBRL } from "@/lib/money";
+import type { Categoria, Produto } from "@/types/database.types";
 
 type Props = {
   produtos: Produto[];
@@ -50,8 +50,7 @@ export function CatalogoCliente({
     if (soEstoque) lista = lista.filter((p) => p.estoque > 0);
     if (precoMax != null) {
       lista = lista.filter((p) => {
-        const ef =
-          p.preco_promocional_cents ?? p.preco_cents;
+        const ef = p.preco_promocional_cents ?? p.preco_cents;
         return ef <= precoMax;
       });
     }

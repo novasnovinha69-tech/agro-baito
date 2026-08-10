@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { adminListarPedidos } from "@/lib/admin-data";
 import { formatBRL } from "@/lib/money";
 import { STATUS_INFO } from "@/lib/status-pedido";
@@ -63,7 +63,9 @@ export default async function AdminPedidosPage() {
                     })}
                   </p>
                 </div>
-                <span className="font-semibold">{formatBRL(p.total_cents)}</span>
+                <span className="font-semibold">
+                  {formatBRL(p.total_cents)}
+                </span>
                 <span className="text-sm text-muted-foreground">
                   {p.tipo_entrega === "retirada" ? "Retirada" : "Entrega"}
                 </span>

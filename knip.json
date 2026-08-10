@@ -1,0 +1,32 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": [
+    "app/**/*.{ts,tsx}",
+    "sentry.*.config.ts",
+    "components/**/*.{ts,tsx}",
+    "lib/**/*.{ts,tsx}",
+    "e2e/**/*.ts"
+  ],
+  "project": ["app/**", "components/**", "lib/**", "sentry.*.config.ts"],
+  "ignoreBinaries": ["husky"],
+  "ignoreDependencies": [
+    "@testing-library/jest-dom",
+    "@vitejs/plugin-react",
+    "jsdom",
+    "server-only",
+    "@commitlint/types",
+    "@radix-ui/react-avatar",
+    "@radix-ui/react-checkbox",
+    "@radix-ui/react-dropdown-menu",
+    "@radix-ui/react-popover",
+    "@radix-ui/react-select",
+    "@radix-ui/react-tabs",
+    "@radix-ui/react-toast",
+    "@radix-ui/react-tooltip",
+    "cmdk",
+    "react-hook-form",
+    "@hookform/resolvers",
+    "zod",
+    "tailwindcss-animate"
+  ]
+}

@@ -10,7 +10,9 @@ import { linkWhatsApp } from "@/lib/loja-config";
 export function WhatsAppFAB() {
   return (
     <a
-      href={linkWhatsApp("Olá! Vim pelo site da Agro Baito e gostaria de atendimento.")}
+      href={linkWhatsApp(
+        "Olá! Vim pelo site da Agro Baito e gostaria de atendimento.",
+      )}
       target="_blank"
       rel="noreferrer"
       aria-label="Falar no WhatsApp"

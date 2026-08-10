@@ -1,13 +1,9 @@
 import "server-only";
 
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { mockCategorias, mockProdutos, mockUnidades } from "@/lib/mock-data";
 import { createSupabaseAdminClient } from "@/lib/supabase/admin";
-import { mockProdutos, mockCategorias, mockUnidades } from "@/lib/mock-data";
-import type {
-  Produto,
-  Categoria,
-  Pedido,
-} from "@/types/database.types";
+import type { Categoria, Pedido, Produto } from "@/types/database.types";
 
 // =============================================================================
 //  Acesso a dados do ADMIN.
@@ -30,7 +26,11 @@ export async function adminListarProdutos(): Promise<
     .select("*, categorias(nome)")
     .order("created_at", { ascending: false });
   if (error) throw error;
-  return (data as unknown as (Produto & { categoria?: { nome: string } | null })[]) ?? [];
+  return (
+    (data as unknown as (Produto & {
+      categoria?: { nome: string } | null;
+    })[]) ?? []
+  );
 }
 
 export async function adminListarCategorias(): Promise<Categoria[]> {
@@ -165,8 +165,8 @@ export async function adminObterProdutoPorId(
     .maybeSingle();
   if (error) throw error;
   return (
-    (data as unknown as (Produto & {
+    (data as unknown as Produto & {
       categoria?: { nome: string } | null;
-    })) ?? null
+    }) ?? null
   );
 }

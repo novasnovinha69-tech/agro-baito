@@ -7,11 +7,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "typecheck": "tsc --noEmit",
+    "lint": "biome lint .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "check": "biome check .",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "knip": "knip",
     "db:push": "supabase db push",
     "db:seed": "supabase db reset --db-url \"$SUPABASE_DB_URL\"",
-    "db:types": "supabase gen types typescript --local > types/database.types.ts"
+    "db:types": "supabase gen types typescript --local > types/database.types.ts",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,mjs,cjs}": [
+      "biome check --write"
+    ],
+    "*.{json,css}": [
+      "biome format --write"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -27,6 +46,7 @@
     "@radix-ui/react-tabs": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
     "@radix-ui/react-tooltip": "^1.1.2",
+    "@sentry/nextjs": "^10.70.0",
     "@supabase/ssr": "^0.5.1",
     "@supabase/supabase-js": "^2.45.4",
     "class-variance-authority": "^0.7.0",
@@ -45,16 +65,27 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.5.7",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@playwright/test": "^1.62.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^20.16.5",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^6.0.5",
+    "@vitest/coverage-v8": "^4.1.10",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.13",
+    "husky": "^9.1.7",
+    "jsdom": "^30.0.1",
+    "knip": "^6.32.1",
+    "lint-staged": "^17.3.0",
     "postcss": "^8.4.45",
     "supabase": "^1.191.3",
     "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vitest": "^4.1.10"
   },
   "engines": {
     "node": ">=18.18.0"

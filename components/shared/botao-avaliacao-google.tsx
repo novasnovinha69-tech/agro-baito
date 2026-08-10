@@ -44,7 +44,10 @@ export function BotaoAvaliacaoGoogle({
       <div className="flex flex-col">
         <div className="flex items-center gap-0.5">
           {[1, 2, 3, 4, 5].map((i) => (
-            <Estrela key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
+            <Estrela
+              key={i}
+              className="h-4 w-4 fill-amber-400 text-amber-400"
+            />
           ))}
         </div>
         <span className="text-sm font-semibold text-gray-800">

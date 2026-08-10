@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { toast } from "sonner";
 import { Loader2, MessageCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { STATUS_ORDEM, STATUS_INFO } from "@/lib/status-pedido";
-import type { StatusPedido } from "@/types/database.types";
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { STATUS_INFO, STATUS_ORDEM } from "@/lib/status-pedido";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import type { StatusPedido } from "@/types/database.types";
 
 export function StatusControle({
   pedidoId,

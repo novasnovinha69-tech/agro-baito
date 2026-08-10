@@ -1,8 +1,8 @@
 "use client";
 
-import { HeaderLoja } from "@/components/loja/header-loja";
-import { FooterLoja } from "@/components/loja/footer-loja";
 import { CartDrawer } from "@/components/loja/cart-drawer";
+import { FooterLoja } from "@/components/loja/footer-loja";
+import { HeaderLoja } from "@/components/loja/header-loja";
 import { WhatsAppFAB } from "@/components/loja/whatsapp-fab";
 
 /** Envoltório da loja pública: header fixo, conteúdo, footer e drawer do carrinho. */

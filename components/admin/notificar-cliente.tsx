@@ -1,11 +1,11 @@
 "use client";
 
+import { Clock, Loader2, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
-import { Clock, Send, Loader2 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
 import { LOJA } from "@/lib/loja-config";
 import { formatBRL } from "@/lib/money";
 
@@ -66,9 +66,7 @@ export function NotificarCliente({ pedido }: Props) {
     if (dentroHorario && !ehFimDeSemana) {
       linhas.push(`⏰ Estamos atendendo agora (horário: 08h às 20h).`);
     } else if (ehFimDeSemana) {
-      linhas.push(
-        `⚠️ No momento estamos fora do horário de atendimento.`,
-      );
+      linhas.push(`⚠️ No momento estamos fora do horário de atendimento.`);
       linhas.push(
         `📅 Seu pedido será entregue no próximo dia útil, a partir das 08h.`,
       );

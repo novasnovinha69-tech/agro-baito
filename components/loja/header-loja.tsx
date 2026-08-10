@@ -1,17 +1,19 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import {
+  LayoutDashboard,
+  MapPin,
   Menu,
+  Phone,
   Search,
   ShoppingCart,
   Sprout,
-  MapPin,
-  Phone,
-  LayoutDashboard,
 } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
+import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -21,17 +23,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useCarrinho } from "@/lib/store/carrinho";
 import { LINKS_NAV, LOJA, linkWhatsApp } from "@/lib/loja-config";
-import { cn } from "@/lib/utils";
+import { useCarrinho } from "@/lib/store/carrinho";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
-import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
-import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
+import { cn } from "@/lib/utils";
 
 export function HeaderLoja() {
   const pathname = usePathname();
-  const totalItens = useCarrinho(
-    (s) => s.itens.reduce((a, i) => a + i.quantidade, 0),
+  const totalItens = useCarrinho((s) =>
+    s.itens.reduce((a, i) => a + i.quantidade, 0),
   );
   const abrirCarrinho = useCarrinho((s) => s.abrir);
   const [busca, setBusca] = useState("");
@@ -81,7 +81,8 @@ export function HeaderLoja() {
             </a>
           </div>
           <span className="flex items-center gap-1">
-            <Sprout className="h-3.5 w-3.5" /> Entregas em Porto Belo, Bombinhas e Itapema
+            <Sprout className="h-3.5 w-3.5" /> Entregas em Porto Belo, Bombinhas
+            e Itapema
           </span>
         </div>
       </div>
@@ -91,7 +92,12 @@ export function HeaderLoja() {
         {/* Menu mobile (hambúrguer) */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden" aria-label="Abrir menu">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              aria-label="Abrir menu"
+            >
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
@@ -134,7 +140,10 @@ export function HeaderLoja() {
         </Link>
 
         {/* Busca (desktop) */}
-        <form action="/buscar" className="mx-auto hidden w-full max-w-xl md:block">
+        <form
+          action="/buscar"
+          className="mx-auto hidden w-full max-w-xl md:block"
+        >
           <div className="relative">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
@@ -157,7 +166,10 @@ export function HeaderLoja() {
           </Link>
 
           {/* Botão avaliação Google (logo oficial) */}
-          <BotaoAvaliacaoGoogle variant="compacto" className="shrink-0 transition-transform hover:scale-110" />
+          <BotaoAvaliacaoGoogle
+            variant="compacto"
+            className="shrink-0 transition-transform hover:scale-110"
+          />
 
           {/* Botão WhatsApp com seletor de lojas (desktop) */}
           <div className="hidden md:block">
@@ -167,7 +179,11 @@ export function HeaderLoja() {
           {/* Botão Painel (só admin) */}
           {isAdmin && (
             <Link href="/admin">
-              <Button variant="ghost" size="sm" className="gap-1.5 text-agro-blue">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="gap-1.5 text-agro-blue"
+              >
                 <LayoutDashboard className="h-4 w-4" />
                 <span className="hidden sm:inline">Painel</span>
               </Button>

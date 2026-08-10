@@ -18,7 +18,8 @@ export const LOJA = {
   unidades: [
     {
       nome: "Loja Perequê — Porto Belo",
-      endereco: "Av. Gov. Celso Ramos, 1187 — Perequê, Porto Belo/SC · CEP 88210-000",
+      endereco:
+        "Av. Gov. Celso Ramos, 1187 — Perequê, Porto Belo/SC · CEP 88210-000",
     },
     {
       nome: "Loja Bombas — Bombinhas",
@@ -29,7 +30,14 @@ export const LOJA = {
       endereco: "Av. Nereu Ramos, 330, Sala 01 — Meia Praia, Itapema/SC",
     },
   ],
-  segmentos: ["Rações", "Acessórios Pet", "Veterinária", "Higiene", "Jardinagem", "Agro"],
+  segmentos: [
+    "Rações",
+    "Acessórios Pet",
+    "Veterinária",
+    "Higiene",
+    "Jardinagem",
+    "Agro",
+  ],
 } as const;
 
 export const LINKS_NAV = [

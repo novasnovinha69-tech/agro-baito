@@ -1,11 +1,9 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { AlertCircle, LogIn, Sprout } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { Suspense, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Card,
   CardContent,
@@ -13,12 +11,18 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Sprout, LogIn, AlertCircle } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 export default function EntrarPageWrapper() {
   return (
-    <Suspense fallback={<div className="container-agro py-12 text-center">Carregando...</div>}>
+    <Suspense
+      fallback={
+        <div className="container-agro py-12 text-center">Carregando...</div>
+      }
+    >
       <EntrarPage />
     </Suspense>
   );
@@ -46,7 +50,10 @@ function EntrarPage() {
     setErro(null);
     try {
       const sb = createSupabaseBrowserClient();
-      const { error } = await sb.auth.signInWithPassword({ email, password: senha });
+      const { error } = await sb.auth.signInWithPassword({
+        email,
+        password: senha,
+      });
       if (error) throw error;
       router.push(proximaPagina);
       router.refresh();
@@ -108,9 +115,7 @@ function EntrarPage() {
             <Sprout className="h-7 w-7 text-agro-blue" />
           </div>
           <CardTitle>Painel Administrativo</CardTitle>
-          <CardDescription>
-            Agro Baito — acesso restrito
-          </CardDescription>
+          <CardDescription>Agro Baito — acesso restrito</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={entrar} className="space-y-4">
@@ -145,7 +150,12 @@ function EntrarPage() {
               </div>
             )}
 
-            <Button type="submit" className="w-full" size="lg" disabled={carregando}>
+            <Button
+              type="submit"
+              className="w-full"
+              size="lg"
+              disabled={carregando}
+            >
               {carregando ? "Entrando..." : "Entrar"}
             </Button>
           </form>

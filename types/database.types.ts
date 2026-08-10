@@ -276,8 +276,7 @@ export type StatusPedido =
 export type Categoria = Database["public"]["Tables"]["categorias"]["Row"];
 export type Produto = Database["public"]["Tables"]["produtos"]["Row"];
 export type Unidade = Database["public"]["Tables"]["unidades"]["Row"];
-export type ZonaEntrega =
-  Database["public"]["Tables"]["zonas_entrega"]["Row"];
+export type ZonaEntrega = Database["public"]["Tables"]["zonas_entrega"]["Row"];
 export type Pedido = Database["public"]["Tables"]["pedidos"]["Row"];
 export type PedidoItem = Database["public"]["Tables"]["pedido_itens"]["Row"];
 export type StatusHistorico =

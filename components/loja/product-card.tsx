@@ -1,19 +1,19 @@
 "use client";
 
-import Link from "next/link";
+import { Package, ShoppingCart } from "lucide-react";
 import Image from "next/image";
-import { ShoppingCart, Package } from "lucide-react";
+import Link from "next/link";
 import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useCarrinho } from "@/lib/store/carrinho";
-import { formatBRL, formatPeso } from "@/lib/money";
-import type { Produto } from "@/types/database.types";
+import { Button } from "@/components/ui/button";
 import {
   precoEfetivoCents,
-  temPromocao,
   precoPorUnidadeCents,
+  temPromocao,
 } from "@/lib/carrinho";
+import { formatBRL, formatPeso } from "@/lib/money";
+import { useCarrinho } from "@/lib/store/carrinho";
+import type { Produto } from "@/types/database.types";
 
 export function ProductCard({ produto }: { produto: Produto }) {
   const adicionar = useCarrinho((s) => s.adicionar);
@@ -21,7 +21,8 @@ export function ProductCard({ produto }: { produto: Produto }) {
   const preco = precoEfetivoCents(produto);
   const precoUn = precoPorUnidadeCents(produto);
   const semEstoque = produto.estoque <= 0;
-  const estoqueBaixo = produto.estoque > 0 && produto.estoque <= produto.estoque_minimo;
+  const estoqueBaixo =
+    produto.estoque > 0 && produto.estoque <= produto.estoque_minimo;
 
   function handleAdd(e: React.MouseEvent) {
     e.preventDefault();

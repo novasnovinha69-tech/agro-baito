@@ -1,8 +1,8 @@
 "use client";
 
+import { ChevronDown, MapPin, Store } from "lucide-react";
 import { useState } from "react";
 import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
-import { MapPin, ChevronDown, Store } from "lucide-react";
 import { LOJA, linkWhatsApp } from "@/lib/loja-config";
 
 /**
@@ -70,7 +70,9 @@ export function BotaoWhatsAppLojas({
         >
           <WhatsAppIcon className="h-3.5 w-3.5" />
           WhatsApp
-          <ChevronDown className={`h-3 w-3 transition-transform ${aberto ? "rotate-180" : ""}`} />
+          <ChevronDown
+            className={`h-3 w-3 transition-transform ${aberto ? "rotate-180" : ""}`}
+          />
         </button>
 
         {aberto && (
@@ -91,8 +93,12 @@ export function BotaoWhatsAppLojas({
                 >
                   <WhatsAppIcon className="mt-0.5 h-5 w-5 shrink-0 text-whatsapp" />
                   <div className="min-w-0">
-                    <p className="text-sm font-semibold text-agro-navy">{loja.nome}</p>
-                    <p className="text-xs text-muted-foreground">{loja.telefone}</p>
+                    <p className="text-sm font-semibold text-agro-navy">
+                      {loja.nome}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {loja.telefone}
+                    </p>
                   </div>
                 </button>
               ))}
@@ -131,13 +137,17 @@ export function BotaoWhatsAppLojas({
               <WhatsAppIcon className="h-4 w-4 text-white" />
             </div>
             <div className="min-w-0 flex-1">
-              <p className="truncate text-sm font-bold text-agro-navy">{loja.nome}</p>
+              <p className="truncate text-sm font-bold text-agro-navy">
+                {loja.nome}
+              </p>
               <p className="flex items-center gap-1 text-xs text-muted-foreground">
                 <MapPin className="h-3 w-3 shrink-0" />
                 <span className="truncate">{loja.endereco}</span>
               </p>
             </div>
-            <span className="shrink-0 text-xs font-bold text-whatsapp">{loja.telefone}</span>
+            <span className="shrink-0 text-xs font-bold text-whatsapp">
+              {loja.telefone}
+            </span>
           </button>
         ))}
       </div>

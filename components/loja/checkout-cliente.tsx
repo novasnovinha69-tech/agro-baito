@@ -1,37 +1,37 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
-import { toast } from "sonner";
 import {
-  MapPin,
-  Search,
-  Truck,
-  Store,
+  AlertCircle,
+  CheckCircle2,
+  Clock,
   CreditCard,
   Loader2,
-  CheckCircle2,
-  Navigation,
-  AlertCircle,
-  Clock,
+  MapPin,
   MessageCircle,
+  Navigation,
+  Search,
+  Store,
+  Truck,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
+import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
+import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { useCarrinho } from "@/lib/store/carrinho";
-import { formatBRL, maskCEP, maskPhone, maskCpfCnpj } from "@/lib/money";
+import { buscarCep, casarZonaPorEndereco } from "@/lib/cep";
 import type { UnidadeComZonas } from "@/lib/data";
-import type { ZonaEntrega } from "@/types/database.types";
-import { casarZonaPorEndereco, buscarCep } from "@/lib/cep";
 import { FRETE_GRATIS_MIN_CENTS } from "@/lib/frete";
 import { LOJA, linkWhatsApp } from "@/lib/loja-config";
-import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
-import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
+import { formatBRL, maskCEP, maskCpfCnpj, maskPhone } from "@/lib/money";
+import { useCarrinho } from "@/lib/store/carrinho";
+import type { ZonaEntrega } from "@/types/database.types";
 
 type Props = {
   unidades: UnidadeComZonas[];
@@ -55,17 +55,28 @@ export function CheckoutCliente({ unidades }: Props) {
 
   const [buscandoCep, setBuscandoCep] = useState(false);
   const [endereco, setEndereco] = useState<EnderecoForm>({
-    cep: "", logradouro: "", numero: "", complemento: "",
-    bairro: "", cidade: "", uf: "", referencia: "",
+    cep: "",
+    logradouro: "",
+    numero: "",
+    complemento: "",
+    bairro: "",
+    cidade: "",
+    uf: "",
+    referencia: "",
   });
 
   // Cliente
   const [cliente, setCliente] = useState({
-    nome: "", telefone: "", email: "", cpfCnpj: "",
+    nome: "",
+    telefone: "",
+    email: "",
+    cpfCnpj: "",
   });
 
   // Entrega
-  const [tipoEntrega, setTipoEntrega] = useState<"retirada" | "entrega" | null>(null);
+  const [tipoEntrega, setTipoEntrega] = useState<"retirada" | "entrega" | null>(
+    null,
+  );
   const [unidadeRetiradaId, setUnidadeRetiradaId] = useState<string>("");
   const [zonaSelecionadaId, setZonaSelecionadaId] = useState<string>("");
   const [zonaSugerida, setZonaSugerida] = useState<ZonaEntrega | null>(null);
@@ -165,9 +176,7 @@ export function CheckoutCliente({ unidades }: Props) {
     linhas.push("");
     linhas.push("📦 *ITENS*");
     itens.forEach((i, idx) => {
-      linhas.push(
-        `${idx + 1}. ${i.nome}`,
-      );
+      linhas.push(`${idx + 1}. ${i.nome}`);
       linhas.push(
         `   ${i.quantidade}x ${formatBRL(i.precoCents)} = ${formatBRL(i.precoCents * i.quantidade)}`,
       );
@@ -190,7 +199,8 @@ export function CheckoutCliente({ unidades }: Props) {
       linhas.push(`Bairro: ${endereco.bairro}`);
       linhas.push(`Cidade: ${endereco.cidade}/${endereco.uf}`);
       linhas.push(`CEP: ${endereco.cep}`);
-      if (endereco.referencia) linhas.push(`Referência: ${endereco.referencia}`);
+      if (endereco.referencia)
+        linhas.push(`Referência: ${endereco.referencia}`);
       linhas.push(
         `Frete: ${ganhouFreteGratis ? "GRÁTIS (acima de R$1.000)" : formatBRL(freteCents)}`,
       );
@@ -269,8 +279,8 @@ export function CheckoutCliente({ unidades }: Props) {
             <p className="mt-2 flex items-center gap-2">
               <MessageCircle className="h-4 w-4 text-whatsapp" />
               <span>
-                Dúvidas? Fale com a gente pelo WhatsApp de qualquer uma das nossas
-                3 lojas.
+                Dúvidas? Fale com a gente pelo WhatsApp de qualquer uma das
+                nossas 3 lojas.
               </span>
             </p>
           </div>
@@ -293,7 +303,10 @@ export function CheckoutCliente({ unidades }: Props) {
 
           {/* Avaliação no Google */}
           <div className="mt-5">
-            <BotaoAvaliacaoGoogle variant="cheio" className="w-full justify-center" />
+            <BotaoAvaliacaoGoogle
+              variant="cheio"
+              className="w-full justify-center"
+            />
           </div>
         </div>
       </div>
@@ -319,7 +332,9 @@ export function CheckoutCliente({ unidades }: Props) {
     endereco.bairro,
     endereco.cidade,
     endereco.uf,
-  ].filter(Boolean).join(", ");
+  ]
+    .filter(Boolean)
+    .join(", ");
   const mapaUrl = enderecoMapa
     ? `https://maps.google.com/maps?q=${encodeURIComponent(enderecoMapa)}&z=15&output=embed`
     : null;
@@ -333,12 +348,22 @@ export function CheckoutCliente({ unidades }: Props) {
       {/* Banner: frete grátis acima de R$1.000 */}
       {ganhouFreteGratis ? (
         <div className="mb-4 flex items-center gap-2 rounded-lg bg-agro-emerald/15 px-4 py-2.5 text-sm font-semibold text-agro-emerald-dark">
-          🎉 <span>Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> (pedido acima de R$1.000)</span>
+          🎉{" "}
+          <span>
+            Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> (pedido acima de
+            R$1.000)
+          </span>
         </div>
       ) : (
         <div className="mb-4 flex items-center justify-between gap-2 rounded-lg bg-agro-blue/10 px-4 py-2.5 text-sm text-agro-blue">
-          <span>🚚 Faltam <strong>{formatBRL(FRETE_GRATIS_MIN_CENTS - subtotal)}</strong> para você ganhar <strong>FRETE GRÁTIS</strong></span>
-          <a href="/catalogo" className="shrink-0 font-semibold underline">Comprar mais</a>
+          <span>
+            🚚 Faltam{" "}
+            <strong>{formatBRL(FRETE_GRATIS_MIN_CENTS - subtotal)}</strong> para
+            você ganhar <strong>FRETE GRÁTIS</strong>
+          </span>
+          <a href="/catalogo" className="shrink-0 font-semibold underline">
+            Comprar mais
+          </a>
         </div>
       )}
 
@@ -349,7 +374,9 @@ export function CheckoutCliente({ unidades }: Props) {
           <Card>
             <CardContent className="space-y-4 p-5">
               <h2 className="flex items-center gap-2 font-display text-base font-bold">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">1</span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">
+                  1
+                </span>
                 Seus dados
               </h2>
               <div className="grid gap-3 sm:grid-cols-2">
@@ -358,7 +385,9 @@ export function CheckoutCliente({ unidades }: Props) {
                   <Input
                     id="nome"
                     value={cliente.nome}
-                    onChange={(e) => setCliente({ ...cliente, nome: e.target.value })}
+                    onChange={(e) =>
+                      setCliente({ ...cliente, nome: e.target.value })
+                    }
                     placeholder="Ex: João da Silva"
                   />
                 </div>
@@ -368,7 +397,10 @@ export function CheckoutCliente({ unidades }: Props) {
                     id="tel"
                     value={cliente.telefone}
                     onChange={(e) =>
-                      setCliente({ ...cliente, telefone: maskPhone(e.target.value) })
+                      setCliente({
+                        ...cliente,
+                        telefone: maskPhone(e.target.value),
+                      })
                     }
                     placeholder="(47) 99999-9999"
                     inputMode="tel"
@@ -380,7 +412,10 @@ export function CheckoutCliente({ unidades }: Props) {
                     id="cpf"
                     value={cliente.cpfCnpj}
                     onChange={(e) =>
-                      setCliente({ ...cliente, cpfCnpj: maskCpfCnpj(e.target.value) })
+                      setCliente({
+                        ...cliente,
+                        cpfCnpj: maskCpfCnpj(e.target.value),
+                      })
                     }
                     placeholder="000.000.000-00"
                   />
@@ -391,7 +426,9 @@ export function CheckoutCliente({ unidades }: Props) {
                     id="email"
                     type="email"
                     value={cliente.email}
-                    onChange={(e) => setCliente({ ...cliente, email: e.target.value })}
+                    onChange={(e) =>
+                      setCliente({ ...cliente, email: e.target.value })
+                    }
                     placeholder="seu@email.com"
                   />
                 </div>
@@ -403,7 +440,9 @@ export function CheckoutCliente({ unidades }: Props) {
           <Card>
             <CardContent className="space-y-4 p-5">
               <h2 className="flex items-center gap-2 font-display text-base font-bold">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">2</span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">
+                  2
+                </span>
                 Entrega ou retirada
               </h2>
 
@@ -423,7 +462,9 @@ export function CheckoutCliente({ unidades }: Props) {
                   <Store className="h-6 w-6 text-agro-blue" />
                   <div>
                     <p className="text-sm font-semibold">Retirar na loja</p>
-                    <p className="text-xs text-muted-foreground">Grátis · pronto em ~1h</p>
+                    <p className="text-xs text-muted-foreground">
+                      Grátis · pronto em ~1h
+                    </p>
                   </div>
                 </button>
                 <button
@@ -438,7 +479,9 @@ export function CheckoutCliente({ unidades }: Props) {
                   <Truck className="h-6 w-6 text-agro-blue" />
                   <div>
                     <p className="text-sm font-semibold">Receber em casa</p>
-                    <p className="text-xs text-muted-foreground">Frete por zona</p>
+                    <p className="text-xs text-muted-foreground">
+                      Frete por zona
+                    </p>
                   </div>
                 </button>
               </div>
@@ -508,7 +551,10 @@ export function CheckoutCliente({ unidades }: Props) {
                           id="rua"
                           value={endereco.logradouro}
                           onChange={(e) =>
-                            setEndereco({ ...endereco, logradouro: e.target.value })
+                            setEndereco({
+                              ...endereco,
+                              logradouro: e.target.value,
+                            })
                           }
                         />
                       </div>
@@ -529,7 +575,10 @@ export function CheckoutCliente({ unidades }: Props) {
                           id="comp"
                           value={endereco.complemento}
                           onChange={(e) =>
-                            setEndereco({ ...endereco, complemento: e.target.value })
+                            setEndereco({
+                              ...endereco,
+                              complemento: e.target.value,
+                            })
                           }
                           placeholder="Apto, bloco..."
                         />
@@ -560,7 +609,10 @@ export function CheckoutCliente({ unidades }: Props) {
                           id="ref"
                           value={endereco.referencia}
                           onChange={(e) =>
-                            setEndereco({ ...endereco, referencia: e.target.value })
+                            setEndereco({
+                              ...endereco,
+                              referencia: e.target.value,
+                            })
                           }
                           placeholder="Próximo a..., portão azul..."
                         />
@@ -599,8 +651,8 @@ export function CheckoutCliente({ unidades }: Props) {
                             Zona detectada: {zonaSugerida.nome}
                           </p>
                           <p className="text-xs text-muted-foreground">
-                            Frete {Number(zonaSugerida.frete_percentual)}% · prazo{" "}
-                            {zonaSugerida.prazo_horas}h
+                            Frete {Number(zonaSugerida.frete_percentual)}% ·
+                            prazo {zonaSugerida.prazo_horas}h
                           </p>
                         </div>
                       </div>
@@ -630,15 +682,18 @@ export function CheckoutCliente({ unidades }: Props) {
                       onChange={(e) => setZonaSelecionadaId(e.target.value)}
                     >
                       <option value="">
-                        {zonaSugerida ? "Trocar de zona..." : "Selecione uma zona..."}
+                        {zonaSugerida
+                          ? "Trocar de zona..."
+                          : "Selecione uma zona..."}
                       </option>
                       {unidades.flatMap((u) =>
                         u.zonas
                           .filter((z) => z.tipo !== "retirada")
                           .map((z) => (
                             <option key={z.id} value={z.id}>
-                              {u.nome.split("—")[1]?.trim() ?? u.nome} · {z.nome} ·{" "}
-                              {Number(z.frete_percentual)}% · {z.prazo_horas}h
+                              {u.nome.split("—")[1]?.trim() ?? u.nome} ·{" "}
+                              {z.nome} · {Number(z.frete_percentual)}% ·{" "}
+                              {z.prazo_horas}h
                             </option>
                           )),
                       )}
@@ -653,13 +708,17 @@ export function CheckoutCliente({ unidades }: Props) {
           <Card>
             <CardContent className="space-y-3 p-5">
               <h2 className="flex items-center gap-2 font-display text-base font-bold">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">3</span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">
+                  3
+                </span>
                 Pagamento
               </h2>
               <div className="flex items-center gap-3 rounded-lg border border-agro-blue/30 bg-agro-blue/5 p-4">
                 <CreditCard className="h-8 w-8 text-agro-blue" />
                 <div>
-                  <p className="text-sm font-semibold">Pix (integração em breve)</p>
+                  <p className="text-sm font-semibold">
+                    Pix (integração em breve)
+                  </p>
                   <p className="text-xs text-muted-foreground">
                     Aprovação imediata. Mercado Pago será conectado na Etapa 7.
                   </p>
@@ -741,7 +800,9 @@ export function CheckoutCliente({ unidades }: Props) {
               <div className="flex items-baseline justify-between">
                 <span className="font-medium">Total</span>
                 <span className="font-display text-xl font-bold text-agro-navy">
-                  {formatBRL(tipoEntrega === "retirada" ? subtotal : totalCents)}
+                  {formatBRL(
+                    tipoEntrega === "retirada" ? subtotal : totalCents,
+                  )}
                 </span>
               </div>
               {zona && (
@@ -784,7 +845,10 @@ export function CheckoutCliente({ unidades }: Props) {
 
               {/* Avaliação no Google (botão oficial) */}
               <div className="mt-3">
-                <BotaoAvaliacaoGoogle variant="cheio" className="w-full justify-center" />
+                <BotaoAvaliacaoGoogle
+                  variant="cheio"
+                  className="w-full justify-center"
+                />
               </div>
             </CardContent>
           </Card>

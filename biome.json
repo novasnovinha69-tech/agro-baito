@@ -1,0 +1,82 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.7/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/.next/**",
+      "!**/node_modules/**",
+      "!**/plataforma-modelos/**",
+      "!**/playwright-report/**",
+      "!**/test-results/**",
+      "!**/coverage/**",
+      "!**/*.log",
+      "!**/high-line-site.zip",
+      "!**/*.pdf"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all",
+      "arrowParentheses": "always",
+      "jsxQuoteStyle": "double"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "style": {
+        "useImportType": "warn",
+        "useNodejsImportProtocol": "warn",
+        "useTemplate": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "useBiomeIgnoreFolder": "off",
+        "noArrayIndexKey": "warn",
+        "useIterableCallbackReturn": "warn"
+      },
+      "a11y": {
+        "preset": "recommended",
+        "useButtonType": "warn",
+        "noStaticElementInteractions": "warn",
+        "useKeyWithClickEvents": "warn",
+        "useHtmlLang": "warn"
+      },
+      "complexity": {
+        "noImportantStyles": "off",
+        "noBannedTypes": "off",
+        "useOptionalChain": "warn"
+      },
+      "correctness": {
+        "noUnusedImports": "warn",
+        "noUnusedVariables": "warn",
+        "useExhaustiveDependencies": "warn",
+        "useParseIntRadix": "warn"
+      },
+      "performance": {
+        "noDynamicNamespaceImportAccess": "off"
+      }
+    }
+  },
+  "css": {
+    "linter": {
+      "enabled": false
+    }
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } }
+}
