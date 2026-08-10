@@ -82,6 +82,39 @@
   background-color: #1ebe5d;
 }
 
+/* ============================================================================
+   SHIMMER (skeleton loading)
+   Lens Jakub Krehel: brilho suave e continuo, NAO pulsante (evita AI-slop).
+   O gradient desliza da esquerda para a direita criando a sensacao de
+   "materializando" (blur/focus) sem chamar atencao — a melhor animacao
+   e aquela que passa despercebida.
+   ========================================================================== */
+@keyframes agro-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background-image: linear-gradient(
+    90deg,
+    hsl(var(--muted) / 0.4) 0%,
+    hsl(var(--muted) / 0.85) 50%,
+    hsl(var(--muted) / 0.4) 100%
+  );
+  background-size: 200% 100%;
+  animation: agro-shimmer 1.6s ease-in-out infinite;
+}
+
+/* Acessibilidade (OBRIGATORIO segundo design-motion-principles):
+   usuarios com prefers-reduced-motion veem um skeleton estatico, sem movimento. */
+@media (prefers-reduced-motion: reduce) {
+  .shimmer {
+    animation: none;
+    background-image: none;
+    background-color: hsl(var(--muted) / 0.7);
+  }
+}
+
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: hsl(var(--muted-foreground) / 0.3); border-radius: 9999px; }

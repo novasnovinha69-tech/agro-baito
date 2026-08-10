@@ -1,4 +1,4 @@
-import { CatalogoCliente } from "@/components/loja/catalogo-cliente";
+import { CatalogoCliente } from "@/components/loja/catalogo-cliente-dynamic";
 import { listarProdutos, listarCategorias } from "@/lib/data";
 
 export const metadata = { title: "Buscar" };

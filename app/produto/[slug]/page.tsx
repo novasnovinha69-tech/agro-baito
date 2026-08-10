@@ -1,6 +1,22 @@
+import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { obterProdutoPorSlug } from "@/lib/data";
-import { ProdutoDetalhe } from "@/components/loja/produto-detalhe";
+import { ProdutoDetalheSkeleton } from "@/components/loja/produto-detalhe-skeleton";
+
+/**
+ * ProdutoDetalhe (client component com seletor de qty, galeria, add ao carrinho)
+ * carregado via next/dynamic para code-split do bundle. SSR mantido para SEO.
+ *
+ * Motion principle (Emil - performance): lazy load de codigo nao critico.
+ */
+const ProdutoDetalhe = dynamic(
+  () =>
+    import("@/components/loja/produto-detalhe").then((m) => m.ProdutoDetalhe),
+  {
+    ssr: true,
+    loading: () => <ProdutoDetalheSkeleton />,
+  },
+);
 
 export async function generateMetadata({
   params,
