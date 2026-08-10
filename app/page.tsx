@@ -1,17 +1,12 @@
 import * as Icons from "lucide-react";
 import {
-  Bone,
   ChevronRight,
   Clock,
   MapPin,
   MessageCircle,
   Package,
-  Pill,
   ShieldCheck,
-  Sparkles,
-  Sprout,
   Truck,
-  Wheat,
 } from "lucide-react";
 import Link from "next/link";
 import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
@@ -21,56 +16,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { listarCategorias, listarProdutos } from "@/lib/data";
 import { LOJA, linkWhatsApp } from "@/lib/loja-config";
-
-// Ícone por slug de categoria (fallback Package)
-const ICONES_CATEGORIA: Record<string, Icons.LucideIcon> = {
-  racoes: Wheat,
-  "acessorios-pet": Bone,
-  veterinaria: Pill,
-  higiene: Sparkles,
-  jardinagem: Sprout,
-  agro: Sprout,
-};
-
-// Cartões do hero — ícones vetoriais. Cada card é um LINK pra categoria.
-const HERO_CARDS = [
-  {
-    icon: Wheat,
-    cor: "text-agro-orange-light",
-    label: "Rações",
-    href: "/categoria/racoes",
-  },
-  {
-    icon: Bone,
-    cor: "text-agro-green-bright",
-    label: "Acessórios",
-    href: "/categoria/acessorios-pet",
-  },
-  {
-    icon: Pill,
-    cor: "text-agro-orange-light",
-    label: "Veterinária",
-    href: "/categoria/veterinaria",
-  },
-  {
-    icon: Sparkles,
-    cor: "text-agro-green-bright",
-    label: "Higiene",
-    href: "/categoria/higiene",
-  },
-  {
-    icon: Sprout,
-    cor: "text-agro-orange-light",
-    label: "Jardinagem",
-    href: "/categoria/jardinagem",
-  },
-  {
-    icon: Sprout,
-    cor: "text-agro-green-bright",
-    label: "Agro",
-    href: "/categoria/agro",
-  },
-];
 
 export default async function HomePage() {
   const [produtos, categorias] = await Promise.all([
@@ -87,22 +32,20 @@ export default async function HomePage() {
           <div>
             <div className="mb-4 flex flex-wrap gap-2">
               <span className="badge-agro bg-agro-orange/90 text-white">
-                ⭐ 20 ANOS DE TRADIÇÃO
+                {LOJA.heroBadge1}
               </span>
               <span className="badge-agro bg-white/20 text-white">
-                🚚 Entregas no Litoral Norte
+                {LOJA.heroBadge2}
               </span>
             </div>
             <h1 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">
-              Somos loucos por{" "}
-              <span className="text-agro-orange-light">PET!</span>
-              <br />
-              20 anos cuidando do seu melhor amigo.
+              {LOJA.heroTitulo}{" "}
+              <span className="text-agro-orange-light">
+                {LOJA.heroDestaque}
+              </span>
             </h1>
             <p className="mt-4 max-w-md text-white/85 md:text-lg">
-              Há <strong>20 anos</strong> a Agro Baito é referência em rações,
-              acessórios pet, veterinária, jardinagem e produtos agro em Porto
-              Belo, Bombinhas e Itapema.
+              {LOJA.heroTexto}
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="xl" variant="accent">
@@ -112,9 +55,7 @@ export default async function HomePage() {
               </Button>
               <Button asChild size="xl" variant="whatsapp">
                 <a
-                  href={linkWhatsApp(
-                    "Olá! Vim pelo site da Agro Baito e gostaria de atendimento.",
-                  )}
+                  href={linkWhatsApp(LOJA.heroTextoBotao)}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -132,24 +73,33 @@ export default async function HomePage() {
                 <Truck className="h-4 w-4 text-white" /> Entrega própria
               </span>
               <span className="flex items-center gap-1">
-                <MapPin className="h-4 w-4 text-white" /> 3 lojas na região
+                <MapPin className="h-4 w-4 text-white" /> {LOJA.unidades.length}{" "}
+                loja(s) na região
               </span>
             </div>
           </div>
 
-          {/* Grade de cartões com ÍCONES — cada um leva para sua categoria */}
+          {/* Grade de cartões — segmentos/categorias da loja */}
           <div className="grid grid-cols-3 gap-3">
-            {HERO_CARDS.map((card, i) => {
-              const Icon = card.icon;
+            {categorias.slice(0, 6).map((cat) => {
+              const Icon =
+                (cat.icone &&
+                  (Icons[
+                    cat.icone as keyof typeof Icons
+                  ] as Icons.LucideIcon)) ||
+                Package;
               return (
                 <Link
-                  key={i}
-                  href={card.href}
+                  key={cat.id}
+                  href={`/categoria/${cat.slug}`}
                   className="flex aspect-square flex-col items-center justify-center gap-2 rounded-2xl bg-white/15 p-3 text-center backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/25"
                 >
-                  <Icon className={`h-9 w-9 ${card.cor}`} strokeWidth={1.8} />
+                  <Icon
+                    className="h-9 w-9 text-agro-orange-light"
+                    strokeWidth={1.8}
+                  />
                   <span className="text-xs font-semibold text-white/95 md:text-sm">
-                    {card.label}
+                    {cat.nome}
                   </span>
                 </Link>
               );
@@ -162,7 +112,7 @@ export default async function HomePage() {
       <section className="border-b bg-card">
         <div className="container-agro grid grid-cols-2 gap-4 py-6 md:grid-cols-4">
           {[
-            { icon: Truck, titulo: "Entrega rápida", texto: "Litoral Norte" },
+            { icon: Truck, titulo: "Entrega rápida", texto: LOJA.regiao },
             {
               icon: ShieldCheck,
               titulo: "Produtos originais",
@@ -171,7 +121,7 @@ export default async function HomePage() {
             {
               icon: Clock,
               titulo: "Retire na loja",
-              texto: "Perequê, Bombas, Itapema",
+              texto: LOJA.cidade,
             },
             {
               icon: MessageCircle,
@@ -213,11 +163,9 @@ export default async function HomePage() {
 
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
           {categorias.map((cat) => {
-            const Icon =
-              ICONES_CATEGORIA[cat.slug] ??
-              (cat.icone
-                ? (Icons[cat.icone as keyof typeof Icons] as Icons.LucideIcon)
-                : Package);
+            const Icon = cat.icone
+              ? (Icons[cat.icone as keyof typeof Icons] as Icons.LucideIcon)
+              : Package;
             return (
               <Link
                 key={cat.id}

@@ -1,34 +1,33 @@
-import { Sprout, Heart, Truck, MapPin, Award } from "lucide-react";
-import { LOJA } from "@/lib/loja-config";
-import { linkWhatsApp } from "@/lib/loja-config";
-import { Button } from "@/components/ui/button";
+import { Award, Heart, Truck } from "lucide-react";
 import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
+import { Button } from "@/components/ui/button";
+import { LOJA, linkWhatsApp } from "@/lib/loja-config";
 
 export const metadata = {
   title: "Sobre nós",
   description:
-    "Há 20 anos a Agro Baito é referência em rações, acessórios pet, veterinária e produtos agro em Porto Belo, Bombinhas e Itapema.",
+    "Conheça a história e a missão da empresa. Página de demonstração — personalize com os dados reais do seu negócio.",
 };
 
 export default function SobrePage() {
   const valores = [
     {
       icon: Heart,
-      titulo: "Loucos por PET",
+      titulo: "Seu diferencial 1",
       texto:
-        "Tratamos cada animal como se fosse nosso. Paixão por pets em cada atendimento.",
+        "Descreva aqui o que faz sua empresa especial. Este texto é um placeholder — ao contratar, personalizamos com a mensagem real do seu negócio.",
     },
     {
       icon: Award,
-      titulo: "20 anos de tradição",
+      titulo: "Seu diferencial 2",
       texto:
-        "Duas décadas de confiança, qualidade e serviço no Litoral Norte de SC.",
+        "Outro ponto forte da sua empresa. Por exemplo: anos de experiência, certificações, prêmios, tradição no mercado.",
     },
     {
       icon: Truck,
-      titulo: "Entrega própria",
+      titulo: "Seu diferencial 3",
       texto:
-        "Frota própria para entregar rápido em Porto Belo, Bombinhas e Itapema.",
+        "Mais um motivo para escolher sua empresa. Exemplo: entrega própria, atendimento personalizado, produtos exclusivos.",
     },
   ];
 
@@ -38,15 +37,13 @@ export default function SobrePage() {
       <section className="bg-agro-gradient text-white">
         <div className="container-agro py-16 text-center">
           <span className="badge-agro mb-4 inline-block bg-agro-orange/90 text-white">
-            ⭐ 20 ANOS DE TRADIÇÃO
+            ⭐ SEU DIFERENCIAL AQUI
           </span>
           <h1 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">
-            Somos loucos por PET! 🐾
+            Sobre a {LOJA.nome}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/85">
-            Há <strong>20 anos</strong> a Agro Baito é referência em rações,
-            acessórios pet, veterinária, jardinagem e produtos agro em Porto
-            Belo, Bombinhas e Itapema.
+            {LOJA.heroTexto}
           </p>
         </div>
       </section>
@@ -82,21 +79,15 @@ export default function SobrePage() {
           </h2>
           <div className="mt-4 space-y-4 text-muted-foreground">
             <p>
-              Tudo começou há 20 anos, com um sonho simples: oferecer produtos de
-              qualidade e atendimento de verdade para quem ama animais e tem uma
-              roça para cuidar. O que era uma loja pequena no Perequê, em Porto
-              Belo, virou referência em todo o Litoral Norte de Santa Catarina.
+              Este é um espaço para contar a história da sua empresa — quando
+              fundou, como cresceu, quais marcos importantes aconteceram. Ao
+              contratar, escrevemos este texto juntos para refletir a trajetória
+              real do seu negócio.
             </p>
             <p>
-              Hoje são <strong>3 lojas</strong> — Perequê (Porto Belo), Bombas
-              (Bombinhas) e Meia Praia (Itapema) — atendendo milhares de clientes
-              que confiam na gente para tudo que seus bichinhos, jardins e
-              propriedades precisam.
-            </p>
-            <p>
-              Somos <strong className="text-agro-green-dark">loucos por PET</strong>{" "}
-              e orgulhosos de ser parte da vida das famílias da nossa região. E
-              agora estamos online para servir ainda melhor!
+              Hoje são <strong>{LOJA.unidades.length} loja(s)</strong> atendendo
+              a região de <strong>{LOJA.regiao}</strong>. Cada uma com seu
+              WhatsApp próprio e endereço configurável no painel administrativo.
             </p>
           </div>
         </div>
@@ -105,14 +96,18 @@ export default function SobrePage() {
       {/* Lojas */}
       <section className="container-agro py-12">
         <h2 className="mb-6 text-center font-display text-2xl font-bold text-agro-blue-dark">
-          Nossas 3 lojas
+          Nossas lojas
         </h2>
         <div className="grid gap-4 md:grid-cols-3">
           {LOJA.unidades.map((u) => (
             <div key={u.nome} className="rounded-xl border bg-card p-5">
-              <MapPin className="h-6 w-6 text-agro-blue" />
-              <h3 className="mt-2 font-semibold">{u.nome}</h3>
+              <h3 className="font-semibold">{u.nome}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{u.endereco}</p>
+              {u.telefone && (
+                <p className="mt-1 text-sm font-medium text-agro-blue">
+                  {u.telefone}
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -120,9 +115,7 @@ export default function SobrePage() {
         <div className="mt-8 text-center">
           <Button asChild variant="whatsapp" size="xl">
             <a
-              href={linkWhatsApp(
-                "Olá! Vim pelo site da Agro Baito e gostaria de atendimento.",
-              )}
+              href={linkWhatsApp(LOJA.heroTextoBotao)}
               target="_blank"
               rel="noreferrer"
             >
