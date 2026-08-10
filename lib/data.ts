@@ -1,17 +1,9 @@
 import "server-only";
 
+import type { Categoria, Produto, ProdutoComCategoria } from "@/lib/carrinho";
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { mockCategorias, mockProdutos, mockUnidades } from "@/lib/mock-data";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import {
-  mockCategorias,
-  mockProdutos,
-  mockUnidades,
-} from "@/lib/mock-data";
-import type {
-  Categoria,
-  Produto,
-  ProdutoComCategoria,
-} from "@/lib/carrinho";
 import type { Unidade, ZonaEntrega } from "@/types/database.types";
 
 // =============================================================================

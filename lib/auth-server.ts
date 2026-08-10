@@ -39,9 +39,10 @@ export async function isMaster(): Promise<boolean> {
  * Verifica a permissão e retorna null se ok, ou um redirect para /admin/sem-permissao
  * Use em Server Components do painel: const denied = await requireRole('master');
  */
-export async function requireRole(
-  roleMinimo: "master" | "admin",
-): Promise<{ allowed: boolean; admin: Awaited<ReturnType<typeof getAdminAtual>> }> {
+export async function requireRole(roleMinimo: "master" | "admin"): Promise<{
+  allowed: boolean;
+  admin: Awaited<ReturnType<typeof getAdminAtual>>;
+}> {
   const admin = await getAdminAtual();
   if (!admin) return { allowed: false, admin: null };
   if (roleMinimo === "master" && admin.role !== "master") {

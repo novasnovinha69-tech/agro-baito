@@ -1,12 +1,12 @@
-import { Truck, MapPin, Clock } from "lucide-react";
+import { Clock, MapPin, Truck } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
+  CardDescription,
   CardHeader,
   CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { listarUnidadesComZonas } from "@/lib/data";
 
 export default async function AdminZonasPage() {
@@ -75,9 +75,9 @@ export default async function AdminZonasPage() {
                 ))}
               </div>
               <p className="mt-3 flex items-center gap-1.5 text-xs text-muted-foreground">
-                <Truck className="h-3.5 w-3.5" />
-                O frete é calculado automaticamente no checkout como % sobre o
-                subtotal dos produtos.
+                <Truck className="h-3.5 w-3.5" />O frete é calculado
+                automaticamente no checkout como % sobre o subtotal dos
+                produtos.
               </p>
             </CardContent>
           </Card>

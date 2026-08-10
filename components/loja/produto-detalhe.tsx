@@ -1,29 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import {
+  AlertTriangle,
+  ChevronRight,
+  Minus,
+  Package,
+  Plus,
+  ShieldCheck,
+  ShoppingCart,
+  Truck,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Minus,
-  Plus,
-  ShoppingCart,
-  Package,
-  ShieldCheck,
-  Truck,
-  ChevronRight,
-  AlertTriangle,
-} from "lucide-react";
+import { useState } from "react";
 import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { useCarrinho } from "@/lib/store/carrinho";
-import { formatBRL, formatBRLValue, formatPeso } from "@/lib/money";
 import {
   precoEfetivoCents,
-  temPromocao,
   precoPorUnidadeCents,
+  temPromocao,
 } from "@/lib/carrinho";
+import { formatBRL, formatBRLValue, formatPeso } from "@/lib/money";
+import { useCarrinho } from "@/lib/store/carrinho";
 import type { Produto } from "@/types/database.types";
 
 export function ProdutoDetalhe({ produto }: { produto: Produto }) {
@@ -39,7 +39,8 @@ export function ProdutoDetalhe({ produto }: { produto: Produto }) {
 
   function clamp(v: number) {
     let n = Math.max(produto.qtd_minima, v);
-    if (produto.multiplo > 1) n = Math.ceil(n / produto.multiplo) * produto.multiplo;
+    if (produto.multiplo > 1)
+      n = Math.ceil(n / produto.multiplo) * produto.multiplo;
     return Math.min(n, produto.estoque);
   }
 
@@ -94,7 +95,8 @@ export function ProdutoDetalhe({ produto }: { produto: Produto }) {
 
           {produto.preco_por_kg && produto.peso_kg ? (
             <p className="mt-2 text-sm text-muted-foreground">
-              Vendido por peso · Embalagem de {formatPeso(Number(produto.peso_kg))}
+              Vendido por peso · Embalagem de{" "}
+              {formatPeso(Number(produto.peso_kg))}
             </p>
           ) : null}
 
@@ -123,9 +125,7 @@ export function ProdutoDetalhe({ produto }: { produto: Produto }) {
                 </strong>
               </p>
             ) : null}
-            <p className="mt-1 text-xs text-muted-foreground">
-              à vista no Pix
-            </p>
+            <p className="mt-1 text-xs text-muted-foreground">à vista no Pix</p>
           </div>
 
           {/* Estoque */}
@@ -163,7 +163,11 @@ export function ProdutoDetalhe({ produto }: { produto: Produto }) {
                   <input
                     value={qtd}
                     onChange={(e) =>
-                      setQtd(clamp(parseInt(e.target.value.replace(/\D/g, "") || "1")))
+                      setQtd(
+                        clamp(
+                          parseInt(e.target.value.replace(/\D/g, "") || "1"),
+                        ),
+                      )
                     }
                     className="h-11 w-14 border-x bg-transparent text-center font-semibold"
                     inputMode="numeric"

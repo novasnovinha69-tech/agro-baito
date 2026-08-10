@@ -51,16 +51,16 @@ const config: Config = {
         },
         // Marca — verde escuro + laranja (AgroBaito V3)
         agro: {
-          green: "#0F5132",          // verde floresta escuro (primária)
-          "green-dark": "#0A3D26",   // verde ainda mais escuro
-          "green-light": "#1A6B45",  // verde médio (hover)
+          green: "#0F5132", // verde floresta escuro (primária)
+          "green-dark": "#0A3D26", // verde ainda mais escuro
+          "green-light": "#1A6B45", // verde médio (hover)
           "green-bright": "#22C55E", // verde brilhante (sucesso)
-          orange: "#F97316",         // laranja vibrante (acento/ação)
-          "orange-dark": "#C2410C",  // laranja escuro
+          orange: "#F97316", // laranja vibrante (acento/ação)
+          "orange-dark": "#C2410C", // laranja escuro
           "orange-light": "#FB923C", // laranja claro (hover)
-          amber: "#F59E0B",          // âmbar (badges)
+          amber: "#F59E0B", // âmbar (badges)
           "amber-dark": "#B45309",
-          navy: "#1E293B",           // slate-800 (textos)
+          navy: "#1E293B", // slate-800 (textos)
           gray: "#64748B",
           "gray-light": "#F1F5F9",
           // Aliases antigos apontando p/ nova paleta (não quebrar componentes)

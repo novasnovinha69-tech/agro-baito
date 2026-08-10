@@ -1,12 +1,9 @@
-import Link from "next/link";
+import { Package, Pencil, Plus } from "lucide-react";
 import Image from "next/image";
-import { Plus, Package, Pencil } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { adminListarProdutos } from "@/lib/admin-data";
 import { formatBRL } from "@/lib/money";
 

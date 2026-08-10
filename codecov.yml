@@ -1,0 +1,31 @@
+# Codecov — configuracao de cobertura
+# Docs: https://docs.codecov.com/docs/codecovyml-reference
+coverage:
+  status:
+    project:
+      default:
+        target: 80% # meta de cobertura do projeto
+        threshold: 5% # tolera cair 5% sem falhar o CI
+        only_pulls: true
+    patch:
+      default:
+        target: 80% # novas linhas cobertas em 80%
+
+# Foca a metrica apenas no codigo de negocio (lib/), nao em configs/tests
+ignore:
+  - "app/**"
+  - "components/**"
+  - "e2e/**"
+  - "*.config.ts"
+  - "*.config.mjs"
+  - "*.config.js"
+  - "vitest.setup.ts"
+  - "instrumentation.ts"
+  - "sentry.*.config.ts"
+  - "middleware.ts"
+  - "plataforma-modelos/**"
+
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false

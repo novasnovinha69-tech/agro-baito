@@ -4,8 +4,7 @@ import type { Database } from "@/types/database.types";
 export type Categoria = Database["public"]["Tables"]["categorias"]["Row"];
 export type Produto = Database["public"]["Tables"]["produtos"]["Row"];
 export type Unidade = Database["public"]["Tables"]["unidades"]["Row"];
-export type ZonaEntrega =
-  Database["public"]["Tables"]["zonas_entrega"]["Row"];
+export type ZonaEntrega = Database["public"]["Tables"]["zonas_entrega"]["Row"];
 export type StatusPedido =
   Database["public"]["Tables"]["pedidos"]["Row"]["status"];
 

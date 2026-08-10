@@ -17,9 +17,7 @@ export type EnderecoViaCep = {
  * Busca endereço pelo CEP. Retorna null se não achar.
  * Gratuita, sem chave, sem limite prático para uso normal.
  */
-export async function buscarCep(
-  cep: string,
-): Promise<EnderecoViaCep | null> {
+export async function buscarCep(cep: string): Promise<EnderecoViaCep | null> {
   const limpo = cep.replace(/\D/g, "");
   if (limpo.length !== 8) return null;
 
@@ -59,14 +57,17 @@ export function casarZonaPorEndereco(
   const cidadeNorm = norm(endereco.localidade ?? endereco.cidade);
 
   // 1) Tenta casar bairro exato
-  let zona = zonas.find((z) => z.tipo === "bairro" && norm(z.valor) === bairroNorm);
+  let zona = zonas.find(
+    (z) => z.tipo === "bairro" && norm(z.valor) === bairroNorm,
+  );
   if (zona) return zona;
   // 2) Bairro parcial (zona valor contida no bairro ou vice-versa)
   zona = zonas.find(
     (z) =>
       z.tipo === "bairro" &&
       bairroNorm &&
-      (bairroNorm.includes(norm(z.valor)) || norm(z.valor).includes(bairroNorm)),
+      (bairroNorm.includes(norm(z.valor)) ||
+        norm(z.valor).includes(bairroNorm)),
   );
   if (zona) return zona;
 
@@ -78,7 +79,8 @@ export function casarZonaPorEndereco(
     (z) =>
       z.tipo === "cidade" &&
       cidadeNorm &&
-      (cidadeNorm.includes(norm(z.valor)) || norm(z.valor).includes(cidadeNorm)),
+      (cidadeNorm.includes(norm(z.valor)) ||
+        norm(z.valor).includes(cidadeNorm)),
   );
   return zona ?? null;
 }

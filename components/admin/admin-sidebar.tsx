@@ -1,25 +1,24 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import {
-  LayoutDashboard,
-  Package,
-  ShoppingCart,
-  Truck,
   AlertTriangle,
-  Settings,
-  Sprout,
-  LogOut,
-  Home,
   Crown,
+  Home,
+  LayoutDashboard,
+  LogOut,
+  Package,
+  Settings,
+  ShoppingCart,
+  Sprout,
+  Truck,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { createSupabaseBrowserClient } from "@/lib/supabase/client";
-import { useRouter } from "next/navigation";
-import { isSupabaseConfigured } from "@/lib/carrinho";
-import type { Role } from "@/lib/auth-server";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
+import type { Role } from "@/lib/auth-server";
+import { isSupabaseConfigured } from "@/lib/carrinho";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { cn } from "@/lib/utils";
 
 type ItemMenu = {
   href: string;
@@ -30,21 +29,45 @@ type ItemMenu = {
 };
 
 const LINKS: ItemMenu[] = [
-  { href: "/admin", label: "Dashboard", icon: LayoutDashboard, acesso: "admin" },
-  { href: "/admin/produtos", label: "Produtos", icon: Package, acesso: "admin" },
-  { href: "/admin/pedidos", label: "Pedidos", icon: ShoppingCart, acesso: "admin" },
-  { href: "/admin/estoque", label: "Estoque", icon: AlertTriangle, acesso: "admin" },
-  { href: "/admin/zonas-entrega", label: "Zonas de Entrega", icon: Truck, acesso: "admin" },
-  { href: "/admin/configuracoes", label: "Configurações", icon: Settings, acesso: "master" },
+  {
+    href: "/admin",
+    label: "Dashboard",
+    icon: LayoutDashboard,
+    acesso: "admin",
+  },
+  {
+    href: "/admin/produtos",
+    label: "Produtos",
+    icon: Package,
+    acesso: "admin",
+  },
+  {
+    href: "/admin/pedidos",
+    label: "Pedidos",
+    icon: ShoppingCart,
+    acesso: "admin",
+  },
+  {
+    href: "/admin/estoque",
+    label: "Estoque",
+    icon: AlertTriangle,
+    acesso: "admin",
+  },
+  {
+    href: "/admin/zonas-entrega",
+    label: "Zonas de Entrega",
+    icon: Truck,
+    acesso: "admin",
+  },
+  {
+    href: "/admin/configuracoes",
+    label: "Configurações",
+    icon: Settings,
+    acesso: "master",
+  },
 ];
 
-export function AdminSidebar({
-  role,
-  nome,
-}: {
-  role: Role;
-  nome?: string;
-}) {
+export function AdminSidebar({ role, nome }: { role: Role; nome?: string }) {
   const pathname = usePathname();
   const router = useRouter();
   const configurado = isSupabaseConfigured();
@@ -171,7 +194,9 @@ export function AdminTopbar({ role, nome }: { role: Role; nome?: string }) {
       <div className="flex min-w-0 items-center gap-2">
         <Sprout className="h-5 w-5 shrink-0 text-agro-blue-light" />
         <div className="min-w-0 leading-tight">
-          <span className="block font-display text-sm font-bold">Agro Baito</span>
+          <span className="block font-display text-sm font-bold">
+            Agro Baito
+          </span>
           {nome ? (
             <span className="flex items-center gap-1 text-[10px] text-white/70">
               {ehMaster ? (

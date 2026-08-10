@@ -1,18 +1,18 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import { Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { useCarrinho } from "@/lib/store/carrinho";
 import { formatBRL } from "@/lib/money";
+import { useCarrinho } from "@/lib/store/carrinho";
 
 export function CartDrawer() {
   const { itens, aberto, fechar, atualizarQuantidade, remover, subtotalCents } =
@@ -76,7 +76,8 @@ export function CartDrawer() {
                     </Link>
                     {i.precoPorKg && i.pesoKg ? (
                       <p className="text-xs text-muted-foreground">
-                        {i.pesoKg.toString().replace(".", ",")} kg · preço por kg
+                        {i.pesoKg.toString().replace(".", ",")} kg · preço por
+                        kg
                       </p>
                     ) : null}
                     <p className="mt-0.5 text-sm font-semibold text-agro-blue-dark">
@@ -100,7 +101,9 @@ export function CartDrawer() {
                           onChange={(e) =>
                             atualizarQuantidade(
                               i.produtoId,
-                              parseInt(e.target.value.replace(/\D/g, "") || "1"),
+                              parseInt(
+                                e.target.value.replace(/\D/g, "") || "1",
+                              ),
                             )
                           }
                           className="h-7 w-10 border-x bg-transparent text-center text-sm"

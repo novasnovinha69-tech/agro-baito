@@ -1,25 +1,20 @@
-import Link from "next/link";
 import {
-  ShoppingCart,
-  Package,
   AlertTriangle,
+  ArrowRight,
+  Package,
+  Plus,
+  ShoppingCart,
   TrendingUp,
   Truck,
-  Plus,
-  ArrowRight,
 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  adminListarProdutos,
-  adminListarPedidos,
   adminEstoqueBaixo,
+  adminListarPedidos,
+  adminListarProdutos,
 } from "@/lib/admin-data";
 import { formatBRL } from "@/lib/money";
 import { STATUS_INFO } from "@/lib/status-pedido";
@@ -130,10 +125,7 @@ export default async function AdminDashboardPage() {
                         {p.tipo_entrega === "retirada" ? "Retirada" : "Entrega"}
                       </p>
                     </div>
-                    <Badge
-                      variant={info.variant}
-                      className="ml-2 shrink-0"
-                    >
+                    <Badge variant={info.variant} className="ml-2 shrink-0">
                       {info.label}
                     </Badge>
                   </Link>
@@ -180,9 +172,7 @@ export default async function AdminDashboardPage() {
                     variant={item.estoque === 0 ? "destructive" : "warn"}
                     className="ml-2 shrink-0"
                   >
-                    {item.estoque === 0
-                      ? "Sem estoque"
-                      : `${item.estoque} un.`}
+                    {item.estoque === 0 ? "Sem estoque" : `${item.estoque} un.`}
                   </Badge>
                 </div>
               ))

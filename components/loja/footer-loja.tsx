@@ -1,6 +1,13 @@
+import {
+  Clock,
+  Instagram,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Sprout,
+} from "lucide-react";
 import Link from "next/link";
-import { Sprout, Instagram, Phone, MapPin, MessageCircle, Clock } from "lucide-react";
-import { LOJA, LINKS_NAV, linkWhatsApp } from "@/lib/loja-config";
+import { LINKS_NAV, LOJA, linkWhatsApp } from "@/lib/loja-config";
 
 export function FooterLoja() {
   return (
@@ -13,7 +20,9 @@ export function FooterLoja() {
               <Sprout className="h-6 w-6 text-agro-blue-dark" />
             </div>
             <div className="leading-tight">
-              <p className="font-display text-base font-extrabold">Agro Baito</p>
+              <p className="font-display text-base font-extrabold">
+                Agro Baito
+              </p>
               <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-white">
                 Animal
               </p>
@@ -80,9 +89,7 @@ export function FooterLoja() {
               <Clock className="h-4 w-4 text-white" />
               <span>
                 <strong className="block text-white">Horário</strong>
-                <span className="text-white/70">
-                  {LOJA.horarioAtendimento}
-                </span>
+                <span className="text-white/70">{LOJA.horarioAtendimento}</span>
               </span>
             </li>
             <li className="flex items-center gap-2">
@@ -105,11 +112,10 @@ export function FooterLoja() {
       <div className="border-t border-white/10">
         <div className="container-agro flex flex-col items-center justify-between gap-2 py-4 text-xs text-white/60 md:flex-row">
           <p>
-            © {new Date().getFullYear()} {LOJA.nome}. Todos os direitos reservados.
+            © {new Date().getFullYear()} {LOJA.nome}. Todos os direitos
+            reservados.
           </p>
-          <p>
-            Pagamento via Pix · Entrega própria em {LOJA.cidade} e região
-          </p>
+          <p>Pagamento via Pix · Entrega própria em {LOJA.cidade} e região</p>
         </div>
       </div>
     </footer>

@@ -1,29 +1,17 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { ImageIcon, Loader2, Save, Trash2, Upload, X } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
-import {
-  Save,
-  Upload,
-  X,
-  Loader2,
-  ImageIcon,
-  Trash2,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 import type { Categoria } from "@/types/database.types";
 
 type ProdutoForm = {
@@ -145,9 +133,7 @@ export function ProdutoForm({
       atualizar("foto_url", data.publicUrl);
       toast.success("Foto enviada com sucesso!");
     } catch (err) {
-      toast.error(
-        err instanceof Error ? err.message : "Erro ao enviar foto.",
-      );
+      toast.error(err instanceof Error ? err.message : "Erro ao enviar foto.");
       setPreviewFoto(produto?.foto_url ?? null);
     } finally {
       setSubindoFoto(false);
@@ -197,9 +183,7 @@ export function ProdutoForm({
       } else {
         // Criar
         const { id: _id, ...paraInsert } = dados;
-        const { error } = await sb
-          .from("produtos")
-          .insert(paraInsert as never);
+        const { error } = await sb.from("produtos").insert(paraInsert as never);
         if (error) throw error;
         toast.success("Produto cadastrado!");
       }
@@ -316,14 +300,21 @@ export function ProdutoForm({
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="preco">
-                    Preço (R$) * <span className="text-xs text-muted-foreground">— use vírgula</span>
+                    Preço (R$) *{" "}
+                    <span className="text-xs text-muted-foreground">
+                      — use vírgula
+                    </span>
                   </Label>
                   <Input
                     id="preco"
                     type="number"
                     step="0.01"
                     min="0"
-                    value={form.preco_cents ? (form.preco_cents / 100).toString() : ""}
+                    value={
+                      form.preco_cents
+                        ? (form.preco_cents / 100).toString()
+                        : ""
+                    }
                     onChange={(e) =>
                       atualizar(
                         "preco_cents",
@@ -337,7 +328,9 @@ export function ProdutoForm({
                 <div className="space-y-2">
                   <Label htmlFor="preco-promo">
                     Preço promocional (R$){" "}
-                    <span className="text-xs text-muted-foreground">— opcional</span>
+                    <span className="text-xs text-muted-foreground">
+                      — opcional
+                    </span>
                   </Label>
                   <Input
                     id="preco-promo"
@@ -414,7 +407,9 @@ export function ProdutoForm({
               <div className="space-y-2">
                 <Label htmlFor="estoque-min">
                   Estoque mínimo{" "}
-                  <span className="text-xs text-muted-foreground">— alerta</span>
+                  <span className="text-xs text-muted-foreground">
+                    — alerta
+                  </span>
                 </Label>
                 <Input
                   id="estoque-min"
@@ -422,10 +417,7 @@ export function ProdutoForm({
                   min="0"
                   value={form.estoque_minimo}
                   onChange={(e) =>
-                    atualizar(
-                      "estoque_minimo",
-                      parseInt(e.target.value || "0"),
-                    )
+                    atualizar("estoque_minimo", parseInt(e.target.value || "0"))
                   }
                 />
               </div>

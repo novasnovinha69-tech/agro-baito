@@ -37,10 +37,7 @@ export async function POST(req: NextRequest) {
       );
     }
     if (!STATUS_VALIDOS.includes(status as StatusPedido)) {
-      return NextResponse.json(
-        { erro: "Status inválido." },
-        { status: 400 },
-      );
+      return NextResponse.json({ erro: "Status inválido." }, { status: 400 });
     }
 
     // 1) Valida sessão + role admin (camada de segurança)

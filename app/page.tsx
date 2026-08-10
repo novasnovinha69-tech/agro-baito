@@ -1,29 +1,26 @@
-import Link from "next/link";
+import * as Icons from "lucide-react";
 import {
-  Truck,
-  ShieldCheck,
-  MessageCircle,
+  Bone,
   ChevronRight,
-  MapPin,
   Clock,
+  MapPin,
+  MessageCircle,
   Package,
+  Pill,
+  ShieldCheck,
   Sparkles,
   Sprout,
-  Pill,
+  Truck,
   Wheat,
-  Bone,
 } from "lucide-react";
+import Link from "next/link";
+import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
+import { ProductCard } from "@/components/loja/product-card";
+import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ProductCard } from "@/components/loja/product-card";
-import {
-  listarProdutos,
-  listarCategorias,
-} from "@/lib/data";
+import { listarCategorias, listarProdutos } from "@/lib/data";
 import { LOJA, linkWhatsApp } from "@/lib/loja-config";
-import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
-import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
-import * as Icons from "lucide-react";
 
 // Ícone por slug de categoria (fallback Package)
 const ICONES_CATEGORIA: Record<string, Icons.LucideIcon> = {
@@ -37,12 +34,42 @@ const ICONES_CATEGORIA: Record<string, Icons.LucideIcon> = {
 
 // Cartões do hero — ícones vetoriais. Cada card é um LINK pra categoria.
 const HERO_CARDS = [
-  { icon: Wheat, cor: "text-agro-orange-light", label: "Rações", href: "/categoria/racoes" },
-  { icon: Bone, cor: "text-agro-green-bright", label: "Acessórios", href: "/categoria/acessorios-pet" },
-  { icon: Pill, cor: "text-agro-orange-light", label: "Veterinária", href: "/categoria/veterinaria" },
-  { icon: Sparkles, cor: "text-agro-green-bright", label: "Higiene", href: "/categoria/higiene" },
-  { icon: Sprout, cor: "text-agro-orange-light", label: "Jardinagem", href: "/categoria/jardinagem" },
-  { icon: Sprout, cor: "text-agro-green-bright", label: "Agro", href: "/categoria/agro" },
+  {
+    icon: Wheat,
+    cor: "text-agro-orange-light",
+    label: "Rações",
+    href: "/categoria/racoes",
+  },
+  {
+    icon: Bone,
+    cor: "text-agro-green-bright",
+    label: "Acessórios",
+    href: "/categoria/acessorios-pet",
+  },
+  {
+    icon: Pill,
+    cor: "text-agro-orange-light",
+    label: "Veterinária",
+    href: "/categoria/veterinaria",
+  },
+  {
+    icon: Sparkles,
+    cor: "text-agro-green-bright",
+    label: "Higiene",
+    href: "/categoria/higiene",
+  },
+  {
+    icon: Sprout,
+    cor: "text-agro-orange-light",
+    label: "Jardinagem",
+    href: "/categoria/jardinagem",
+  },
+  {
+    icon: Sprout,
+    cor: "text-agro-green-bright",
+    label: "Agro",
+    href: "/categoria/agro",
+  },
 ];
 
 export default async function HomePage() {
@@ -67,13 +94,15 @@ export default async function HomePage() {
               </span>
             </div>
             <h1 className="font-display text-3xl font-extrabold leading-tight md:text-5xl">
-              Somos loucos por <span className="text-agro-orange-light">PET!</span>
-              <br />20 anos cuidando do seu melhor amigo.
+              Somos loucos por{" "}
+              <span className="text-agro-orange-light">PET!</span>
+              <br />
+              20 anos cuidando do seu melhor amigo.
             </h1>
             <p className="mt-4 max-w-md text-white/85 md:text-lg">
               Há <strong>20 anos</strong> a Agro Baito é referência em rações,
-              acessórios pet, veterinária, jardinagem e produtos agro em
-              Porto Belo, Bombinhas e Itapema.
+              acessórios pet, veterinária, jardinagem e produtos agro em Porto
+              Belo, Bombinhas e Itapema.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="xl" variant="accent">
@@ -96,8 +125,8 @@ export default async function HomePage() {
 
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/80">
               <span className="flex items-center gap-1">
-                <ShieldCheck className="h-4 w-4 text-agro-orange-light" /> Produtos
-                originais
+                <ShieldCheck className="h-4 w-4 text-agro-orange-light" />{" "}
+                Produtos originais
               </span>
               <span className="flex items-center gap-1">
                 <Truck className="h-4 w-4 text-white" /> Entrega própria
@@ -134,9 +163,21 @@ export default async function HomePage() {
         <div className="container-agro grid grid-cols-2 gap-4 py-6 md:grid-cols-4">
           {[
             { icon: Truck, titulo: "Entrega rápida", texto: "Litoral Norte" },
-            { icon: ShieldCheck, titulo: "Produtos originais", texto: "Qualidade garantida" },
-            { icon: Clock, titulo: "Retire na loja", texto: "Perequê, Bombas, Itapema" },
-            { icon: MessageCircle, titulo: "Atendimento", texto: "Direto no WhatsApp" },
+            {
+              icon: ShieldCheck,
+              titulo: "Produtos originais",
+              texto: "Qualidade garantida",
+            },
+            {
+              icon: Clock,
+              titulo: "Retire na loja",
+              texto: "Perequê, Bombas, Itapema",
+            },
+            {
+              icon: MessageCircle,
+              titulo: "Atendimento",
+              texto: "Direto no WhatsApp",
+            },
           ].map((b) => (
             <div key={b.titulo} className="flex items-center gap-3">
               <div className="grid h-11 w-11 place-items-center rounded-full bg-agro-blue/10 text-agro-blue">
@@ -239,7 +280,8 @@ export default async function HomePage() {
               Precisa de ajuda? 🐾
             </h2>
             <p className="mt-2 max-w-md text-muted-foreground">
-              Fale com a gente no WhatsApp. Nossa equipe é <strong className="text-agro-green-dark">louca por PET</strong> e
+              Fale com a gente no WhatsApp. Nossa equipe é{" "}
+              <strong className="text-agro-green-dark">louca por PET</strong> e
               pronta pra ajudar você a escolher o melhor pro seu bichinho,
               jardim ou roça.
             </p>
