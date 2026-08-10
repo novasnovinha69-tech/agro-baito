@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 export const metadata = {
   title: "Trocas e devoluções",
   description:
-    "Política de trocas e devoluções da Agro Baito. Prazos, condições e como solicitar.",
+    "Política de trocas e devoluções. Prazos, condições e como solicitar.",
 };
 
 export default function TrocasDevolucoesPage() {
@@ -40,9 +40,7 @@ export default function TrocasDevolucoesPage() {
         </section>
 
         <section>
-          <h2 className="font-display text-lg font-bold">
-            Como solicitar
-          </h2>
+          <h2 className="font-display text-lg font-bold">Como solicitar</h2>
           <p className="mt-2 text-sm text-muted-foreground">
             Entre em contato pelo WhatsApp informando o número do pedido e o
             motivo da troca/devolução. Nossa equipe irá orientar os próximos
@@ -53,9 +51,10 @@ export default function TrocasDevolucoesPage() {
         <section>
           <h2 className="font-display text-lg font-bold">Reembolso</h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            O reembolso é processado no mesmo método de pagamento original em até
-            7 dias úteis após o recebimento e conferência do produto devolvido.
-            Para pagamentos via Pix, o reembolso é geralmente instantâneo.
+            O reembolso é processado no mesmo método de pagamento original em
+            até 7 dias úteis após o recebimento e conferência do produto
+            devolvido. Para pagamentos via Pix, o reembolso é geralmente
+            instantâneo.
           </p>
         </section>
       </div>

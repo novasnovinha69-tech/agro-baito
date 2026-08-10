@@ -2,53 +2,70 @@
 //  CONFIGURAÇÃO DA LOJA  —  PONTO ÚNICO PARA TROCAR DE EMPRESA
 // =============================================================================
 //  Para usar este site para OUTRA empresa, edite SÓ este arquivo.
+//
+//  ⚠️  MODO DEMONSTRAÇÃO: os dados abaixo são PLACEHOLDERS genéricos.
+//      Para colocar no ar para um cliente real, substitua pelos dados dele.
 // =============================================================================
 
 export const LOJA = {
-  nome: "Agro Baito",
-  slogan: "Somos loucos por PET! 🐾",
-  telefone: "(47) 99717-4539",
-  whatsappNumero: "5547997174539",
-  email: "agrobaito@hotmail.com",
-  cidade: "Porto Belo/SC",
-  regiao: "Litoral Norte de SC (Porto Belo, Bombinhas e Itapema)",
-  instagram: "https://www.instagram.com/insta_baito/",
-  horarioAtendimento: "Seg a sex 08:15–18:45 · Sábado 08:15–18:00",
-  linkAvaliacaoGoogle: "https://www.google.com/search?q=Agro+Baito+Porto+Belo",
+  nome: "Sua Empresa",
+  slogan: "Seu slogan aqui!",
+  telefone: "(00) 00000-0000",
+  whatsappNumero: "5500000000000", // 55 + DDD + numero (so digitos)
+  email: "contato@suaempresa.com.br",
+  cidade: "Sua Cidade/UF",
+  regiao: "Sua região de atendimento",
+  instagram: "https://www.instagram.com/sua_empresa/",
+  horarioAtendimento: "Seg a sex 08:00–18:00 · Sábado 08:00–12:00",
+  linkAvaliacaoGoogle: "#", // cole o link do Google Maps da empresa
+  // Texto do hero (primeira seção da home) — personalizavel
+  heroTitulo: "Sua loja online profissional",
+  heroDestaque: "pronta para vender!",
+  heroTexto:
+    "Este é um site de demonstração. Todos os dados (nome, telefone, endereço, produtos) são exemplos. Ao contratar, personalizamos tudo com as informações reais do seu negócio.",
+  heroBadge1: "⭐ SEU DIFERENCIAL AQUI",
+  heroBadge2: "🚚 Entregas na sua região",
+  // Botão do hero
+  heroTextoBotao: "Olá! Vim pelo site e gostaria de atendimento.",
   unidades: [
     {
-      nome: "Loja Perequê — Porto Belo",
-      endereco:
-        "Av. Gov. Celso Ramos, 1187 — Perequê, Porto Belo/SC · CEP 88210-000",
+      nome: "Loja 1 — Matriz",
+      endereco: "Seu endereço aqui — Sua Cidade/UF · CEP 00000-000",
+      whatsapp: "5500000000000",
+      telefone: "(00) 00000-0000",
     },
     {
-      nome: "Loja Bombas — Bombinhas",
-      endereco: "Av. Leopoldo Zarling, 2072 — Bombas, Bombinhas/SC",
+      nome: "Loja 2 — Filial",
+      endereco: "Seu endereço aqui — Sua Cidade/UF",
+      whatsapp: "5500000000000",
+      telefone: "(00) 00000-0000",
     },
     {
-      nome: "Loja Meia Praia — Itapema",
-      endereco: "Av. Nereu Ramos, 330, Sala 01 — Meia Praia, Itapema/SC",
+      nome: "Loja 3 — Filial",
+      endereco: "Seu endereço aqui — Sua Cidade/UF",
+      whatsapp: "5500000000000",
+      telefone: "(00) 00000-0000",
     },
   ],
   segmentos: [
-    "Rações",
-    "Acessórios Pet",
-    "Veterinária",
-    "Higiene",
-    "Jardinagem",
-    "Agro",
+    "Categoria 1",
+    "Categoria 2",
+    "Categoria 3",
+    "Categoria 4",
+    "Categoria 5",
   ],
 } as const;
+
+/**
+ * Indica se o site esta em modo demonstracao (dados placeholder).
+ * Quando o cliente preencher os dados reais no loja-config.ts,
+ * basta trocar para `false` e o banner de demonstracao some.
+ */
+export const MODO_DEMONSTRACAO = true;
 
 export const LINKS_NAV = [
   { label: "Início", href: "/" },
   { label: "Catálogo", href: "/catalogo" },
-  { label: "Rações", href: "/categoria/racoes" },
-  { label: "Acessórios", href: "/categoria/acessorios-pet" },
-  { label: "Veterinária", href: "/categoria/veterinaria" },
-  { label: "Higiene", href: "/categoria/higiene" },
-  { label: "Jardinagem", href: "/categoria/jardinagem" },
-  { label: "Agro", href: "/categoria/agro" },
 ] as const;
 
 /** Monta o link wa.me com mensagem opcional. */

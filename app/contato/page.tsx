@@ -1,12 +1,11 @@
-import { MapPin, Clock, MessageCircle, Phone, Instagram } from "lucide-react";
-import { LOJA, linkWhatsApp } from "@/lib/loja-config";
-import { Button } from "@/components/ui/button";
+import { Clock, Instagram, MapPin, MessageCircle, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
+import { Button } from "@/components/ui/button";
+import { LOJA, linkWhatsApp } from "@/lib/loja-config";
 
 export const metadata = {
   title: "Contato",
-  description:
-    "Fale com a Agro Baito. WhatsApp, telefone e nossas 3 lojas em Porto Belo, Bombinhas e Itapema.",
+  description: `Fale com a ${LOJA.nome}. WhatsApp, telefone e nossas lojas em ${LOJA.regiao}.`,
 };
 
 export default function ContatoPage() {
@@ -30,16 +29,12 @@ export default function ContatoPage() {
               </div>
               <div className="flex-1">
                 <p className="font-semibold">WhatsApp</p>
-                <p className="text-sm text-muted-foreground">
-                  {LOJA.telefone}
-                </p>
+                <p className="text-sm text-muted-foreground">{LOJA.telefone}</p>
               </div>
             </div>
             <Button asChild variant="whatsapp" className="mt-3 w-full">
               <a
-                href={linkWhatsApp(
-                  "Olá! Vim pelo site da Agro Baito e gostaria de atendimento.",
-                )}
+                href={linkWhatsApp(LOJA.heroTextoBotao)}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -106,7 +101,9 @@ export default function ContatoPage() {
                   <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-agro-blue" />
                   <div>
                     <p className="font-semibold">{u.nome}</p>
-                    <p className="text-sm text-muted-foreground">{u.endereco}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {u.endereco}
+                    </p>
                   </div>
                 </div>
                 <iframe

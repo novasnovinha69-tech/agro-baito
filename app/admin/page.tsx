@@ -45,9 +45,7 @@ export default async function AdminDashboardPage() {
           <h1 className="font-display text-2xl font-bold text-agro-navy">
             Dashboard
           </h1>
-          <p className="text-sm text-muted-foreground">
-            Visão geral da Agro Baito
-          </p>
+          <p className="text-sm text-muted-foreground">Visão geral</p>
         </div>
         <Button asChild>
           <Link href="/admin/produtos/novo">

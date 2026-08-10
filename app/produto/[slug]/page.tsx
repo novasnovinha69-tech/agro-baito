@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
-import { obterProdutoPorSlug } from "@/lib/data";
 import { ProdutoDetalheSkeleton } from "@/components/loja/produto-detalhe-skeleton";
+import { obterProdutoPorSlug } from "@/lib/data";
+import { LOJA } from "@/lib/loja-config";
 
 /**
  * ProdutoDetalhe (client component com seletor de qty, galeria, add ao carrinho)
@@ -27,9 +28,7 @@ export async function generateMetadata({
   if (!produto) return { title: "Produto não encontrado" };
   return {
     title: produto.nome,
-    description:
-      produto.descricao ??
-      `${produto.nome} na Agro Baito. Entrega em Porto Belo.`,
+    description: produto.descricao ?? `${produto.nome} na ${LOJA.nome}.`,
   };
 }
 

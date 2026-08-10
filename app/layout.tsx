@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 import { LojaShell } from "@/components/loja/loja-shell";
+import { LOJA } from "@/lib/loja-config";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,30 +22,23 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
   title: {
-    default:
-      "Agro Baito — Rações, Veterinária e Pet em Porto Belo, Bombinhas e Itapema/SC",
-    template: "%s | Agro Baito",
+    default: `${LOJA.nome} — Loja online`,
+    template: `%s | ${LOJA.nome}`,
   },
-  description:
-    "Rações, acessórios pet, veterinária, higiene, jardinagem e produtos agro. Somos loucos por PET! Entrega em Porto Belo, Bombinhas e Itapema. Retire nas lojas do Perequê, Bombas ou Meia Praia.",
+  description: LOJA.heroTexto,
   keywords: [
-    "agropecuária",
-    "pet shop",
-    "ração",
-    "veterinário",
-    "acessórios pet",
-    "Porto Belo",
-    "Bombinhas",
-    "Itapema",
-    "Perequê",
-    "Litoral Norte SC",
+    "loja online",
+    "e-commerce",
+    "comprar online",
+    "entrega",
+    LOJA.cidade,
+    LOJA.regiao,
   ],
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    title: "Agro Baito — Tudo para sua criação e sua roça",
-    description:
-      "Entrega em Porto Belo, Bombinhas e Itapema. Pix com desconto. Retire na loja.",
+    title: `${LOJA.nome} — Loja online`,
+    description: LOJA.heroTexto,
   },
 };
 

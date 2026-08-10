@@ -1,10 +1,10 @@
 import { CatalogoCliente } from "@/components/loja/catalogo-cliente-dynamic";
-import { listarProdutos, listarCategorias } from "@/lib/data";
+import { listarCategorias, listarProdutos } from "@/lib/data";
+import { LOJA } from "@/lib/loja-config";
 
 export const metadata = {
   title: "Catálogo completo",
-  description:
-    "Todos os produtos da Agro Baito: rações, medicamentos veterinários, pesca, ferramentas e agro.",
+  description: `Todos os produtos disponíveis na ${LOJA.nome}.`,
 };
 
 export default async function CatalogoPage({

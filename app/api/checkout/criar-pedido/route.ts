@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { criarPedido } from "@/lib/pedidos";
-import { criarPagamentoPix } from "@/lib/mercadopago";
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { criarPagamentoPix } from "@/lib/mercadopago";
+import { criarPedido } from "@/lib/pedidos";
 
 /**
  * POST /api/checkout/criar-pedido
@@ -14,13 +14,7 @@ import { isSupabaseConfigured } from "@/lib/carrinho";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const {
-      itens,
-      cliente,
-      entrega,
-      pagamento,
-      valores,
-    } = body;
+    const { itens, cliente, entrega, pagamento, valores } = body;
 
     // Validacao minima
     if (!itens?.length || !cliente?.nome || !cliente?.telefone) {
@@ -50,7 +44,7 @@ export async function POST(req: Request) {
       try {
         const pix = await criarPagamentoPix({
           totalCents: valores.totalCents,
-          descricao: `Pedido ${pedido.codigo} — Agro Baito`,
+          descricao: `Pedido ${pedido.codigo}`,
           referenciaExterna: pedido.id,
           pagador: {
             nome: cliente.nome,

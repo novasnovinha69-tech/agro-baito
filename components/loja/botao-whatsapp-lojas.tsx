@@ -1,46 +1,32 @@
 "use client";
 
-import { ChevronDown, MapPin, Store } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 import { useState } from "react";
 import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
-import { LOJA, linkWhatsApp } from "@/lib/loja-config";
+import { LOJA } from "@/lib/loja-config";
 
 /**
  * Botão WhatsApp que mostra SELETOR DE LOJAS.
  * Cada loja tem seu próprio número — cliente escolhe qual quer falar.
  *
- * Números das lojas da Agro Baito:
- *  - Perequê (Porto Belo): (47) 99717-4539
- *  - Bombas (Bombinhas):   (47) 99996-3657
- *  - Meia Praia (Itapema): (47) 99717-4539
+ * Agora usa LOJA.unidades (config central) em vez de dados hardcoded.
+ * Cada unidade precisa ter: nome, whatsapp, telefone, endereco.
  */
 type LojaWhatsApp = {
   nome: string;
   numero: string; // DDI+DDD+numero
-  telefone: string; // formato exibido
+  telefone: string;
   endereco: string;
 };
 
-const LOJAS_WHATSAPP: LojaWhatsApp[] = [
-  {
-    nome: "Loja Perequê (Porto Belo)",
-    numero: "5547997174539",
-    telefone: "(47) 99717-4539",
-    endereco: "Av. Gov. Celso Ramos, 1187 — Perequê, Porto Belo/SC",
-  },
-  {
-    nome: "Loja Bombas (Bombinhas)",
-    numero: "5547999963657",
-    telefone: "(47) 99996-3657",
-    endereco: "Av. Leopoldo Zarling, 2072 — Bombas, Bombinhas/SC",
-  },
-  {
-    nome: "Loja Meia Praia (Itapema)",
-    numero: "5547997174539",
-    telefone: "(47) 99717-4539",
-    endereco: "Av. Nereu Ramos, 330 — Meia Praia, Itapema/SC",
-  },
-];
+function lojasDoConfig(): LojaWhatsApp[] {
+  return LOJA.unidades.map((u) => ({
+    nome: u.nome,
+    numero: u.whatsapp ?? LOJA.whatsappNumero,
+    telefone: u.telefone ?? LOJA.telefone,
+    endereco: u.endereco,
+  }));
+}
 
 export function BotaoWhatsAppLojas({
   variant = "completo",
@@ -50,10 +36,11 @@ export function BotaoWhatsAppLojas({
   className?: string;
 }) {
   const [aberto, setAberto] = useState(false);
+  const lojas = lojasDoConfig();
 
   function abrirWhatsapp(numero: string) {
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(
-      `Olá! Vim pelo site da Agro Baito e gostaria de atendimento.`,
+      LOJA.heroTextoBotao,
     )}`;
     window.open(url, "_blank");
     setAberto(false);
@@ -64,6 +51,7 @@ export function BotaoWhatsAppLojas({
     return (
       <div className={`relative ${className}`}>
         <button
+          type="button"
           onClick={() => setAberto(!aberto)}
           className="flex items-center gap-1.5 rounded-full bg-whatsapp px-3 py-1.5 text-xs font-semibold text-white shadow-sm transition-transform hover:scale-105"
           aria-label="Falar no WhatsApp"
@@ -85,8 +73,9 @@ export function BotaoWhatsAppLojas({
               <div className="bg-agro-green px-4 py-2.5 text-xs font-bold uppercase tracking-wide text-white">
                 Escolha a loja
               </div>
-              {LOJAS_WHATSAPP.map((loja) => (
+              {lojas.map((loja) => (
                 <button
+                  type="button"
                   key={loja.nome}
                   onClick={() => abrirWhatsapp(loja.numero)}
                   className="flex w-full items-start gap-3 border-b px-4 py-3 text-left transition-colors last:border-0 hover:bg-muted"
@@ -127,8 +116,9 @@ export function BotaoWhatsAppLojas({
       </div>
 
       <div className="space-y-2">
-        {LOJAS_WHATSAPP.map((loja) => (
+        {lojas.map((loja) => (
           <button
+            type="button"
             key={loja.nome}
             onClick={() => abrirWhatsapp(loja.numero)}
             className="flex w-full items-center gap-3 rounded-lg border border-agro-green/20 bg-agro-green/5 p-3 text-left transition-all hover:border-whatsapp hover:bg-whatsapp/5"

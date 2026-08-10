@@ -1,7 +1,7 @@
 "use client";
 
 import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
-import { linkWhatsApp } from "@/lib/loja-config";
+import { LOJA, linkWhatsApp } from "@/lib/loja-config";
 
 /**
  * Botão flutuante de WhatsApp (FAB) — fica fixo no canto inferior direito.
@@ -10,9 +10,7 @@ import { linkWhatsApp } from "@/lib/loja-config";
 export function WhatsAppFAB() {
   return (
     <a
-      href={linkWhatsApp(
-        "Olá! Vim pelo site da Agro Baito e gostaria de atendimento.",
-      )}
+      href={linkWhatsApp(LOJA.heroTextoBotao)}
       target="_blank"
       rel="noreferrer"
       aria-label="Falar no WhatsApp"

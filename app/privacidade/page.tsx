@@ -1,9 +1,9 @@
 import { Shield } from "lucide-react";
+import { LOJA } from "@/lib/loja-config";
 
 export const metadata = {
   title: "Política de privacidade",
-  description:
-    "Como a Agro Baito coleta, usa e protege seus dados pessoais (LGPD).",
+  description: `Como a ${LOJA.nome} coleta, usa e protege seus dados pessoais (LGPD).`,
 };
 
 export default function PrivacidadePage() {
@@ -32,7 +32,9 @@ export default function PrivacidadePage() {
             <li>Nome, telefone e e-mail (para contato e pedidos)</li>
             <li>CPF/CNPJ (para emissão de nota fiscal, quando fornecido)</li>
             <li>Endereço de entrega (para processar pedidos)</li>
-            <li>Dados de navegação (cookies essenciais e analytics anônimos)</li>
+            <li>
+              Dados de navegação (cookies essenciais e analytics anônimos)
+            </li>
           </ul>
         </section>
 
@@ -70,7 +72,8 @@ export default function PrivacidadePage() {
           </h2>
           <p className="mt-2">
             Os dados de pagamento são processados diretamente pelo Mercado Pago,
-            que é o responsável pela segurança dessas informações. A Agro Baito
+            que é o responsável pela segurança dessas informações. A $
+            {LOJA.nome}
             não armazena dados de cartão ou chaves Pix.
           </p>
         </section>

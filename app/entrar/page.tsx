@@ -1,11 +1,9 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { AlertCircle, LogIn, Shield, Sprout, User } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { Suspense, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
   Card,
   CardContent,
@@ -13,8 +11,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Sprout, LogIn, AlertCircle, User, Shield } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { isSupabaseConfigured } from "@/lib/carrinho";
+import { LOJA } from "@/lib/loja-config";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 export default function EntrarPageWrapper() {
   return (
@@ -38,7 +39,8 @@ function EntrarPage() {
   const [tipo, setTipo] = useState<"cliente" | "admin">(
     params.get("tipo") === "cliente" ? "cliente" : "admin",
   );
-  const proximaPagina = params.get("next") ?? (tipo === "cliente" ? "/conta" : "/admin");
+  const proximaPagina =
+    params.get("next") ?? (tipo === "cliente" ? "/conta" : "/admin");
 
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -121,7 +123,7 @@ function EntrarPage() {
             <Sprout className="h-7 w-7 text-agro-blue" />
           </div>
           <CardTitle>Entrar</CardTitle>
-          <CardDescription>Agro Baito</CardDescription>
+          <CardDescription>{LOJA.nome}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           {/* Toggle cliente/admin */}
