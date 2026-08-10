@@ -1,19 +1,18 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
-  LayoutDashboard,
-  MapPin,
   Menu,
-  Phone,
   Search,
   ShoppingCart,
   Sprout,
+  MapPin,
+  Phone,
+  LayoutDashboard,
+  User,
 } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
-import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -23,15 +22,17 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { LINKS_NAV, LOJA, linkWhatsApp } from "@/lib/loja-config";
 import { useCarrinho } from "@/lib/store/carrinho";
-import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { LINKS_NAV, LOJA, linkWhatsApp } from "@/lib/loja-config";
 import { cn } from "@/lib/utils";
+import { createSupabaseBrowserClient } from "@/lib/supabase/client";
+import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
+import { BotaoWhatsAppLojas } from "@/components/loja/botao-whatsapp-lojas";
 
 export function HeaderLoja() {
   const pathname = usePathname();
-  const totalItens = useCarrinho((s) =>
-    s.itens.reduce((a, i) => a + i.quantidade, 0),
+  const totalItens = useCarrinho(
+    (s) => s.itens.reduce((a, i) => a + i.quantidade, 0),
   );
   const abrirCarrinho = useCarrinho((s) => s.abrir);
   const [busca, setBusca] = useState("");
@@ -81,8 +82,7 @@ export function HeaderLoja() {
             </a>
           </div>
           <span className="flex items-center gap-1">
-            <Sprout className="h-3.5 w-3.5" /> Entregas em Porto Belo, Bombinhas
-            e Itapema
+            <Sprout className="h-3.5 w-3.5" /> Entregas em Porto Belo, Bombinhas e Itapema
           </span>
         </div>
       </div>
@@ -92,12 +92,7 @@ export function HeaderLoja() {
         {/* Menu mobile (hambúrguer) */}
         <Sheet>
           <SheetTrigger asChild>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden"
-              aria-label="Abrir menu"
-            >
+            <Button variant="ghost" size="icon" className="md:hidden" aria-label="Abrir menu">
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
@@ -107,6 +102,18 @@ export function HeaderLoja() {
                 <Sprout className="h-5 w-5" /> Agro Baito
               </SheetTitle>
             </SheetHeader>
+            {/* Links institucionais no menu mobile */}
+            <nav className="mt-2 flex flex-col gap-1 border-t pt-2">
+              <Link href="/sobre" className="rounded-md px-3 py-2 text-sm hover:bg-muted">
+                Sobre nós
+              </Link>
+              <Link href="/contato" className="rounded-md px-3 py-2 text-sm hover:bg-muted">
+                Contato
+              </Link>
+              <Link href="/conta" className="rounded-md px-3 py-2 text-sm hover:bg-muted">
+                Minha conta
+              </Link>
+            </nav>
             <nav className="mt-4 flex flex-col gap-1">
               {LINKS_NAV.map((l) => (
                 <Link
@@ -133,17 +140,14 @@ export function HeaderLoja() {
             <p className="font-display text-base font-extrabold text-agro-blue-dark md:text-lg">
               Agro Baito
             </p>
-            <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-agro-navy md:text-xs">
-              Animal
+            <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground md:text-xs">
+              {LOJA.slogan}
             </p>
           </div>
         </Link>
 
         {/* Busca (desktop) */}
-        <form
-          action="/buscar"
-          className="mx-auto hidden w-full max-w-xl md:block"
-        >
+        <form action="/buscar" className="mx-auto hidden w-full max-w-xl md:block">
           <div className="relative">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
@@ -166,24 +170,25 @@ export function HeaderLoja() {
           </Link>
 
           {/* Botão avaliação Google (logo oficial) */}
-          <BotaoAvaliacaoGoogle
-            variant="compacto"
-            className="shrink-0 transition-transform hover:scale-110"
-          />
+          <BotaoAvaliacaoGoogle variant="compacto" className="shrink-0 transition-transform hover:scale-110" />
 
           {/* Botão WhatsApp com seletor de lojas (desktop) */}
           <div className="hidden md:block">
             <BotaoWhatsAppLojas variant="simples" />
           </div>
 
+          {/* Minha conta (cliente) */}
+          <Link href="/conta" aria-label="Minha conta">
+            <Button variant="ghost" size="sm" className="gap-1.5 text-agro-blue">
+              <User className="h-4 w-4" />
+              <span className="hidden sm:inline">Conta</span>
+            </Button>
+          </Link>
+
           {/* Botão Painel (só admin) */}
           {isAdmin && (
             <Link href="/admin">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="gap-1.5 text-agro-blue"
-              >
+              <Button variant="ghost" size="sm" className="gap-1.5 text-agro-blue">
                 <LayoutDashboard className="h-4 w-4" />
                 <span className="hidden sm:inline">Painel</span>
               </Button>
