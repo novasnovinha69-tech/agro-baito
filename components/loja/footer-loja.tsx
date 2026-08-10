@@ -1,18 +1,11 @@
-import {
-  Clock,
-  Instagram,
-  MapPin,
-  MessageCircle,
-  Phone,
-  Sprout,
-} from "lucide-react";
 import Link from "next/link";
-import { LINKS_NAV, LOJA, linkWhatsApp } from "@/lib/loja-config";
+import { Sprout, Instagram, Phone, MapPin, MessageCircle, Clock } from "lucide-react";
+import { LOJA, LINKS_NAV, linkWhatsApp } from "@/lib/loja-config";
 
 export function FooterLoja() {
   return (
     <footer className="mt-16 border-t bg-agro-blue-dark text-white/90">
-      <div className="container-agro grid gap-8 py-12 md:grid-cols-4">
+      <div className="container-agro grid gap-8 py-12 md:grid-cols-5">
         {/* Marca */}
         <div>
           <div className="flex items-center gap-2">
@@ -20,17 +13,15 @@ export function FooterLoja() {
               <Sprout className="h-6 w-6 text-agro-blue-dark" />
             </div>
             <div className="leading-tight">
-              <p className="font-display text-base font-extrabold">
-                Agro Baito
-              </p>
-              <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-white">
-                Animal
+              <p className="font-display text-base font-extrabold">Agro Baito</p>
+              <p className="-mt-1 text-[10px] font-semibold uppercase tracking-wider text-white/70">
+                {LOJA.slogan}
               </p>
             </div>
           </div>
           <p className="mt-3 text-sm text-white/70">{LOJA.slogan}.</p>
           <p className="mt-2 text-sm text-white/70">
-            Rações · Petiscos · Medicamentos · Pesca · Ferramentas · Agro
+            Rações · Acessórios Pet · Veterinária · Higiene · Jardinagem · Agro
           </p>
         </div>
 
@@ -50,7 +41,39 @@ export function FooterLoja() {
           </ul>
         </div>
 
-        {/* Unidades */}
+        {/* Institucional */}
+        <div>
+          <h4 className="font-display text-sm font-bold uppercase tracking-wider text-white">
+            Institucional
+          </h4>
+          <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <Link href="/sobre" className="hover:text-white">
+                Sobre nós
+              </Link>
+            </li>
+            <li>
+              <Link href="/contato" className="hover:text-white">
+                Contato
+              </Link>
+            </li>
+            <li>
+              <Link href="/trocas-e-devolucoes" className="hover:text-white">
+                Trocas e devoluções
+              </Link>
+            </li>
+            <li>
+              <Link href="/privacidade" className="hover:text-white">
+                Política de privacidade
+              </Link>
+            </li>
+            <li>
+              <Link href="/conta" className="hover:text-white">
+                Minha conta
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div>
           <h4 className="font-display text-sm font-bold uppercase tracking-wider text-white">
             Nossas lojas
@@ -89,7 +112,9 @@ export function FooterLoja() {
               <Clock className="h-4 w-4 text-white" />
               <span>
                 <strong className="block text-white">Horário</strong>
-                <span className="text-white/70">{LOJA.horarioAtendimento}</span>
+                <span className="text-white/70">
+                  {LOJA.horarioAtendimento}
+                </span>
               </span>
             </li>
             <li className="flex items-center gap-2">
@@ -112,10 +137,11 @@ export function FooterLoja() {
       <div className="border-t border-white/10">
         <div className="container-agro flex flex-col items-center justify-between gap-2 py-4 text-xs text-white/60 md:flex-row">
           <p>
-            © {new Date().getFullYear()} {LOJA.nome}. Todos os direitos
-            reservados.
+            © {new Date().getFullYear()} {LOJA.nome}. Todos os direitos reservados.
           </p>
-          <p>Pagamento via Pix · Entrega própria em {LOJA.cidade} e região</p>
+          <p>
+            Pagamento via Pix · Entrega própria em {LOJA.cidade} e região
+          </p>
         </div>
       </div>
     </footer>

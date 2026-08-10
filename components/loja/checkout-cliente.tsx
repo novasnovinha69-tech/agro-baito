@@ -1,37 +1,39 @@
 "use client";
 
-import {
-  AlertCircle,
-  CheckCircle2,
-  Clock,
-  CreditCard,
-  Loader2,
-  MapPin,
-  MessageCircle,
-  Navigation,
-  Search,
-  Store,
-  Truck,
-} from "lucide-react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
-import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
+import {
+  MapPin,
+  Search,
+  Truck,
+  Store,
+  CreditCard,
+  Loader2,
+  CheckCircle2,
+  Navigation,
+  AlertCircle,
+  Clock,
+  MessageCircle,
+  Copy,
+  QrCode,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { buscarCep, casarZonaPorEndereco } from "@/lib/cep";
+import { useCarrinho } from "@/lib/store/carrinho";
+import { formatBRL, maskCEP, maskPhone, maskCpfCnpj } from "@/lib/money";
 import type { UnidadeComZonas } from "@/lib/data";
+import type { ZonaEntrega } from "@/types/database.types";
+import { casarZonaPorEndereco, buscarCep } from "@/lib/cep";
 import { FRETE_GRATIS_MIN_CENTS } from "@/lib/frete";
 import { LOJA, linkWhatsApp } from "@/lib/loja-config";
-import { formatBRL, maskCEP, maskCpfCnpj, maskPhone } from "@/lib/money";
-import { useCarrinho } from "@/lib/store/carrinho";
-import type { ZonaEntrega } from "@/types/database.types";
+import { WhatsAppIcon } from "@/components/shared/whatsapp-icon";
+import { BotaoAvaliacaoGoogle } from "@/components/shared/botao-avaliacao-google";
 
 type Props = {
   unidades: UnidadeComZonas[];
@@ -55,31 +57,32 @@ export function CheckoutCliente({ unidades }: Props) {
 
   const [buscandoCep, setBuscandoCep] = useState(false);
   const [endereco, setEndereco] = useState<EnderecoForm>({
-    cep: "",
-    logradouro: "",
-    numero: "",
-    complemento: "",
-    bairro: "",
-    cidade: "",
-    uf: "",
-    referencia: "",
+    cep: "", logradouro: "", numero: "", complemento: "",
+    bairro: "", cidade: "", uf: "", referencia: "",
   });
 
   // Cliente
   const [cliente, setCliente] = useState({
-    nome: "",
-    telefone: "",
-    email: "",
-    cpfCnpj: "",
+    nome: "", telefone: "", email: "", cpfCnpj: "",
   });
 
   // Entrega
-  const [tipoEntrega, setTipoEntrega] = useState<"retirada" | "entrega" | null>(
-    null,
-  );
+  const [tipoEntrega, setTipoEntrega] = useState<"retirada" | "entrega" | null>(null);
   const [unidadeRetiradaId, setUnidadeRetiradaId] = useState<string>("");
   const [zonaSelecionadaId, setZonaSelecionadaId] = useState<string>("");
   const [zonaSugerida, setZonaSugerida] = useState<ZonaEntrega | null>(null);
+
+  // Pagamento
+  type MetodoPagamento = "pix" | "whatsapp" | "nao_loja";
+  const [metodoPagamento, setMetodoPagamento] = useState<MetodoPagamento>("pix");
+  const [criandoPedido, setCriandoPedido] = useState(false);
+  const [pixGerado, setPixGerado] = useState<{
+    qrCode: string;
+    qrCodeBase64: string | null;
+    pedidoCodigo: string;
+    pedidoToken: string;
+  } | null>(null);
+  const [pixCopiado, setPixCopiado] = useState(false);
 
   // Tudo de zonas disponíveis numa lista plana
   const todasZonas: ZonaEntrega[] = unidades.flatMap((u) => u.zonas);
@@ -176,7 +179,9 @@ export function CheckoutCliente({ unidades }: Props) {
     linhas.push("");
     linhas.push("📦 *ITENS*");
     itens.forEach((i, idx) => {
-      linhas.push(`${idx + 1}. ${i.nome}`);
+      linhas.push(
+        `${idx + 1}. ${i.nome}`,
+      );
       linhas.push(
         `   ${i.quantidade}x ${formatBRL(i.precoCents)} = ${formatBRL(i.precoCents * i.quantidade)}`,
       );
@@ -199,8 +204,7 @@ export function CheckoutCliente({ unidades }: Props) {
       linhas.push(`Bairro: ${endereco.bairro}`);
       linhas.push(`Cidade: ${endereco.cidade}/${endereco.uf}`);
       linhas.push(`CEP: ${endereco.cep}`);
-      if (endereco.referencia)
-        linhas.push(`Referência: ${endereco.referencia}`);
+      if (endereco.referencia) linhas.push(`Referência: ${endereco.referencia}`);
       linhas.push(
         `Frete: ${ganhouFreteGratis ? "GRÁTIS (acima de R$1.000)" : formatBRL(freteCents)}`,
       );
@@ -253,6 +257,175 @@ export function CheckoutCliente({ unidades }: Props) {
     setTimeout(() => limpar(), 500);
   }
 
+  // ===== Finalizar com Pix (cria pedido + gera QR Code) =====
+  async function finalizarComPix() {
+    if (!validarPedido()) return;
+    setCriandoPedido(true);
+    setPixGerado(null);
+    try {
+      const resp = await fetch("/api/checkout/criar-pedido", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          itens: itens.map((i) => ({
+            produtoId: i.produtoId,
+            nome: i.nome,
+            precoCents: i.precoCents,
+            quantidade: i.quantidade,
+            pesoKg: i.pesoKg,
+            unidadeMedida: i.unidadeMedida,
+          })),
+          cliente: {
+            nome: cliente.nome,
+            telefone: cliente.telefone,
+            email: cliente.email || undefined,
+            cpfCnpj: cliente.cpfCnpj || undefined,
+          },
+          entrega: {
+            tipo: tipoEntrega,
+            zonaId: zonaSelecionadaId || null,
+            unidadeId: unidadeRetiradaId || null,
+            endereco:
+              tipoEntrega === "entrega"
+                ? {
+                    cep: endereco.cep,
+                    logradouro: endereco.logradouro,
+                    numero: endereco.numero,
+                    complemento: endereco.complemento,
+                    bairro: endereco.bairro,
+                    cidade: endereco.cidade,
+                    uf: endereco.uf,
+                    referencia: endereco.referencia,
+                  }
+                : null,
+          },
+          pagamento: { metodo: "pix" },
+          valores: {
+            subtotalCents: subtotal,
+            freteCents: tipoEntrega === "retirada" ? 0 : freteCents,
+            totalCents: tipoEntrega === "retirada" ? subtotal : totalCents,
+          },
+        }),
+      });
+      const data = await resp.json();
+      if (!resp.ok) {
+        throw new Error(data.erro ?? "Erro ao criar pedido");
+      }
+      if (data.pix?.qrCode) {
+        setPixGerado({
+          qrCode: data.pix.qrCode,
+          qrCodeBase64: data.pix.qrCodeBase64,
+          pedidoCodigo: data.pedido.codigo,
+          pedidoToken: data.pedido.token,
+        });
+        toast.success(`Pedido ${data.pedido.codigo} criado! Pague o Pix para confirmar.`);
+      } else {
+        // Pix indisponivel — fallback para sucesso via WhatsApp
+        toast.info(data.aviso ?? "Pix indisponivel. Use o WhatsApp.");
+        setPedidoConfirmado(true);
+        setTimeout(() => limpar(), 500);
+      }
+    } catch (err) {
+      toast.error(
+        err instanceof Error ? err.message : "Erro ao processar pedido.",
+      );
+    } finally {
+      setCriandoPedido(false);
+    }
+  }
+
+  // ===== Copiar QR Code (copia e cola) =====
+  function copiarQrCode() {
+    if (!pixGerado) return;
+    navigator.clipboard.writeText(pixGerado.qrCode);
+    setPixCopiado(true);
+    toast.success("Código Pix copiado!");
+    setTimeout(() => setPixCopiado(false), 2000);
+  }
+
+  // ===== Tela de QR Code Pix (aguardando pagamento) =====
+  if (pixGerado) {
+    return (
+      <div className="container-agro py-12">
+        <div className="mx-auto max-w-md rounded-2xl border-2 border-agro-blue/30 bg-agro-blue/5 p-8 text-center">
+          <div className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-agro-blue">
+            <QrCode className="h-8 w-8 text-white" />
+          </div>
+          <h2 className="mt-4 font-display text-2xl font-bold text-agro-navy">
+            Pague com Pix para confirmar
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Pedido <strong>{pixGerado.pedidoCodigo}</strong> · {formatBRL(tipoEntrega === "retirada" ? subtotal : totalCents)}
+          </p>
+
+          {/* QR Code imagem */}
+          {pixGerado.qrCodeBase64 && (
+            <div className="mt-5 grid place-items-center">
+              <img
+                src={`data:image/png;base64,${pixGerado.qrCodeBase64}`}
+                alt="QR Code Pix"
+                className="rounded-lg border bg-white p-3"
+                width={240}
+                height={240}
+              />
+            </div>
+          )}
+
+          {/* Copia e cola */}
+          <div className="mt-4">
+            <p className="mb-1.5 text-xs font-semibold uppercase text-muted-foreground">
+              Pix Copia e Cola
+            </p>
+            <div className="flex items-center gap-2">
+              <code className="flex-1 truncate rounded-md border bg-background px-3 py-2 text-xs">
+                {pixGerado.qrCode}
+              </code>
+              <Button
+                type="button"
+                variant={pixCopiado ? "accent" : "outline"}
+                size="icon"
+                onClick={copiarQrCode}
+                aria-label="Copiar código Pix"
+              >
+                {pixCopiado ? (
+                  <CheckCircle2 className="h-4 w-4" />
+                ) : (
+                  <Copy className="h-4 w-4" />
+                )}
+              </Button>
+            </div>
+          </div>
+
+          <div className="mt-5 rounded-lg bg-muted p-3 text-left text-xs text-muted-foreground">
+            <p className="flex items-center gap-2">
+              <Clock className="h-4 w-4 shrink-0" />
+              O QR Code expira em 30 minutos. Após o pagamento, a confirmação é
+              automática.
+            </p>
+          </div>
+
+          <div className="mt-5 flex flex-col gap-2">
+            <Button asChild variant="outline">
+              <Link href={`/conta/pedidos/${pixGerado.pedidoToken}`}>
+                Acompanhar meu pedido
+              </Link>
+            </Button>
+            <Button
+              variant="ghost"
+              onClick={() => {
+                setPixGerado(null);
+                setPedidoConfirmado(true);
+                setTimeout(() => limpar(), 500);
+              }}
+            >
+              Já paguei / voltar
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // ===== Tela de pedido confirmado =====
   if (pedidoConfirmado) {
     return (
@@ -279,8 +452,8 @@ export function CheckoutCliente({ unidades }: Props) {
             <p className="mt-2 flex items-center gap-2">
               <MessageCircle className="h-4 w-4 text-whatsapp" />
               <span>
-                Dúvidas? Fale com a gente pelo WhatsApp de qualquer uma das
-                nossas 3 lojas.
+                Dúvidas? Fale com a gente pelo WhatsApp de qualquer uma das nossas
+                3 lojas.
               </span>
             </p>
           </div>
@@ -303,10 +476,7 @@ export function CheckoutCliente({ unidades }: Props) {
 
           {/* Avaliação no Google */}
           <div className="mt-5">
-            <BotaoAvaliacaoGoogle
-              variant="cheio"
-              className="w-full justify-center"
-            />
+            <BotaoAvaliacaoGoogle variant="cheio" className="w-full justify-center" />
           </div>
         </div>
       </div>
@@ -332,9 +502,7 @@ export function CheckoutCliente({ unidades }: Props) {
     endereco.bairro,
     endereco.cidade,
     endereco.uf,
-  ]
-    .filter(Boolean)
-    .join(", ");
+  ].filter(Boolean).join(", ");
   const mapaUrl = enderecoMapa
     ? `https://maps.google.com/maps?q=${encodeURIComponent(enderecoMapa)}&z=15&output=embed`
     : null;
@@ -348,22 +516,12 @@ export function CheckoutCliente({ unidades }: Props) {
       {/* Banner: frete grátis acima de R$1.000 */}
       {ganhouFreteGratis ? (
         <div className="mb-4 flex items-center gap-2 rounded-lg bg-agro-emerald/15 px-4 py-2.5 text-sm font-semibold text-agro-emerald-dark">
-          🎉{" "}
-          <span>
-            Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> (pedido acima de
-            R$1.000)
-          </span>
+          🎉 <span>Parabéns! Você ganhou <strong>FRETE GRÁTIS</strong> (pedido acima de R$1.000)</span>
         </div>
       ) : (
         <div className="mb-4 flex items-center justify-between gap-2 rounded-lg bg-agro-blue/10 px-4 py-2.5 text-sm text-agro-blue">
-          <span>
-            🚚 Faltam{" "}
-            <strong>{formatBRL(FRETE_GRATIS_MIN_CENTS - subtotal)}</strong> para
-            você ganhar <strong>FRETE GRÁTIS</strong>
-          </span>
-          <a href="/catalogo" className="shrink-0 font-semibold underline">
-            Comprar mais
-          </a>
+          <span>🚚 Faltam <strong>{formatBRL(FRETE_GRATIS_MIN_CENTS - subtotal)}</strong> para você ganhar <strong>FRETE GRÁTIS</strong></span>
+          <a href="/catalogo" className="shrink-0 font-semibold underline">Comprar mais</a>
         </div>
       )}
 
@@ -374,9 +532,7 @@ export function CheckoutCliente({ unidades }: Props) {
           <Card>
             <CardContent className="space-y-4 p-5">
               <h2 className="flex items-center gap-2 font-display text-base font-bold">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">
-                  1
-                </span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">1</span>
                 Seus dados
               </h2>
               <div className="grid gap-3 sm:grid-cols-2">
@@ -385,9 +541,7 @@ export function CheckoutCliente({ unidades }: Props) {
                   <Input
                     id="nome"
                     value={cliente.nome}
-                    onChange={(e) =>
-                      setCliente({ ...cliente, nome: e.target.value })
-                    }
+                    onChange={(e) => setCliente({ ...cliente, nome: e.target.value })}
                     placeholder="Ex: João da Silva"
                   />
                 </div>
@@ -397,10 +551,7 @@ export function CheckoutCliente({ unidades }: Props) {
                     id="tel"
                     value={cliente.telefone}
                     onChange={(e) =>
-                      setCliente({
-                        ...cliente,
-                        telefone: maskPhone(e.target.value),
-                      })
+                      setCliente({ ...cliente, telefone: maskPhone(e.target.value) })
                     }
                     placeholder="(47) 99999-9999"
                     inputMode="tel"
@@ -412,10 +563,7 @@ export function CheckoutCliente({ unidades }: Props) {
                     id="cpf"
                     value={cliente.cpfCnpj}
                     onChange={(e) =>
-                      setCliente({
-                        ...cliente,
-                        cpfCnpj: maskCpfCnpj(e.target.value),
-                      })
+                      setCliente({ ...cliente, cpfCnpj: maskCpfCnpj(e.target.value) })
                     }
                     placeholder="000.000.000-00"
                   />
@@ -426,9 +574,7 @@ export function CheckoutCliente({ unidades }: Props) {
                     id="email"
                     type="email"
                     value={cliente.email}
-                    onChange={(e) =>
-                      setCliente({ ...cliente, email: e.target.value })
-                    }
+                    onChange={(e) => setCliente({ ...cliente, email: e.target.value })}
                     placeholder="seu@email.com"
                   />
                 </div>
@@ -440,9 +586,7 @@ export function CheckoutCliente({ unidades }: Props) {
           <Card>
             <CardContent className="space-y-4 p-5">
               <h2 className="flex items-center gap-2 font-display text-base font-bold">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">
-                  2
-                </span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">2</span>
                 Entrega ou retirada
               </h2>
 
@@ -462,9 +606,7 @@ export function CheckoutCliente({ unidades }: Props) {
                   <Store className="h-6 w-6 text-agro-blue" />
                   <div>
                     <p className="text-sm font-semibold">Retirar na loja</p>
-                    <p className="text-xs text-muted-foreground">
-                      Grátis · pronto em ~1h
-                    </p>
+                    <p className="text-xs text-muted-foreground">Grátis · pronto em ~1h</p>
                   </div>
                 </button>
                 <button
@@ -479,9 +621,7 @@ export function CheckoutCliente({ unidades }: Props) {
                   <Truck className="h-6 w-6 text-agro-blue" />
                   <div>
                     <p className="text-sm font-semibold">Receber em casa</p>
-                    <p className="text-xs text-muted-foreground">
-                      Frete por zona
-                    </p>
+                    <p className="text-xs text-muted-foreground">Frete por zona</p>
                   </div>
                 </button>
               </div>
@@ -551,10 +691,7 @@ export function CheckoutCliente({ unidades }: Props) {
                           id="rua"
                           value={endereco.logradouro}
                           onChange={(e) =>
-                            setEndereco({
-                              ...endereco,
-                              logradouro: e.target.value,
-                            })
+                            setEndereco({ ...endereco, logradouro: e.target.value })
                           }
                         />
                       </div>
@@ -575,10 +712,7 @@ export function CheckoutCliente({ unidades }: Props) {
                           id="comp"
                           value={endereco.complemento}
                           onChange={(e) =>
-                            setEndereco({
-                              ...endereco,
-                              complemento: e.target.value,
-                            })
+                            setEndereco({ ...endereco, complemento: e.target.value })
                           }
                           placeholder="Apto, bloco..."
                         />
@@ -609,10 +743,7 @@ export function CheckoutCliente({ unidades }: Props) {
                           id="ref"
                           value={endereco.referencia}
                           onChange={(e) =>
-                            setEndereco({
-                              ...endereco,
-                              referencia: e.target.value,
-                            })
+                            setEndereco({ ...endereco, referencia: e.target.value })
                           }
                           placeholder="Próximo a..., portão azul..."
                         />
@@ -651,8 +782,8 @@ export function CheckoutCliente({ unidades }: Props) {
                             Zona detectada: {zonaSugerida.nome}
                           </p>
                           <p className="text-xs text-muted-foreground">
-                            Frete {Number(zonaSugerida.frete_percentual)}% ·
-                            prazo {zonaSugerida.prazo_horas}h
+                            Frete {Number(zonaSugerida.frete_percentual)}% · prazo{" "}
+                            {zonaSugerida.prazo_horas}h
                           </p>
                         </div>
                       </div>
@@ -682,18 +813,15 @@ export function CheckoutCliente({ unidades }: Props) {
                       onChange={(e) => setZonaSelecionadaId(e.target.value)}
                     >
                       <option value="">
-                        {zonaSugerida
-                          ? "Trocar de zona..."
-                          : "Selecione uma zona..."}
+                        {zonaSugerida ? "Trocar de zona..." : "Selecione uma zona..."}
                       </option>
                       {unidades.flatMap((u) =>
                         u.zonas
                           .filter((z) => z.tipo !== "retirada")
                           .map((z) => (
                             <option key={z.id} value={z.id}>
-                              {u.nome.split("—")[1]?.trim() ?? u.nome} ·{" "}
-                              {z.nome} · {Number(z.frete_percentual)}% ·{" "}
-                              {z.prazo_horas}h
+                              {u.nome.split("—")[1]?.trim() ?? u.nome} · {z.nome} ·{" "}
+                              {Number(z.frete_percentual)}% · {z.prazo_horas}h
                             </option>
                           )),
                       )}
@@ -704,25 +832,71 @@ export function CheckoutCliente({ unidades }: Props) {
             </CardContent>
           </Card>
 
-          {/* 3. Pagamento (placeholder Etapa 7) */}
+          {/* 3. Pagamento */}
           <Card>
             <CardContent className="space-y-3 p-5">
               <h2 className="flex items-center gap-2 font-display text-base font-bold">
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">
-                  3
-                </span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-agro-blue text-xs text-white">3</span>
                 Pagamento
               </h2>
-              <div className="flex items-center gap-3 rounded-lg border border-agro-blue/30 bg-agro-blue/5 p-4">
-                <CreditCard className="h-8 w-8 text-agro-blue" />
-                <div>
-                  <p className="text-sm font-semibold">
-                    Pix (integração em breve)
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Aprovação imediata. Mercado Pago será conectado na Etapa 7.
-                  </p>
-                </div>
+
+              {/* Seletor de metodo */}
+              <div className="grid gap-2">
+                <button
+                  type="button"
+                  onClick={() => setMetodoPagamento("pix")}
+                  className={`flex items-center gap-3 rounded-lg border p-3 text-left transition-all ${
+                    metodoPagamento === "pix"
+                      ? "border-agro-blue bg-agro-blue/5 ring-1 ring-agro-blue"
+                      : "hover:border-agro-blue/50"
+                  }`}
+                >
+                  <QrCode className="h-6 w-6 shrink-0 text-agro-blue" />
+                  <div>
+                    <p className="text-sm font-semibold">Pix — aprovação imediata</p>
+                    <p className="text-xs text-muted-foreground">
+                      Pague com QR Code. Confirmação automática.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setMetodoPagamento("whatsapp")}
+                  className={`flex items-center gap-3 rounded-lg border p-3 text-left transition-all ${
+                    metodoPagamento === "whatsapp"
+                      ? "border-agro-blue bg-agro-blue/5 ring-1 ring-agro-blue"
+                      : "hover:border-agro-blue/50"
+                  }`}
+                >
+                  <MessageCircle className="h-6 w-6 shrink-0 text-whatsapp" />
+                  <div>
+                    <p className="text-sm font-semibold">Enviar pedido por WhatsApp</p>
+                    <p className="text-xs text-muted-foreground">
+                      Finaliza e abre o WhatsApp da loja com o pedido pronto.
+                    </p>
+                  </div>
+                </button>
+
+                {tipoEntrega === "retirada" && (
+                  <button
+                    type="button"
+                    onClick={() => setMetodoPagamento("nao_loja")}
+                    className={`flex items-center gap-3 rounded-lg border p-3 text-left transition-all ${
+                      metodoPagamento === "nao_loja"
+                        ? "border-agro-blue bg-agro-blue/5 ring-1 ring-agro-blue"
+                        : "hover:border-agro-blue/50"
+                    }`}
+                  >
+                    <Store className="h-6 w-6 shrink-0 text-agro-blue" />
+                    <div>
+                      <p className="text-sm font-semibold">Pagar na retirada</p>
+                      <p className="text-xs text-muted-foreground">
+                        Pix, cartão ou dinheiro ao buscar na loja.
+                      </p>
+                    </div>
+                  </button>
+                )}
               </div>
             </CardContent>
           </Card>
@@ -800,9 +974,7 @@ export function CheckoutCliente({ unidades }: Props) {
               <div className="flex items-baseline justify-between">
                 <span className="font-medium">Total</span>
                 <span className="font-display text-xl font-bold text-agro-navy">
-                  {formatBRL(
-                    tipoEntrega === "retirada" ? subtotal : totalCents,
-                  )}
+                  {formatBRL(tipoEntrega === "retirada" ? subtotal : totalCents)}
                 </span>
               </div>
               {zona && (
@@ -811,19 +983,61 @@ export function CheckoutCliente({ unidades }: Props) {
                 </p>
               )}
 
-              {/* Botão WhatsApp — envia o pedido completo para a loja */}
-              <Button
-                variant="whatsapp"
-                className="mt-4 w-full"
-                size="lg"
-                onClick={enviarPorWhatsApp}
-              >
-                <WhatsAppIcon className="h-5 w-5" />
-                Enviar pedido por WhatsApp
-              </Button>
-              <p className="mt-1.5 text-center text-xs text-muted-foreground">
-                Abre o WhatsApp da loja com seu pedido pronto pra enviar
-              </p>
+              {/* Botao principal — muda conforme metodo de pagamento */}
+              {metodoPagamento === "pix" && (
+                <>
+                  <Button
+                    variant="accent"
+                    className="mt-4 w-full"
+                    size="lg"
+                    onClick={finalizarComPix}
+                    disabled={criandoPedido}
+                  >
+                    {criandoPedido ? (
+                      <Loader2 className="h-5 w-5 animate-spin" />
+                    ) : (
+                      <QrCode className="h-5 w-5" />
+                    )}
+                    {criandoPedido ? "Gerando Pix..." : "Pagar com Pix"}
+                  </Button>
+                  <p className="mt-1.5 text-center text-xs text-muted-foreground">
+                    Gera o QR Code para pagamento imediato
+                  </p>
+                </>
+              )}
+
+              {metodoPagamento === "whatsapp" && (
+                <>
+                  <Button
+                    variant="whatsapp"
+                    className="mt-4 w-full"
+                    size="lg"
+                    onClick={enviarPorWhatsApp}
+                  >
+                    <WhatsAppIcon className="h-5 w-5" />
+                    Enviar pedido por WhatsApp
+                  </Button>
+                  <p className="mt-1.5 text-center text-xs text-muted-foreground">
+                    Abre o WhatsApp da loja com seu pedido pronto pra enviar
+                  </p>
+                </>
+              )}
+
+              {metodoPagamento === "nao_loja" && (
+                <>
+                  <Button
+                    className="mt-4 w-full"
+                    size="lg"
+                    onClick={finalizar}
+                  >
+                    <Store className="h-5 w-5" />
+                    Confirmar pedido
+                  </Button>
+                  <p className="mt-1.5 text-center text-xs text-muted-foreground">
+                    Pagamento na retirada na loja
+                  </p>
+                </>
+              )}
 
               <div className="my-3 flex items-center gap-2">
                 <Separator className="flex-1" />
@@ -837,18 +1051,12 @@ export function CheckoutCliente({ unidades }: Props) {
                 size="lg"
                 onClick={finalizar}
               >
-                Confirmar pedido sem WhatsApp
+                Confirmar sem pagamento online
               </Button>
-              <p className="mt-2 text-center text-xs text-muted-foreground">
-                Pagamento via Pix/cartão será ativado em breve
-              </p>
 
               {/* Avaliação no Google (botão oficial) */}
               <div className="mt-3">
-                <BotaoAvaliacaoGoogle
-                  variant="cheio"
-                  className="w-full justify-center"
-                />
+                <BotaoAvaliacaoGoogle variant="cheio" className="w-full justify-center" />
               </div>
             </CardContent>
           </Card>

@@ -5,6 +5,9 @@ import { type NextRequest, NextResponse } from "next/server";
  * Middleware que:
  *  1. Refresha a sessão do Supabase (cookies).
  *  2. Protege rotas /admin/* — exige usuário autenticado + role admin.
+ *  3. Protege rotas /conta/* — exige usuário autenticado (cliente).
+ *
+ * /conta/pedidos/[token] e PUBLICO (cliente acompanha por link, sem login).
  *
  * Quando o Supabase não está configurado, libera tudo (modo demo/visual).
  */
@@ -14,6 +17,9 @@ export async function middleware(req: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   const ehAdminRoute = req.nextUrl.pathname.startsWith("/admin");
+  const ehContaRoute =
+    req.nextUrl.pathname.startsWith("/conta") &&
+    !req.nextUrl.pathname.includes("/conta/pedidos/");
 
   // Sem Supabase configurado → modo visual: libera, mas avisa no admin.
   if (!url || !anon) {
@@ -70,9 +76,20 @@ export async function middleware(req: NextRequest) {
     }
   }
 
+  // Protege /conta/* (exceto /conta/pedidos/[token] que e publico)
+  if (ehContaRoute) {
+    if (!user) {
+      const loginUrl = req.nextUrl.clone();
+      loginUrl.pathname = "/entrar";
+      loginUrl.searchParams.set("tipo", "cliente");
+      loginUrl.searchParams.set("next", req.nextUrl.pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   return res;
 }
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/admin/:path*", "/conta/:path*"],
 };
