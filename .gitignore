@@ -43,11 +43,27 @@ next-env.d.ts
 # Supabase
 supabase/.temp
 supabase/.branches
-`n# Logs e arquivos temporarios`n*.log`nlogo_ama.jpg`nbaixar_ig.ps1`npublic/analisa-cores.html`npublic/galeria.html`n.zcode/
-.vercel
-.env*
+
+# Logs e arquivos temporarios
+*.log
+.zcode/
+
+# Artefatos de proposta/analise (nao pertecem ao site em producao)
+proposta*.html
+proposta*.pdf
+Proposta*.pdf
+logo_ama.jpg
+baixar_ig.ps1
+high-line-site.zip
+public/analisa-*.html
+public/galeria.html
+public/analisa-baito.html
 
 # Projetos extras (nao pertencem ao site)
 plataforma-modelos/
 high-line/
 referencia-baito/
+
+# Skills CLI local (uso do agente, nao do site)
+.agents/
+skills-lock.json
